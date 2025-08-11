@@ -1,13 +1,85 @@
-# Astro with Tailwind
+# ImperialForm Website
 
-```sh
-npm create astro@latest -- --template with-tailwindcss
+Toronto's trusted concrete contractors - Family owned & operated since 1985.
+
+## 🚀 Project Structure
+
+```
+/
+├── public/
+├── src/
+│   ├── components/
+│   ├── layouts/
+│   ├── pages/
+│   │   ├── blog/
+│   │   ├── services/
+│   │   └── ...
+│   └── lib/
+├── astro.config.mjs
+├── tsconfig.json
+├── tailwind.config.js
+└── package.json
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/with-tailwindcss)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/with-tailwindcss/devcontainer.json)
+## 🛠️ Tech Stack
 
-Astro comes with [Tailwind](https://tailwindcss.com) support out of the box. This example showcases how to style your Astro project with Tailwind.
+- **Framework:** [Astro](https://astro.build) v5.12
+- **UI Framework:** React 19
+- **Styling:** Tailwind CSS v4
+- **Icons:** Lucide Icons
+- **TypeScript:** Full type safety
 
-For complete setup instructions, please see our [Tailwind Integration Guide](https://docs.astro.build/en/guides/integrations-guide/tailwind).
+## 📦 Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Elemanor/imperialform-website.git
+
+# Navigate to project directory
+cd imperialform-website
+
+# Install dependencies
+npm install
+```
+
+## 🧞 Commands
+
+All commands are run from the root of the project:
+
+| Command                | Action                                           |
+| :--------------------- | :----------------------------------------------- |
+| `npm install`          | Installs dependencies                            |
+| `npm run dev`          | Starts local dev server at `localhost:4321`      |
+| `npm run build`        | Build production site to `./dist/`              |
+| `npm run preview`      | Preview build locally, before deploying         |
+
+## 🏗️ Building for Production
+
+```bash
+# Build the site
+npm run build
+
+# Preview the build locally
+npm run preview
+```
+
+The site will be built to the `./dist/` directory and can be deployed to any static hosting service.
+
+## 🌟 Features
+
+- **Foundation Calculator:** Interactive tool for calculating footing sizes, wall quantities, and cost estimates
+- **15+ Technical Blog Posts:** Comprehensive guides on OBC requirements and concrete construction
+- **Service Pages:** Detailed information about all concrete services
+- **Responsive Design:** Mobile-first approach with full responsiveness
+- **SEO Optimized:** Meta tags and structured content for search engines
+- **Fast Performance:** Static site generation with Astro
+
+## 📱 Contact
+
+- **Phone:** (437) 545-0067
+- **Email:** info@imperialform.ca
+- **Website:** [imperialform.ca](https://imperialform.ca)
+
+## 📄 License
+
+© 2024 ImperialForm. All rights reserved.
