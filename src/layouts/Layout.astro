@@ -6,7 +6,7 @@ export interface Props {
   description?: string;
 }
 
-const { title, description = "Toronto Concrete - Professional concrete contractors serving Toronto and GTA. Driveways, foundations, patios, commercial concrete. Licensed & insured. Free quotes." } = Astro.props;
+const { title, description = "ImperialForm - Professional concrete contractors serving Toronto and GTA. Driveways, foundations, patios, waterproofing. Licensed & insured. Free quotes." } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -30,6 +30,15 @@ const { title, description = "Toronto Concrete - Professional concrete contracto
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     
     <title>{title}</title>
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QK43R3KY6S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QK43R3KY6S');
+    </script>
   </head>
   <body>
     <slot />
