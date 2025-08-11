@@ -1,0 +1,378 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Hammer, Phone, CheckCircle, AlertCircle } from 'lucide-astro';
+---
+
+<Layout title="Concrete Formwork Services Toronto | Professional Forming">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/services" class="hover:text-red-600">Services</a>
+            <span>/</span>
+            <span>Concrete Formwork</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Concrete Formwork Services
+          </h1>
+          <p class="text-xl text-gray-600">
+            Professional forming for foundations, walls, and custom concrete structures
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <!-- Left Content -->
+          <div class="lg:col-span-2">
+            <!-- Main Image -->
+            <img 
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800" 
+              alt="Concrete formwork installation"
+              class="w-full h-96 object-cover rounded-lg shadow-md mb-8"
+            />
+
+            <!-- Overview -->
+            <div class="prose max-w-none mb-12">
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Expert Formwork Construction</h2>
+              <p class="text-gray-700 mb-4">
+                Formwork is the backbone of any concrete project - it's what shapes and supports the concrete 
+                until it cures. Poor formwork leads to failed projects, wasted materials, and dangerous 
+                structural issues. That's why you need experienced professionals who understand the engineering 
+                behind proper forming.
+              </p>
+              <p class="text-gray-700 mb-4">
+                With 39 years of experience, we've built formwork for everything from simple residential 
+                foundations to complex architectural concrete structures. We use quality materials, precise 
+                measurements, and proven techniques to ensure your concrete comes out perfect every time.
+              </p>
+              <p class="text-gray-700">
+                Whether you're a homeowner needing foundation forms or a contractor looking for a reliable 
+                formwork partner, we deliver professional results on time and on budget.
+              </p>
+            </div>
+
+            <!-- Types of Formwork -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Formwork Services We Provide</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Foundation Forms</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Footings and grade beams</li>
+                    <li>• Full basement walls</li>
+                    <li>• Crawl space walls</li>
+                    <li>• Pier foundations</li>
+                    <li>• Strip footings</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Wall Forms</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Retaining walls</li>
+                    <li>• Basement walls</li>
+                    <li>• Property walls</li>
+                    <li>• Sound barriers</li>
+                    <li>• Decorative walls</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Structural Forms</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Columns and pillars</li>
+                    <li>• Beams and lintels</li>
+                    <li>• Suspended slabs</li>
+                    <li>• Stairs</li>
+                    <li>• Custom shapes</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Specialty Forms</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Curved walls</li>
+                    <li>• Architectural concrete</li>
+                    <li>• Pool walls</li>
+                    <li>• Cisterns & tanks</li>
+                    <li>• Custom designs</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Form Systems -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Form Systems We Use</h3>
+              <div class="space-y-4">
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Traditional Wood Forms</h4>
+                  <p class="text-gray-600 mb-2">
+                    Cost-effective for residential projects. Custom-built on site for perfect fit.
+                  </p>
+                  <p class="text-sm text-gray-500">Best for: Foundations, footings, custom shapes</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Aluminum/Steel Panel Systems</h4>
+                  <p class="text-gray-600 mb-2">
+                    Reusable modular panels for faster assembly and perfect finish.
+                  </p>
+                  <p class="text-sm text-gray-500">Best for: Walls, large projects, repetitive structures</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Insulated Concrete Forms (ICF)</h4>
+                  <p class="text-gray-600 mb-2">
+                    Stay-in-place forms that provide built-in insulation. Energy efficient.
+                  </p>
+                  <p class="text-sm text-gray-500">Best for: Basements, energy-efficient homes</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Symons Forms</h4>
+                  <p class="text-gray-600 mb-2">
+                    Industry-standard rental forms for professional contractors.
+                  </p>
+                  <p class="text-sm text-gray-500">Best for: Large walls, commercial projects</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Why Proper Formwork Matters -->
+            <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <AlertCircle class="w-6 h-6 text-red-600" />
+                Why Professional Formwork Matters
+              </h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">DIY Risks:</h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Form blowouts waste concrete</li>
+                    <li>• Weak forms create bulges</li>
+                    <li>• Poor bracing causes collapse</li>
+                    <li>• Incorrect dimensions</li>
+                    <li>• Safety hazards</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Professional Benefits:</h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Engineered for load capacity</li>
+                    <li>• Perfect dimensions</li>
+                    <li>• Smooth finish quality</li>
+                    <li>• Safety compliance</li>
+                    <li>• Faster completion</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Process -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Formwork Process</h3>
+              <div class="space-y-4">
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Site Assessment</h4>
+                    <p class="text-gray-600">Evaluate project requirements, access, and site conditions</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Design & Planning</h4>
+                    <p class="text-gray-600">Calculate loads, design form system, order materials</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Form Construction</h4>
+                    <p class="text-gray-600">Build forms to exact specifications with proper bracing</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Quality Check</h4>
+                    <p class="text-gray-600">Verify dimensions, level, plumb, and structural integrity</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Pour Support</h4>
+                    <p class="text-gray-600">Monitor during pour, adjust as needed, ensure success</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">6</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Form Removal</h4>
+                    <p class="text-gray-600">Strip forms at proper time, clean and store if rental</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Pricing Guide -->
+            <div class="bg-white rounded-lg p-8 shadow-md border-2 border-gray-200">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Formwork Pricing Guide</h3>
+              <div class="space-y-3">
+                <div class="flex justify-between items-center pb-3 border-b border-gray-200">
+                  <span class="text-gray-700">Foundation Forms</span>
+                  <span class="font-semibold text-gray-900">$15-25 per linear foot</span>
+                </div>
+                <div class="flex justify-between items-center pb-3 border-b border-gray-200">
+                  <span class="text-gray-700">Wall Forms (8ft high)</span>
+                  <span class="font-semibold text-gray-900">$20-35 per linear foot</span>
+                </div>
+                <div class="flex justify-between items-center pb-3 border-b border-gray-200">
+                  <span class="text-gray-700">ICF Installation</span>
+                  <span class="font-semibold text-gray-900">$25-40 per sq ft</span>
+                </div>
+                <div class="flex justify-between items-center pb-3 border-b border-gray-200">
+                  <span class="text-gray-700">Column Forms</span>
+                  <span class="font-semibold text-gray-900">$200-500 each</span>
+                </div>
+                <div class="flex justify-between items-center">
+                  <span class="text-gray-700">Custom/Architectural</span>
+                  <span class="font-semibold text-gray-900">Quote required</span>
+                </div>
+              </div>
+              <p class="text-sm text-gray-500 mt-4">
+                * Prices vary based on complexity, height, access, and form type
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="lg:col-span-1">
+            <!-- Quick Quote -->
+            <div class="bg-red-600 text-white rounded-lg p-6 mb-6 sticky top-24">
+              <h3 class="text-xl font-bold mb-4">Formwork Quote</h3>
+              <div class="space-y-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <Phone class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">(416) 555-0199</p>
+                    <p class="text-sm opacity-90">Free estimates</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <Hammer class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">39 Years Experience</p>
+                    <p class="text-sm opacity-90">Thousands of projects</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <CheckCircle class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">Licensed & Insured</p>
+                    <p class="text-sm opacity-90">Full protection</p>
+                  </div>
+                </div>
+              </div>
+              <a href="/get-quote" class="block w-full bg-white text-red-600 text-center py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Get Free Quote
+              </a>
+            </div>
+
+            <!-- Services Include -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h4 class="font-bold text-gray-900 mb-4">Service Includes</h4>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Site measurement & layout</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Material supply</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Form construction</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Rebar installation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Pour coordination</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Form stripping</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Site cleanup</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Who We Work With -->
+            <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+              <h4 class="font-bold text-gray-900 mb-4">Who We Work With</h4>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>• Homeowners</li>
+                <li>• General contractors</li>
+                <li>• Home builders</li>
+                <li>• Renovation contractors</li>
+                <li>• Property developers</li>
+                <li>• Architects</li>
+                <li>• DIY needing help</li>
+              </ul>
+            </div>
+
+            <!-- Safety Note -->
+            <div class="bg-yellow-50 rounded-lg p-6 border-2 border-yellow-400">
+              <h4 class="font-bold text-gray-900 mb-3">Safety First</h4>
+              <p class="text-sm text-gray-700 mb-3">
+                Formwork failure can cause serious injury or death. Our forms are engineered 
+                for safety with proper bracing and load calculations.
+              </p>
+              <p class="text-sm text-gray-600">
+                • WSIB covered<br/>
+                • Safety trained crew<br/>
+                • Engineered designs
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Need Professional Formwork?</h2>
+        <p class="text-xl mb-8 text-gray-300">
+          Get it done right the first time - call the experts
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:416-555-0199" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+            Call: (416) 555-0199
+          </a>
+          <a href="/get-quote" class="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get Free Quote
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

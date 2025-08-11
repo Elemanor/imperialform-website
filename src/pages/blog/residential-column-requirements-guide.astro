@@ -1,0 +1,620 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Building, Ruler, AlertTriangle } from 'lucide-astro';
+---
+
+<Layout title="Residential Column Requirements | Steel, Wood & Masonry Guide">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Column Requirements</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Residential Column Requirements: Steel, Wood & Masonry
+          </h1>
+          <p class="text-xl text-gray-600">
+            Complete guide to column sizing, installation, and load requirements per OBC Part 9
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>16 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              Columns are the critical vertical members that transfer beam loads down to footings. In residential 
+              construction, proper column selection and installation can mean the difference between a stable 
+              structure and catastrophic failure. After decades of installing columns in Toronto basements and 
+              supporting structures, here's everything you need to know about meeting OBC requirements for 
+              steel, wood, and masonry columns.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8 border-2 border-blue-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Building class="w-5 h-5 text-blue-600" />
+                OBC Part 9 Column Scope
+              </h3>
+              <p class="text-gray-700 mb-3">
+                Section 9.17 applies to columns supporting:
+              </p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Beams carrying loads from maximum 2 wood-frame floors</li>
+                <li>• Maximum floor loads of 2.4 kPa (50 psf)</li>
+                <li>• Maximum joist spans of 5m (16 ft)</li>
+                <li>• Balconies, decks, and carport roofs</li>
+              </ul>
+              <p class="text-gray-700 mt-3">
+                <strong>Beyond these limits:</strong> Engineering design per Part 4 required
+              </p>
+            </div>
+          </div>
+
+          <!-- Load Calculation -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Understanding Column Loads
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">How to Calculate Column Load</h3>
+              
+              <div class="bg-gray-50 rounded-lg p-6 mb-6">
+                <h4 class="font-semibold text-gray-900 mb-3">Basic Formula:</h4>
+                <p class="text-gray-700 mb-3">
+                  Column Load = Supported Area × Load per Unit Area
+                </p>
+                <p class="text-gray-700">
+                  <strong>Supported Area =</strong> (Half joist span on each side) × (Half beam span on each side)
+                </p>
+              </div>
+
+              <div class="bg-yellow-50 rounded-lg p-6 border border-yellow-400">
+                <h4 class="font-semibold text-gray-900 mb-3">Example Calculation:</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Joist span: 4.8m (16 ft) supported by beam</li>
+                  <li>• Column spacing: 3m (10 ft) along beam</li>
+                  <li>• Supported area: 4.8m × 3m = 14.4m²</li>
+                  <li>• Live load: 2.4 kPa × 14.4m² = 34.6 kN</li>
+                  <li>• Dead load (estimated): 1.0 kPa × 14.4m² = 14.4 kN</li>
+                  <li><strong>Total load: ~49 kN (11,000 lbs)</strong></li>
+                </ul>
+                <p class="text-gray-700 mt-3">
+                  <strong>Note:</strong> This exceeds the 36 kN limit for standard adjustable columns!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Steel Columns -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <Ruler class="inline w-6 h-6 text-red-600 mr-2" />
+              Steel Column Requirements
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300 mb-6">
+              <h3 class="font-bold text-gray-900 mb-4">Adjustable Steel Columns (Most Common)</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Size Requirements:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Minimum diameter: 73mm (3")</li>
+                    <li>• Wall thickness: 4.76mm (3/16") minimum</li>
+                    <li>• Maximum load: 36 kN (8,000 lbs)</li>
+                    <li>• Must meet CAN/CGSB-7.2 standard</li>
+                    <li>• Label required showing allowable load</li>
+                    <li>• Safety factor: 2.25</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Installation Requirements:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Top plate: 100×100×6.35mm steel</li>
+                    <li>• Base plate: 100×100×6.35mm steel</li>
+                    <li>• Mechanically fasten to beam</li>
+                    <li>• Center on footing</li>
+                    <li>• Lateral support required</li>
+                    <li>• Rust-inhibiting paint (1 coat min)</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-red-50 rounded-lg p-4 mt-6 border border-red-400">
+                <p class="text-gray-700">
+                  <strong>Critical:</strong> Many residential applications exceed 36 kN load limit. Always calculate 
+                  actual loads. If over 36 kN, require engineered column per Part 4.
+                </p>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Common Steel Column Sizes & Capacities</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Size</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Wall Thickness</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Typical Capacity</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Adjustable (light)</td>
+                    <td class="py-3 px-4 text-gray-700">73mm (3")</td>
+                    <td class="py-3 px-4 text-gray-700">4.76mm</td>
+                    <td class="py-3 px-4 text-gray-700">36 kN</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Adjustable (heavy)</td>
+                    <td class="py-3 px-4 text-gray-700">89mm (3.5")</td>
+                    <td class="py-3 px-4 text-gray-700">6.35mm</td>
+                    <td class="py-3 px-4 text-gray-700">50 kN*</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">HSS (engineered)</td>
+                    <td class="py-3 px-4 text-gray-700">102×102mm</td>
+                    <td class="py-3 px-4 text-gray-700">6.35mm</td>
+                    <td class="py-3 px-4 text-gray-700">150 kN*</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Pipe column</td>
+                    <td class="py-3 px-4 text-gray-700">114mm (4.5")</td>
+                    <td class="py-3 px-4 text-gray-700">6.0mm</td>
+                    <td class="py-3 px-4 text-gray-700">200 kN*</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p class="text-sm text-gray-600 mt-2">
+              * Requires engineering design per Part 4
+            </p>
+          </div>
+
+          <!-- Wood Columns -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Wood Column Requirements
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Minimum Sizes & Types</h3>
+              
+              <div class="space-y-6">
+                <div class="bg-gray-50 rounded-lg p-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Solid Wood Columns:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Square: 140×140mm (5.5×5.5") minimum</li>
+                    <li>• Round: 184mm (7.25") diameter minimum</li>
+                    <li>• Species: Per NBC lumber grades</li>
+                    <li>• Moisture content: 19% maximum</li>
+                  </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Built-up Wood Columns:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Minimum size: 140×140mm (5.5×5.5")</li>
+                    <li>• Each member: 38mm (1.5") thick minimum</li>
+                    <li>• Fastening options:</li>
+                    <li class="ml-4">- Bolts: 9.52mm (3/8") @ 450mm o.c.</li>
+                    <li class="ml-4">- Nails: 76mm (3") @ 300mm o.c.</li>
+                    <li>• All members same species and grade</li>
+                  </ul>
+                </div>
+
+                <div class="bg-yellow-50 rounded-lg p-6 border border-yellow-400">
+                  <h4 class="font-semibold text-gray-900 mb-3">Moisture Protection Required:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Separation from concrete: 0.05mm polyethylene or Type S roofing</li>
+                    <li>• Raise on pedestal above floor (recommended)</li>
+                    <li>• Pressure-treated if in contact with concrete</li>
+                    <li>• Adequate ventilation in basement</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-8 border border-gray-200 mt-6">
+              <h3 class="font-bold text-gray-900 mb-4">Wood Column Capacity Factors</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Slenderness Ratio:</h4>
+                  <p class="text-gray-700 mb-2">
+                    L/d = Length ÷ Least dimension
+                  </p>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Maximum L/d = 50</li>
+                    <li>• Typical basement: L/d = 17</li>
+                    <li>• Higher ratio = lower capacity</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Typical Capacities:</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• 140×140mm SPF: ~60 kN</li>
+                    <li>• 184mm round cedar: ~45 kN</li>
+                    <li>• 190×190mm hemlock: ~100 kN</li>
+                    <li>• Varies by species and grade</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Masonry Columns -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Unit Masonry & Concrete Columns
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Unit Masonry Columns</h3>
+                
+                <h4 class="font-semibold text-gray-900 mb-3">Requirements:</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Minimum size: 240×240mm (9.5×9.5")</li>
+                  <li>• Block strength: 15 MPa minimum</li>
+                  <li>• Mortar: Type S or N</li>
+                  <li>• Cores: Filled with grout</li>
+                  <li>• Vertical reinforcement required</li>
+                  <li>• Height limit: 3m (10')</li>
+                </ul>
+                
+                <h4 class="font-semibold text-gray-900 mb-3 mt-4">Common Sizes:</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• 290×290mm (12×12") - standard</li>
+                  <li>• 390×390mm (16×16") - heavy loads</li>
+                  <li>• 490×490mm (20×20") - commercial</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Solid Concrete Columns</h3>
+                
+                <h4 class="font-semibold text-gray-900 mb-3">Requirements:</h4>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Minimum size: 240×240mm (9.5×9.5")</li>
+                  <li>• Concrete: 15 MPa minimum</li>
+                  <li>• Reinforcement: 4-15M vertical</li>
+                  <li>• Ties: 10M @ 300mm o.c.</li>
+                  <li>• Forms: Sonotube or built</li>
+                  <li>• Cure time: 7 days minimum</li>
+                </ul>
+                
+                <h4 class="font-semibold text-gray-900 mb-3 mt-4">Advantages:</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• High load capacity</li>
+                  <li>• Fire resistant</li>
+                  <li>• No maintenance</li>
+                  <li>• Custom sizes possible</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Installation Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Critical Installation Requirements</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">All Column Types Must Have:</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">1. Proper Location:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Centered on footing</li>
+                    <li>• Plumb within 1:100</li>
+                    <li>• Under beam bearing point</li>
+                    <li>• Clear of mechanical services</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">2. Lateral Support:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Connection to beam (bolted/welded)</li>
+                    <li>• Bracing if height > 3m</li>
+                    <li>• Exception: Low decks < 600mm</li>
+                    <li>• Cross-bracing for tall columns</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">3. Bearing Plates:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Steel: 100×100×6.35mm minimum</li>
+                    <li>• Wood: Full bearing on beam</li>
+                    <li>• Distribute load evenly</li>
+                    <li>• Prevent crushing</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">4. Base Connection:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Anchor bolts or embedded</li>
+                    <li>• Prevent lateral movement</li>
+                    <li>• Moisture barrier for wood</li>
+                    <li>• Level bearing surface</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-red-600" />
+              Common Column Problems & Solutions
+            </h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Overloaded Adjustable Columns</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Load exceeds 36 kN rating but standard column installed
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Calculate actual loads before selection. Use engineered column or 
+                  reduce spacing between columns. Never exceed manufacturer's rating.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Wood Column Rot</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Bottom of wood column decaying from moisture
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Always use moisture barrier. Raise on concrete pedestal. Ensure proper 
+                  basement ventilation. Consider steel column replacement.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Column Not Plumb</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Column leaning, creating eccentric loading
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Maximum out-of-plumb: 1:100. Jack and re-level. Add lateral bracing. 
+                  Check footing for settlement.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Insufficient Footing</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Column punching through slab or settling
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Minimum footing: 600×600×200mm for typical column. Increase for heavy 
+                  loads. Check soil bearing capacity.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">No Lateral Support</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Column buckling or swaying under load
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Mechanically fasten to beam. Add mid-height bracing if > 3m tall. 
+                  Cross-brace between columns.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Comparison -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Column Cost Comparison</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Material Cost</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Installation</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Total (2.4m height)</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Capacity</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Adjustable steel</td>
+                    <td class="py-3 px-4 text-gray-700">$120</td>
+                    <td class="py-3 px-4 text-gray-700">$150</td>
+                    <td class="py-3 px-4 font-semibold">$270</td>
+                    <td class="py-3 px-4 text-gray-700">36 kN</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Wood 140×140</td>
+                    <td class="py-3 px-4 text-gray-700">$80</td>
+                    <td class="py-3 px-4 text-gray-700">$200</td>
+                    <td class="py-3 px-4 font-semibold">$280</td>
+                    <td class="py-3 px-4 text-gray-700">60 kN</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">HSS 102×102</td>
+                    <td class="py-3 px-4 text-gray-700">$250</td>
+                    <td class="py-3 px-4 text-gray-700">$300</td>
+                    <td class="py-3 px-4 font-semibold">$550</td>
+                    <td class="py-3 px-4 text-gray-700">150 kN</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Masonry 290×290</td>
+                    <td class="py-3 px-4 text-gray-700">$150</td>
+                    <td class="py-3 px-4 text-gray-700">$450</td>
+                    <td class="py-3 px-4 font-semibold">$600</td>
+                    <td class="py-3 px-4 text-gray-700">200 kN</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Concrete 300×300</td>
+                    <td class="py-3 px-4 text-gray-700">$180</td>
+                    <td class="py-3 px-4 text-gray-700">$400</td>
+                    <td class="py-3 px-4 font-semibold">$580</td>
+                    <td class="py-3 px-4 text-gray-700">250 kN</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-4">
+              * Includes footing pad. Prices vary by location and accessibility.
+            </p>
+          </div>
+
+          <!-- Toronto Specific -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Toronto-Specific Considerations</h2>
+            
+            <div class="bg-blue-50 rounded-lg p-8">
+              <h3 class="font-bold text-gray-900 mb-4">Local Factors Affecting Column Selection</h3>
+              
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Basement Moisture</h4>
+                  <p class="text-gray-700">
+                    Toronto's high water table and clay soils create moisture issues. Steel columns with proper 
+                    coating are often preferred over wood. If using wood, pressure-treated or raised on pedestals 
+                    is essential.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Century Homes</h4>
+                  <p class="text-gray-700">
+                    Many Toronto homes have undersized columns from original construction. When renovating, 
+                    calculate current loads - modern living loads often exceed original design. Sistering or 
+                    replacement usually required.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Basement Lowering</h4>
+                  <p class="text-gray-700">
+                    Popular renovation increases column height and slenderness ratio. Original columns may no 
+                    longer be adequate. Recalculate capacity with new height. Often requires larger or additional 
+                    columns.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Open Concept Trends</h4>
+                  <p class="text-gray-700">
+                    Removing walls increases beam spans and column loads. What worked for compartmentalized 
+                    layouts may fail with open concept. Always recalculate when removing walls.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Selection Guide -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Column Selection Guide</h2>
+            
+            <div class="bg-green-50 rounded-lg p-8">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-3">For Loads < 36 kN:</h3>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Standard adjustable steel column</li>
+                    <li>✓ Quick installation</li>
+                    <li>✓ Height adjustable</li>
+                    <li>✓ Most economical</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-3">For Loads 36-100 kN:</h3>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ HSS steel column (engineered)</li>
+                    <li>✓ Large wood column (190×190mm)</li>
+                    <li>✓ Requires Part 4 design</li>
+                    <li>✓ Professional installation</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-3">For Loads > 100 kN:</h3>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Concrete or masonry column</li>
+                    <li>✓ Large HSS steel</li>
+                    <li>✓ Always engineered</li>
+                    <li>✓ Substantial footing required</li>
+                  </ul>
+                </div>
+                <div>
+                  <h3 class="font-bold text-gray-900 mb-3">For Wet Conditions:</h3>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Steel or concrete only</li>
+                    <li>✓ Avoid wood columns</li>
+                    <li>✓ Proper drainage essential</li>
+                    <li>✓ Waterproof coatings</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Getting Column Selection Right</h2>
+            <p class="text-gray-700 mb-4">
+              Column failure is catastrophic - there's no gradual warning like with beams that sag. When a column 
+              fails, the structure above comes down immediately. That's why proper sizing, installation, and lateral 
+              support are non-negotiable.
+            </p>
+            <p class="text-gray-700 mb-4">
+              The most common mistake we see is using standard adjustable columns for loads exceeding 36 kN. 
+              Always calculate actual loads - don't guess. In Toronto basements, moisture is another killer. 
+              We've replaced hundreds of rotted wood columns that lacked proper moisture protection.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, we calculate every column load, specify the right type for the application, 
+              and install with proper footings, bearing plates, and lateral support. For renovations, we assess 
+              existing columns against new loads. It costs more to do it right, but column failure costs everything.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Column Installation or Assessment?</h3>
+            <p class="text-lg mb-6">
+              Load calculations, proper sizing, professional installation
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

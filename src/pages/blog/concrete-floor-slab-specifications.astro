@@ -1,0 +1,624 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Layers, Ruler, Shield } from 'lucide-astro';
+---
+
+<Layout title="Concrete Floor Slab Specifications | Complete Build Guide">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Floor Slab Specifications</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Concrete Floor Slab Specifications & Construction
+          </h1>
+          <p class="text-xl text-gray-600">
+            Complete guide to foundation slab systems: layers, dimensions, and strength requirements
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>16 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              A properly constructed concrete floor slab is a complex system of layers, each serving a critical 
+              function. From the compacted subgrade to the finished concrete surface, every component must be 
+              correctly specified and installed. This guide covers the complete floor slab assembly, including 
+              the standard Toronto specification: 125mm crushed stone, extruded insulation, poly dampproofing, 
+              and 75mm concrete slab with proper strength ratings.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8 border-2 border-blue-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Layers class="w-5 h-5 text-blue-600" />
+                Standard Residential Floor Slab System
+              </h3>
+              <p class="text-gray-700">
+                A typical residential basement or garage floor slab in Toronto consists of multiple layers 
+                totaling 250-300mm (10-12") in depth, designed to provide structural support, moisture 
+                control, thermal insulation, and a durable wearing surface.
+              </p>
+            </div>
+          </div>
+
+          <!-- Complete Slab Assembly -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Complete Floor Slab Assembly (Bottom to Top)
+            </h2>
+            
+            <div class="bg-white rounded-lg border-2 border-gray-300 overflow-hidden">
+              <div class="bg-gradient-to-b from-gray-100 to-gray-50 p-6 border-b-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-3 text-lg">Layer 1: Subgrade</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Material:</strong> Compacted native soil or engineered fill
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Compaction: 95% Standard Proctor Density minimum</li>
+                  <li>• Free of organic material, debris, frozen soil</li>
+                  <li>• Graded to required elevation ±25mm</li>
+                  <li>• Proof-rolled to identify soft spots</li>
+                </ul>
+              </div>
+
+              <div class="bg-yellow-50 p-6 border-b-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-3 text-lg">Layer 2: Granular Base (125mm)</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Material:</strong> 19mm (3/4") clear crushed stone - Granular A
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Thickness: 125mm (5") minimum, 150mm (6") preferred</li>
+                  <li>• Purpose: Drainage layer, capillary break, stable base</li>
+                  <li>• Compaction: Vibratory plate compactor, 2-3 passes</li>
+                  <li>• No fines to maintain drainage capacity</li>
+                  <li>• Level tolerance: ±10mm</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 p-6 border-b-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-3 text-lg">Layer 3: Rigid Insulation (Optional but Recommended)</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Material:</strong> Extruded polystyrene (XPS) rigid foam
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Thickness: 50mm (2") minimum, 75mm (3") for heated floors</li>
+                  <li>• R-value: R-10 minimum (R-2.5 per inch)</li>
+                  <li>• Compressive strength: 20 PSI minimum</li>
+                  <li>• Joints: Tight-fitting, taped with appropriate tape</li>
+                  <li>• Coverage: Full coverage under slab, 600mm perimeter vertical</li>
+                </ul>
+              </div>
+
+              <div class="bg-green-50 p-6 border-b-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-3 text-lg">Layer 4: Vapor Barrier / Dampproofing</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Material:</strong> 6 mil (0.15mm) polyethylene sheeting
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Type: Virgin polyethylene, ASTM E1745 Class A</li>
+                  <li>• Overlap: Minimum 150mm (6") at seams</li>
+                  <li>• Sealing: All seams taped with compatible tape</li>
+                  <li>• Penetrations: Sealed with mastic or tape</li>
+                  <li>• Turn-up: 150mm up walls, sealed to foundation</li>
+                </ul>
+              </div>
+
+              <div class="bg-red-50 p-6 border-b-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-3 text-lg">Layer 5: Concrete Slab (75mm minimum)</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Material:</strong> Ready-mix concrete, 32 MPa minimum strength
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Thickness: 75mm (3") minimum residential, 100mm (4") garage/basement</li>
+                  <li>• Strength: 32 MPa (4,600 PSI) at 28 days</li>
+                  <li>• Slump: 80-100mm (3-4")</li>
+                  <li>• Air entrainment: 5-7% for exterior exposure</li>
+                  <li>• Reinforcement: 6x6 W2.9/W2.9 welded wire mesh or fiber</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 p-6">
+                <h3 class="font-bold text-gray-900 mb-3 text-lg">Layer 6: Surface Finish</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Options:</strong> Various finishes based on use
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Smooth trowel: Interior floors</li>
+                  <li>• Broom finish: Garages, exterior</li>
+                  <li>• Sealed: Densifier or acrylic sealer</li>
+                  <li>• Polished: Diamond grinding for decorative</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Detailed Specifications -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Detailed Material Specifications</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                  <Shield class="w-5 h-5 text-red-600" />
+                  Concrete Mix Design Requirements
+                </h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-3">Interior Slabs (Basement)</h4>
+                    <ul class="space-y-2 text-gray-700">
+                      <li><strong>Strength:</strong> 25 MPa minimum</li>
+                      <li><strong>Cement:</strong> Type GU (General Use)</li>
+                      <li><strong>W/C Ratio:</strong> 0.50 maximum</li>
+                      <li><strong>Aggregate:</strong> 19mm maximum</li>
+                      <li><strong>Slump:</strong> 80-100mm</li>
+                      <li><strong>Air:</strong> 3-5% (non-exposed)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-3">Exterior/Garage Slabs</h4>
+                    <ul class="space-y-2 text-gray-700">
+                      <li><strong>Strength:</strong> 32 MPa minimum</li>
+                      <li><strong>Cement:</strong> Type GU or MS</li>
+                      <li><strong>W/C Ratio:</strong> 0.45 maximum</li>
+                      <li><strong>Aggregate:</strong> 19mm maximum</li>
+                      <li><strong>Slump:</strong> 80-100mm</li>
+                      <li><strong>Air:</strong> 5-7% (freeze-thaw)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Reinforcement Options</h3>
+                <div class="space-y-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Welded Wire Mesh (WWM)</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Standard: 6x6 W2.9/W2.9 (6x6 10/10)</li>
+                      <li>• Heavy duty: 6x6 W4.0/W4.0 (6x6 8/8)</li>
+                      <li>• Placement: Center of slab or upper third</li>
+                      <li>• Support: Chairs at 1.2m centers</li>
+                      <li>• Overlap: 150mm minimum</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Fiber Reinforcement</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Synthetic: 0.5-0.9 kg/m³ (1-2 lbs/yd³)</li>
+                      <li>• Steel: 15-30 kg/m³ (25-50 lbs/yd³)</li>
+                      <li>• Benefits: Crack control, impact resistance</li>
+                      <li>• No placement issues like mesh</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Rebar (Heavy Loads)</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Size: 10M bars typical</li>
+                      <li>• Spacing: 300-450mm centers both ways</li>
+                      <li>• Cover: 75mm top, 75mm bottom</li>
+                      <li>• Used for point loads, heavy equipment</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slab Thickness Guidelines -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Slab Thickness Requirements</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Application</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Thickness</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Recommended</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Notes</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Residential basement</td>
+                    <td class="py-3 px-4 text-gray-700">75mm (3")</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Light loads only</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Residential garage</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                    <td class="py-3 px-4 text-gray-700">125mm (5")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Cars and light trucks</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Driveway</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Freeze-thaw exposure</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Workshop/heavy equipment</td>
+                    <td class="py-3 px-4 text-gray-700">125mm (5")</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Point loads, machinery</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Heated floors (hydronic)</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                    <td class="py-3 px-4 text-gray-700">125mm (5")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">50mm above tubes</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Joint Layout -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Control Joint Requirements</h2>
+            
+            <div class="bg-yellow-50 rounded-lg p-8 border-2 border-yellow-400">
+              <h3 class="font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <Ruler class="w-5 h-5 text-yellow-600" />
+                Joint Spacing Guidelines
+              </h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Maximum Spacing:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• 75mm slab: 2.7m (9') maximum</li>
+                    <li>• 100mm slab: 3.6m (12') maximum</li>
+                    <li>• 125mm slab: 4.5m (15') maximum</li>
+                    <li>• 150mm slab: 5.4m (18') maximum</li>
+                  </ul>
+                  <p class="text-sm text-gray-600 mt-2">
+                    Rule of thumb: 36 x slab thickness
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Joint Details:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Depth: 1/4 of slab thickness minimum</li>
+                    <li>• Width: 3-6mm (1/8-1/4")</li>
+                    <li>• Timing: Within 6-12 hours of pour</li>
+                    <li>• Pattern: Square panels preferred</li>
+                    <li>• Aspect ratio: Maximum 1.5:1</li>
+                  </ul>
+                </div>
+              </div>
+              
+              <div class="bg-white rounded-lg p-4 mt-6">
+                <p class="text-gray-700">
+                  <strong>Important:</strong> Joints should align with columns, walls, and other penetrations. 
+                  Re-entrant corners require joints to prevent random cracking.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Installation Sequence -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Installation Sequence</h2>
+            
+            <div class="space-y-4">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Subgrade Preparation</h3>
+                    <p class="text-gray-700">
+                      Excavate to required depth (typically 300-350mm below finished floor). Compact subgrade to 
+                      95% SPD. Proof roll to identify soft spots. Fine grade to ±25mm.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Place Crushed Stone (125mm)</h3>
+                    <p class="text-gray-700">
+                      Spread 19mm clear stone in lifts. Compact with vibratory plate. Level to ±10mm using 
+                      screed rails. Ensure no contamination with fines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Install Insulation (if specified)</h3>
+                    <p class="text-gray-700">
+                      Lay XPS boards tight together. Stagger joints. Tape all seams. Install vertical edge 
+                      insulation. Protect from damage during subsequent work.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Install Vapor Barrier</h3>
+                    <p class="text-gray-700">
+                      Roll out 6 mil poly. Overlap seams 150mm minimum. Tape all seams and penetrations. 
+                      Turn up at walls 150mm. Avoid punctures during reinforcement placement.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Place Reinforcement</h3>
+                    <p class="text-gray-700">
+                      Position mesh/rebar on chairs at mid-depth. Overlap mesh 150mm. Tie rebar at intersections. 
+                      Keep 75mm from edges. Support cannot puncture vapor barrier.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">6</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Pour Concrete (75mm minimum)</h3>
+                    <p class="text-gray-700">
+                      Verify mix design (32 MPa). Check slump (80-100mm). Place in continuous operation. 
+                      Avoid segregation. Do not add water on site.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">7</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Level and Finish</h3>
+                    <p class="text-gray-700">
+                      Screed to proper elevation. Bull float to close surface. Wait for bleed water to evaporate. 
+                      Apply specified finish (smooth trowel, broom, etc.).
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">8</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Cut Control Joints</h3>
+                    <p class="text-gray-700">
+                      Cut joints within 6-12 hours. Depth = 1/4 slab thickness. Follow predetermined layout. 
+                      Clean joints of debris.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">9</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Cure and Protect</h3>
+                    <p class="text-gray-700">
+                      Apply curing compound or cover with plastic. Maintain moisture for 7 days minimum. 
+                      Protect from traffic for 7 days (foot) to 28 days (vehicle).
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Common Slab Problems & Prevention</h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Random Cracking</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Inadequate joint spacing, rapid drying, high slump concrete
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Proper joint layout, curing, control mix water content
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Curling/Warping</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Differential drying/temperature between top and bottom
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Proper curing, vapor barrier, adequate thickness
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Dusting Surface</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Overworking surface, too much water, poor curing
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Proper finishing timing, densifier application
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Settlement</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Poor subgrade compaction, inadequate base
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Proper subgrade preparation, adequate base thickness
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Breakdown -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Typical Cost Breakdown (per m²)</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Component</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Material</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Labor</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Total</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Excavation & prep</td>
+                    <td class="py-3 px-4 text-gray-700">-</td>
+                    <td class="py-3 px-4 text-gray-700">$15-20</td>
+                    <td class="py-3 px-4 font-semibold">$15-20</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">125mm crushed stone</td>
+                    <td class="py-3 px-4 text-gray-700">$8-12</td>
+                    <td class="py-3 px-4 text-gray-700">$5-8</td>
+                    <td class="py-3 px-4 font-semibold">$13-20</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">50mm XPS insulation</td>
+                    <td class="py-3 px-4 text-gray-700">$15-20</td>
+                    <td class="py-3 px-4 text-gray-700">$3-5</td>
+                    <td class="py-3 px-4 font-semibold">$18-25</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Vapor barrier</td>
+                    <td class="py-3 px-4 text-gray-700">$2-3</td>
+                    <td class="py-3 px-4 text-gray-700">$2-3</td>
+                    <td class="py-3 px-4 font-semibold">$4-6</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Wire mesh</td>
+                    <td class="py-3 px-4 text-gray-700">$3-5</td>
+                    <td class="py-3 px-4 text-gray-700">$2-3</td>
+                    <td class="py-3 px-4 font-semibold">$5-8</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">100mm concrete (32 MPa)</td>
+                    <td class="py-3 px-4 text-gray-700">$35-45</td>
+                    <td class="py-3 px-4 text-gray-700">$25-35</td>
+                    <td class="py-3 px-4 font-semibold">$60-80</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="py-3 px-4 font-bold text-gray-900">Total</td>
+                    <td class="py-3 px-4 text-gray-700">$63-85</td>
+                    <td class="py-3 px-4 text-gray-700">$52-74</td>
+                    <td class="py-3 px-4 font-bold text-gray-900">$115-159/m²</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-4">
+              * Prices vary based on site conditions, accessibility, and total area. Smaller areas have higher unit costs.
+            </p>
+          </div>
+
+          <!-- Quality Standards -->
+          <div class="bg-green-50 rounded-lg p-8 mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Quality Standards & Tolerances</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Surface Tolerances:</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Flatness: 10mm in 3m (FF 20 minimum)</li>
+                  <li>• Level: ±20mm from design elevation</li>
+                  <li>• Slope (if required): ±0.5% from specified</li>
+                  <li>• Joint alignment: ±6mm from string line</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Material Standards:</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Concrete: CSA A23.1 compliance</li>
+                  <li>• Aggregate: CSA A23.2</li>
+                  <li>• Reinforcement: CSA G30.18</li>
+                  <li>• Vapor barrier: ASTM E1745</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Building a Slab That Lasts</h2>
+            <p class="text-gray-700 mb-4">
+              A properly constructed floor slab is more than just concrete on the ground. It's a carefully 
+              engineered system where each layer plays a critical role. The 125mm of crushed stone provides 
+              drainage and a stable base. The insulation saves energy and prevents condensation. The vapor 
+              barrier keeps moisture out. And the 75-100mm of 32 MPa concrete provides the durable wearing 
+              surface.
+            </p>
+            <p class="text-gray-700 mb-4">
+              Cutting corners on any component compromises the entire system. A slab without proper base 
+              preparation will settle and crack. One without vapor barrier will have moisture problems. 
+              Inadequate strength concrete will dust and deteriorate. Every layer matters.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, we build every slab to these specifications or better. We use 32 MPa 
+              concrete as standard (not the 25 MPa minimum), include proper reinforcement, and never skip 
+              the vapor barrier or insulation. It costs a bit more upfront but saves thousands in repairs 
+              and provides decades of trouble-free service.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need a Professional Floor Slab?</h3>
+            <p class="text-lg mb-6">
+              We build to specification - every layer, every time
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

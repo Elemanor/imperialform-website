@@ -1,0 +1,442 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { BookOpen, AlertTriangle, CheckCircle } from 'lucide-astro';
+---
+
+<Layout title="How to Measure Concrete Slump | Testing Guide | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Concrete Slump Test</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            How to Measure Concrete Slump
+          </h1>
+          <p class="text-xl text-gray-600">
+            A complete guide to slump testing for quality concrete
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>10 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              The slump test is the most common way to measure concrete workability on site. It tells us if the 
+              concrete mix has the right consistency for proper placement and finishing. Too wet? You'll have weak 
+              concrete. Too dry? It won't flow properly. Here's everything you need to know about slump testing.
+            </p>
+
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">What is Slump?</h2>
+            <p class="text-gray-700 mb-4">
+              Slump measures how much fresh concrete "slumps" or settles when a cone-shaped mold is removed. 
+              It's measured in millimeters (or inches) and indicates the concrete's workability - essentially 
+              how easy it is to pour, place, and finish.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8">
+              <h3 class="text-xl font-bold text-gray-900 mb-3">Typical Slump Ranges</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li><strong>0-25mm (0-1"):</strong> Very dry, used for road construction with machine placement</li>
+                <li><strong>25-50mm (1-2"):</strong> Low slump, for foundations with minimal reinforcement</li>
+                <li><strong>50-100mm (2-4"):</strong> Medium slump, standard for footings and slabs</li>
+                <li><strong>100-150mm (4-6"):</strong> High slump, for walls and columns with heavy reinforcement</li>
+                <li><strong>150mm+ (6"+):</strong> Very high slump, pumped concrete or self-consolidating</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Equipment Needed -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Equipment for Slump Test</h2>
+            <div class="bg-white rounded-lg p-8 border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">Standard Equipment (ASTM C143)</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-3">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <div>
+                    <strong>Slump Cone:</strong> Metal cone 300mm (12") high, 200mm (8") bottom diameter, 
+                    100mm (4") top diameter
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <div>
+                    <strong>Tamping Rod:</strong> 16mm (5/8") diameter, 600mm (24") long, rounded tip
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <div>
+                    <strong>Base Plate:</strong> Flat, non-absorbent surface, minimum 400mm x 400mm
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <div>
+                    <strong>Ruler/Tape:</strong> For measuring the slump (300mm or 12" minimum)
+                  </div>
+                </li>
+                <li class="flex items-start gap-3">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <div>
+                    <strong>Scoop:</strong> For filling the cone with concrete
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Step by Step Process -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Step-by-Step Slump Test Procedure</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Prepare Equipment</h3>
+                    <p class="text-gray-700">
+                      Dampen the cone and base plate with water. Place cone on level base plate and stand on foot pieces 
+                      to hold it steady. The cone must not move during filling.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Fill First Layer</h3>
+                    <p class="text-gray-700">
+                      Fill cone 1/3 full (approximately 70mm or 2.75" deep). Rod this layer 25 times with the tamping 
+                      rod, distributing strokes evenly. Penetrate entire depth of layer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Fill Second Layer</h3>
+                    <p class="text-gray-700">
+                      Fill cone 2/3 full (approximately 160mm or 6.25" from bottom). Rod 25 times, penetrating slightly 
+                      into first layer (about 25mm or 1"). Distribute strokes evenly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Fill Third Layer</h3>
+                    <p class="text-gray-700">
+                      Overfill the cone slightly. Rod 25 times, penetrating slightly into second layer. Keep concrete 
+                      above top of cone throughout rodding.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Strike Off Surface</h3>
+                    <p class="text-gray-700">
+                      Use tamping rod to strike off excess concrete level with top of cone. Use a rolling motion. 
+                      Clean any spillage from around base of cone.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">6</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Lift Cone</h3>
+                    <p class="text-gray-700">
+                      Carefully lift cone straight up in 5±2 seconds. Do not twist or move laterally. The lift must 
+                      be smooth and continuous.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">7</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Measure Slump</h3>
+                    <p class="text-gray-700">
+                      Immediately measure the difference between the height of the cone (300mm) and the highest point 
+                      of the slumped concrete. Record to nearest 5mm (1/4").
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-yellow-50 rounded-lg p-6 mt-8 border-2 border-yellow-400">
+              <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <AlertTriangle class="w-5 h-5 text-yellow-600" />
+                Important Timing
+              </h3>
+              <p class="text-gray-700">
+                The entire test from start of filling to removal of cone should be completed within 2.5 minutes. 
+                Test must be done within 5 minutes of obtaining the concrete sample.
+              </p>
+            </div>
+          </div>
+
+          <!-- Types of Slump -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Types of Slump Results</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">True Slump ✓</h3>
+                <p class="text-gray-700 mb-3">
+                  Concrete slumps evenly all around, maintaining general cone shape. This is the only valid result.
+                </p>
+                <p class="text-sm text-green-600 font-semibold">
+                  Valid test - record measurement
+                </p>
+              </div>
+              
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Shear Slump ⚠</h3>
+                <p class="text-gray-700 mb-3">
+                  One side of cone shears off and slips down. Common with low-slump concrete.
+                </p>
+                <p class="text-sm text-yellow-600 font-semibold">
+                  Retest with fresh sample
+                </p>
+              </div>
+              
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Collapse Slump ✗</h3>
+                <p class="text-gray-700 mb-3">
+                  Concrete completely collapses. Indicates very high slump (>200mm) or poor mix.
+                </p>
+                <p class="text-sm text-red-600 font-semibold">
+                  Mix too wet - reject or adjust
+                </p>
+              </div>
+              
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Zero Slump ✗</h3>
+                <p class="text-gray-700 mb-3">
+                  No measurable slump. Concrete is too dry for the test method.
+                </p>
+                <p class="text-sm text-red-600 font-semibold">
+                  Use different test method
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Applications -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Recommended Slumps for Different Applications</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-50">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-bold text-gray-900">Application</th>
+                    <th class="text-left py-3 px-4 font-bold text-gray-900">Slump Range</th>
+                    <th class="text-left py-3 px-4 font-bold text-gray-900">Notes</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Footings & Foundations</td>
+                    <td class="py-3 px-4 text-gray-700">75-125mm (3-5")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Standard residential</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Slabs on Grade</td>
+                    <td class="py-3 px-4 text-gray-700">75-100mm (3-4")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Driveways, garage floors</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Walls & Columns</td>
+                    <td class="py-3 px-4 text-gray-700">100-150mm (4-6")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Heavy reinforcement</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Pumped Concrete</td>
+                    <td class="py-3 px-4 text-gray-700">125-175mm (5-7")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Must flow through pump</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Mass Concrete</td>
+                    <td class="py-3 px-4 text-gray-700">25-75mm (1-3")</td>
+                    <td class="py-3 px-4 text-sm text-gray-600">Large foundations</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Factors Affecting Slump -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Factors That Affect Slump</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Increases Slump:</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">↑</span>
+                    More water content
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">↑</span>
+                    Higher temperature
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">↑</span>
+                    Water-reducing admixtures
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">↑</span>
+                    Rounded aggregates
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">↑</span>
+                    Time since mixing
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Decreases Slump:</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600">↓</span>
+                    Less water content
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600">↓</span>
+                    Lower temperature
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600">↓</span>
+                    Higher cement content
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600">↓</span>
+                    Angular aggregates
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-blue-600">↓</span>
+                    Air-entraining admixtures
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Field Tips -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Field Tips from 39 Years Experience</h2>
+            
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                <span>
+                  <strong>Test early:</strong> Always test the first truck. If slump is wrong, you can adjust 
+                  subsequent trucks.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                <span>
+                  <strong>Sample correctly:</strong> Take sample from middle portion of load, not first or last 
+                  discharge.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                <span>
+                  <strong>Temperature matters:</strong> Hot weather increases slump loss. Test more frequently 
+                  in summer.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                <span>
+                  <strong>Don't add water:</strong> Never add water on site to increase slump - it weakens the 
+                  concrete. Use plasticizers instead.
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                <span>
+                  <strong>Document everything:</strong> Record slump, time, temperature, truck number, and location 
+                  placed.
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Why Slump Testing Matters</h2>
+            <p class="text-gray-700 mb-4">
+              Proper slump ensures your concrete is workable enough to place and finish properly, while maintaining 
+              the strength needed for long-term durability. At Toronto Concrete, we test every load to ensure 
+              consistent quality.
+            </p>
+            <p class="text-gray-700">
+              Remember: slump is just one measure of concrete quality. Proper mix design, air content, temperature, 
+              and curing are equally important for strong, durable concrete that lasts decades.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Professional Concrete Work?</h3>
+            <p class="text-lg mb-6">
+              We handle all the technical details - you just enjoy the results
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

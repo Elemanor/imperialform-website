@@ -1,0 +1,92 @@
+---
+import { Shield, Award, FileCheck, Clock } from 'lucide-astro';
+
+const warranties = [
+  {
+    icon: Shield,
+    title: "25-Year Structural Warranty",
+    coverage: "Full coverage on all structural concrete work",
+    details: ["Foundation integrity", "Load-bearing elements", "Structural repairs", "Material defects"]
+  },
+  {
+    icon: Award,
+    title: "10-Year Surface Warranty",
+    coverage: "Protection for decorative and finished surfaces",
+    details: ["Stamped patterns", "Color retention", "Surface scaling", "Crack prevention"]
+  },
+  {
+    icon: FileCheck,
+    title: "5-Year Workmanship Guarantee",
+    coverage: "Complete coverage of our installation quality",
+    details: ["Installation defects", "Finishing issues", "Drainage problems", "Joint failures"]
+  },
+  {
+    icon: Clock,
+    title: "Lifetime Support",
+    coverage: "Ongoing maintenance advice and support",
+    details: ["Free consultations", "Maintenance tips", "Repair guidance", "Priority service"]
+  }
+];
+---
+
+<section id="warranties" class="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold mb-4">
+        Industry-Leading Warranties
+      </h2>
+      <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+        We stand behind our work with comprehensive warranties that protect your investment
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+      {warranties.map((warranty) => (
+        <div class="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg p-6 hover:bg-white/20 transition-colors">
+          <div class="w-12 h-12 bg-red-600 rounded-lg flex items-center justify-center mb-4">
+            <warranty.icon class="w-6 h-6 text-white" />
+          </div>
+          <h3 class="text-xl font-bold mb-2">{warranty.title}</h3>
+          <p class="text-gray-300 text-sm mb-4">{warranty.coverage}</p>
+          <ul class="space-y-2">
+            {warranty.details.map((detail) => (
+              <li class="text-sm text-gray-400 flex items-start gap-2">
+                <span class="w-1.5 h-1.5 bg-red-500 rounded-full mt-1.5 flex-shrink-0"></span>
+                {detail}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+
+    <div class="bg-red-600 rounded-lg p-8 text-center">
+      <h3 class="text-2xl font-bold mb-4">What Our Warranty Covers</h3>
+      <div class="grid md:grid-cols-3 gap-6 text-left max-w-4xl mx-auto">
+        <div>
+          <h4 class="font-semibold mb-2">Materials & Labor</h4>
+          <p class="text-sm text-red-100">100% coverage of materials and labor costs for warranty repairs</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">No Deductibles</h4>
+          <p class="text-sm text-red-100">Zero out-of-pocket costs for covered warranty work</p>
+        </div>
+        <div>
+          <h4 class="font-semibold mb-2">Transferable</h4>
+          <p class="text-sm text-red-100">Warranty transfers to new owners, protecting property value</p>
+        </div>
+      </div>
+      <div class="mt-6">
+        <a href="#contact" class="inline-block bg-white text-red-600 px-8 py-3 rounded-md font-semibold hover:bg-gray-100 transition-colors">
+          Get Your Warranty Quote
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-12 text-center">
+      <p class="text-gray-400 text-sm">
+        All warranties are backed by our $5 million liability insurance and WSIB coverage
+      </p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,516 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { BookOpen, Ruler, AlertTriangle } from 'lucide-astro';
+---
+
+<Layout title="OBC Foundation & Footing Dimensions | Building Code Guide">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>OBC Foundation Dimensions</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Ontario Building Code: Foundation & Footing Dimensions
+          </h1>
+          <p class="text-xl text-gray-600">
+            Standard dimensions for footings and basement walls per OBC requirements
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>15 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              The Ontario Building Code (OBC) sets specific requirements for foundation and footing dimensions 
+              to ensure structural safety. These dimensions depend on soil conditions, building loads, and 
+              the number of stories. Here's what every homeowner and contractor in Toronto needs to know.
+            </p>
+
+            <div class="bg-yellow-50 rounded-lg p-6 mb-8 border-2 border-yellow-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <AlertTriangle class="w-5 h-5 text-yellow-600" />
+                Important Note
+              </h3>
+              <p class="text-gray-700">
+                This guide covers typical residential requirements. Always consult the current OBC and local 
+                building officials for your specific project. Engineering may be required for non-standard 
+                conditions.
+              </p>
+            </div>
+          </div>
+
+          <!-- Footing Dimensions -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <Ruler class="inline w-6 h-6 text-red-600 mr-2" />
+              Standard Footing Dimensions (OBC Table 9.15.3.4)
+            </h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200 mb-8">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Strip Footings - Good Soil (75 kPa or higher)</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Building Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Width</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Depth</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">1 Storey - No Brick Veneer</td>
+                    <td class="py-3 px-4 text-gray-700">250mm (10")</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">1 Storey - With Brick Veneer</td>
+                    <td class="py-3 px-4 text-gray-700">350mm (14")</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2 Storey - No Brick Veneer</td>
+                    <td class="py-3 px-4 text-gray-700">350mm (14")</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2 Storey - With Brick Veneer</td>
+                    <td class="py-3 px-4 text-gray-700">450mm (18")</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">3 Storey - No Brick Veneer</td>
+                    <td class="py-3 px-4 text-gray-700">500mm (20")</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">3 Storey - With Brick Veneer</td>
+                    <td class="py-3 px-4 text-gray-700">650mm (26")</td>
+                    <td class="py-3 px-4 text-gray-700">200mm (8")</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Adjustments for Soil Conditions</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Soil Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Bearing Capacity</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Width Multiplier</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Rock/Very Dense</td>
+                    <td class="py-3 px-4 text-gray-700">&gt;150 kPa</td>
+                    <td class="py-3 px-4 text-gray-700">0.5x</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Good Soil</td>
+                    <td class="py-3 px-4 text-gray-700">75-150 kPa</td>
+                    <td class="py-3 px-4 text-gray-700">1.0x (standard)</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Average Soil</td>
+                    <td class="py-3 px-4 text-gray-700">50-75 kPa</td>
+                    <td class="py-3 px-4 text-gray-700">1.5x</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Poor Soil/Clay</td>
+                    <td class="py-3 px-4 text-gray-700">&lt;50 kPa</td>
+                    <td class="py-3 px-4 text-gray-700">Engineering required</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-6 mt-6">
+              <p class="text-gray-700">
+                <strong>Toronto Note:</strong> Most of Toronto has clay soil with bearing capacity of 50-75 kPa. 
+                This means footings typically need to be 1.5x wider than the standard dimensions shown above.
+              </p>
+            </div>
+          </div>
+
+          <!-- Basement Wall Dimensions -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Basement Wall Thickness Requirements</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200 mb-8">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Poured Concrete Walls (25 MPa minimum)</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Wall Height</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Backfill Height</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Thickness</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">1.5m (5') or less</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">2.0m (6.5')</td>
+                    <td class="py-3 px-4 text-gray-700">200mm (8")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8')</td>
+                    <td class="py-3 px-4 text-gray-700">250mm (10")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">3.0m (10')</td>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8')</td>
+                    <td class="py-3 px-4 text-gray-700">300mm (12")</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200 mb-8">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Concrete Block Walls</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Wall Height</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Backfill Height</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Block Size</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">1.2m (4') or less</td>
+                    <td class="py-3 px-4 text-gray-700">190mm (8") solid/filled</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">1.5m (5')</td>
+                    <td class="py-3 px-4 text-gray-700">240mm (10") solid/filled</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">2.0m (6.5')</td>
+                    <td class="py-3 px-4 text-gray-700">290mm (12") solid/filled</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8') or less</td>
+                    <td class="py-3 px-4 text-gray-700">2.4m (8')</td>
+                    <td class="py-3 px-4 text-gray-700">290mm (12") + reinforced</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">ICF (Insulated Concrete Form) Walls</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Wall Height</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Concrete Core</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Total Thickness</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Up to 2.4m (8')</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                    <td class="py-3 px-4 text-gray-700">280mm (11")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Up to 3.0m (10')</td>
+                    <td class="py-3 px-4 text-gray-700">200mm (8")</td>
+                    <td class="py-3 px-4 text-gray-700">330mm (13")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Over 3.0m (10')</td>
+                    <td class="py-3 px-4 text-gray-700">250mm (10")</td>
+                    <td class="py-3 px-4 text-gray-700">380mm (15")</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Reinforcement Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Reinforcement Requirements</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Footings</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>Minimum 2-15M bars continuous</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>3" clear cover top and bottom</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>Additional bars for footings &gt;600mm wide</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>Lap splices minimum 600mm</span>
+                  </li>
+                </ul>
+              </div>
+              
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Walls</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>Vertical: 15M @ 400mm o.c. maximum</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>Horizontal: 10M @ 600mm o.c. maximum</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>40mm clear cover minimum</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600">•</span>
+                    <span>Extra bars at openings and corners</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Special Considerations -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Special OBC Requirements</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Depth Below Grade</h3>
+                <p class="text-gray-700 mb-2">
+                  All footings must be placed below the frost line to prevent heaving:
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Heated buildings: Minimum 1.2m (4 feet) below grade</li>
+                  <li>• Unheated buildings: Minimum 1.5m (5 feet) below grade</li>
+                  <li>• Toronto typically requires 1.2m for residential homes</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Keyways and Dowels</h3>
+                <p class="text-gray-700 mb-2">
+                  Connection between footing and wall requires:
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Keyway: Minimum 40mm x 40mm groove in footing</li>
+                  <li>• OR Dowels: 15M bars @ 600mm o.c., 600mm embedment</li>
+                  <li>• Both methods acceptable per OBC</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Drainage Requirements</h3>
+                <p class="text-gray-700 mb-2">
+                  Foundation drainage system must include:
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Perforated drain tile at footing level</li>
+                  <li>• Minimum 100mm (4") diameter pipe</li>
+                  <li>• Crushed stone cover 150mm above and beside pipe</li>
+                  <li>• Filter fabric to prevent silt infiltration</li>
+                  <li>• Positive drainage to storm sewer or sump</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Dampproofing & Waterproofing</h3>
+                <p class="text-gray-700 mb-2">
+                  Below-grade walls require moisture protection:
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Dampproofing: Minimum for all foundations</li>
+                  <li>• Waterproofing: Required where hydrostatic pressure exists</li>
+                  <li>• Applied from footing to 150mm above grade</li>
+                  <li>• Protection board required over membrane</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Column Footings -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Column/Pad Footings</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Load Support</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Size</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Depth</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Steel post (3" diameter)</td>
+                    <td class="py-3 px-4 text-gray-700">600mm x 600mm</td>
+                    <td class="py-3 px-4 text-gray-700">200mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Wood post (150mm/6")</td>
+                    <td class="py-3 px-4 text-gray-700">750mm x 750mm</td>
+                    <td class="py-3 px-4 text-gray-700">200mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Built-up beam support</td>
+                    <td class="py-3 px-4 text-gray-700">900mm x 900mm</td>
+                    <td class="py-3 px-4 text-gray-700">250mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Deck post (typical)</td>
+                    <td class="py-3 px-4 text-gray-700">400mm diameter</td>
+                    <td class="py-3 px-4 text-gray-700">150mm</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Common Mistakes -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Common OBC Violations We See</h2>
+            
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Undersized footings:</strong> Using standard dimensions without accounting for Toronto's 
+                  clay soil conditions
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Insufficient depth:</strong> Footings above frost line leading to heaving and cracking
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Wrong concrete strength:</strong> Using less than 25 MPa for foundations (OBC minimum)
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Missing reinforcement:</strong> Not including required rebar in footings and walls
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Inadequate drainage:</strong> No drain tile or improper slope leading to water problems
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Reference Chart -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Reference: Toronto Residential</h2>
+            
+            <div class="bg-blue-50 rounded-lg p-8">
+              <h3 class="text-lg font-bold text-gray-900 mb-4">Typical 2-Storey Home with Full Basement</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Footings:</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Width: 525mm (21") for clay soil</li>
+                    <li>• Depth: 200mm (8") minimum</li>
+                    <li>• Below grade: 1.2m (4 feet)</li>
+                    <li>• Concrete: 25 MPa minimum</li>
+                    <li>• Rebar: 2-15M continuous</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Basement Walls:</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Thickness: 200mm (8") poured</li>
+                    <li>• Height: 2.4m (8') typical</li>
+                    <li>• Concrete: 25 MPa minimum</li>
+                    <li>• Vertical rebar: 15M @ 400mm</li>
+                    <li>• Horizontal rebar: 10M @ 600mm</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Building to Code Matters</h2>
+            <p class="text-gray-700 mb-4">
+              Following OBC requirements isn't just about passing inspection - it's about building a foundation 
+              that will last for generations. Undersized footings or walls might save money today but lead to 
+              expensive repairs tomorrow.
+            </p>
+            <p class="text-gray-700 mb-4">
+              At Toronto Concrete, we always exceed minimum code requirements. We account for local soil conditions, 
+              use 32 MPa concrete (stronger than the 25 MPa minimum), and include extra reinforcement where needed.
+            </p>
+            <p class="text-gray-700">
+              Remember: these are minimum requirements. Site-specific conditions may require larger dimensions or 
+              engineering design. Always consult with professionals and obtain proper permits before starting 
+              foundation work.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Code-Compliant Foundation Work?</h3>
+            <p class="text-lg mb-6">
+              We handle permits, inspections, and exceed OBC requirements
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

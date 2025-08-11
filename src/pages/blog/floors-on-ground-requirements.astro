@@ -1,0 +1,716 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Layers, Droplets, AlertTriangle } from 'lucide-astro';
+---
+
+<Layout title="Floors-on-Ground Requirements | OBC 9.16 Complete Guide">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Floors-on-Ground</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Floors-on-Ground: Structural Requirements & Moisture Protection
+          </h1>
+          <p class="text-xl text-gray-600">
+            Complete guide to OBC Part 9.16 requirements for concrete slabs on grade
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>18 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              Floors-on-ground are the workhorses of residential construction - supporting everything above while 
+              fighting moisture from below. While these floors can be concrete or treated wood, concrete remains 
+              the standard in Toronto construction. After pouring thousands of slabs in our challenging clay soils, 
+              we've learned that success depends on proper base preparation, drainage, and moisture protection. 
+              Here's everything you need to know about OBC Part 9.16 requirements for non-structural floors-on-ground.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8 border-2 border-blue-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Layers class="w-5 h-5 text-blue-600" />
+                OBC Part 9.16 Scope
+              </h3>
+              <p class="text-gray-700 mb-3">
+                Section 9.16 applies to non-structural floors-on-ground that:
+              </p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Rely on soil or granular fill for support</li>
+                <li>• Include concrete slabs and wood-frame floors</li>
+                <li>• Are required in all accessible spaces (except crawl spaces)</li>
+                <li>• Protect ground cover and restrict moisture/gas entry</li>
+                <li>• Act as capillary break and gas permeable layer</li>
+              </ul>
+              <p class="text-gray-700 mt-3">
+                <strong>Important:</strong> Structural slabs that transfer building loads require Part 4 design
+              </p>
+            </div>
+          </div>
+
+          <!-- Types of Floors-on-Ground -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Types of Floors-on-Ground
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Structural Floors</h3>
+                <p class="text-gray-700 mb-3">
+                  Support building loads and transfer them to ground
+                </p>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Thickened edge slabs</li>
+                  <li>• Monolithic slab-on-grade</li>
+                  <li>• Raft foundations</li>
+                  <li>• Support walls and columns</li>
+                  <li>• Minimum 125mm (5") thick</li>
+                  <li>• Reinforcement required</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Non-Structural Floors</h3>
+                <p class="text-gray-700 mb-3">
+                  Support only floor loads, not building structure
+                </p>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Basement slabs</li>
+                  <li>• Garage floors</li>
+                  <li>• Floating slabs</li>
+                  <li>• Independent of footings</li>
+                  <li>• Minimum 75mm (3") thick</li>
+                  <li>• Wire mesh typical</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Base Preparation Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Base Preparation Requirements
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Granular Base Requirements</h3>
+              
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Material Specifications (OBC 9.16.2.1):</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Coarse, clean granular material required</li>
+                    <li>• Maximum 10% passing 4mm (No. 4) sieve</li>
+                    <li>• Acts as capillary break for moisture</li>
+                    <li>• Allows depressurization for soil gas removal</li>
+                    <li>• Free of organic material</li>
+                    <li>• Compaction required unless coarse clean aggregate</li>
+                  </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-6">
+                  <h4 class="font-semibold text-gray-900 mb-3">Minimum Thickness Requirements:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• <strong>OBC minimum:</strong> 100mm (4") all floors-on-ground</li>
+                    <li>• <strong>Exception:</strong> Unconditioned garages/carports</li>
+                    <li>• <strong>Poor drainage:</strong> 125mm (5") recommended</li>
+                    <li>• <strong>Clay soils:</strong> 150mm (6") recommended</li>
+                    <li>• <strong>High water table:</strong> 200mm (8") recommended</li>
+                  </ul>
+                </div>
+
+                <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-400">
+                  <p class="text-gray-700">
+                    <strong>Toronto Recommendation:</strong> While OBC requires 100mm minimum, use 150mm (6") crushed 
+                    stone for all applications. Our expansive clay soils and freeze-thaw cycles demand extra drainage 
+                    capacity. The material must not be susceptible to volume changes from moisture or freezing.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Drainage Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <Droplets class="inline w-6 h-6 text-blue-600 mr-2" />
+              Drainage Requirements (OBC 9.16.3)
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300 mb-6">
+              <h3 class="font-bold text-gray-900 mb-4">Control of Water Ingress (9.16.3.1)</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Mandatory Drainage:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Required unless proven unnecessary</li>
+                    <li>• Intercept groundwater before migration</li>
+                    <li>• Prevent water ingress to building</li>
+                    <li>• Floor drains require sloped slabs (9.16.3.3)</li>
+                    <li>• Hydrostatic pressure requires Part 4 design</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Drainage Methods:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Perimeter drains to daylight</li>
+                    <li>• Connection to storm sewer</li>
+                    <li>• Sump pit and pump</li>
+                    <li>• French drains under slab</li>
+                    <li>• Drainage mat systems</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-8 border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-4">Drainage Layer Design</h3>
+              
+              <div class="space-y-4">
+                <div class="bg-gray-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Option 1: Granular Drainage</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• 19mm clear stone minimum</li>
+                    <li>• 100mm thick layer</li>
+                    <li>• Sloped 0.5% to drains</li>
+                    <li>• Cover with filter fabric</li>
+                  </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Option 2: Drainage Board</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Dimpled plastic sheets</li>
+                    <li>• Creates air gap for drainage</li>
+                    <li>• Faster installation</li>
+                    <li>• Combine with perimeter drains</li>
+                  </ul>
+                </div>
+
+                <div class="bg-gray-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Option 3: Pipe Grid</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• 100mm perforated pipe</li>
+                    <li>• 3m spacing maximum</li>
+                    <li>• Connect to sump or outlet</li>
+                    <li>• Surround with clear stone</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Moisture Protection -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Moisture Protection Requirements</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Vapor Barrier Installation</h3>
+              
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Material Requirements:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Polyethylene sheet: 0.15mm (6 mil) minimum</li>
+                    <li>• Cross-laminated polyethylene acceptable</li>
+                    <li>• Conform to CAN/CGSB-51.34</li>
+                    <li>• Permeance: < 45 ng/(Pa·s·m²)</li>
+                    <li>• UV resistant if exposed during construction</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Installation Details:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Place directly under slab</li>
+                    <li>• Lap joints 150mm (6") minimum</li>
+                    <li>• Seal laps with tape or mastic</li>
+                    <li>• Turn up at walls 150mm</li>
+                    <li>• Protect during construction</li>
+                    <li>• Repair all punctures before pour</li>
+                  </ul>
+                </div>
+
+                <div class="bg-red-50 rounded-lg p-4 border border-red-400">
+                  <p class="text-gray-700">
+                    <strong>Critical:</strong> Never omit vapor barrier under heated slabs. Moisture migrating through 
+                    concrete causes flooring failures, mold growth, and indoor air quality issues. The $500 for proper 
+                    vapor barrier prevents $10,000+ in flooring replacement.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="bg-white rounded-lg p-8 border border-gray-200 mt-6">
+              <h3 class="font-bold text-gray-900 mb-4">Soil Gas Protection (Radon)</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Basic Protection:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Continuous vapor barrier</li>
+                    <li>• Sealed penetrations</li>
+                    <li>• Granular layer for depressurization</li>
+                    <li>• Seal slab edges to walls</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Active System Ready:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• 100mm vertical pipe stub</li>
+                    <li>• Through slab to granular layer</li>
+                    <li>• Cap for future fan connection</li>
+                    <li>• Route to roof area</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Concrete Specifications -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Concrete Slab Requirements (OBC 9.16.4)</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Minimum Slab Specifications</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Application</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Thickness</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Strength</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Reinforcement</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Basement (non-structural)</td>
+                    <td class="py-3 px-4 text-gray-700">75mm (3")</td>
+                    <td class="py-3 px-4 text-gray-700">20 MPa</td>
+                    <td class="py-3 px-4 text-gray-700">Bond break required</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Garage (residential)</td>
+                    <td class="py-3 px-4 text-gray-700">75mm (3")</td>
+                    <td class="py-3 px-4 text-gray-700">32 MPa + air</td>
+                    <td class="py-3 px-4 text-gray-700">5-8% air entrainment</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Structural slab</td>
+                    <td class="py-3 px-4 text-gray-700">125mm (5")</td>
+                    <td class="py-3 px-4 text-gray-700">25 MPa</td>
+                    <td class="py-3 px-4 text-gray-700">10M @ 400mm o.c.</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Exterior (driveways)</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                    <td class="py-3 px-4 text-gray-700">32 MPa C-1</td>
+                    <td class="py-3 px-4 text-gray-700">10M @ 300mm o.c.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="bg-blue-50 rounded-lg p-6 mt-6">
+              <h4 class="font-semibold text-gray-900 mb-3">Special Requirements:</h4>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Surface finish: Smooth and even (9.16.4.1)</li>
+                <li>• NO dry cement added to absorb water</li>
+                <li>• Topping course: 20mm minimum if used (9.16.4.2)</li>
+                <li>• Bond break required at footings/rock (9.16.4.4)</li>
+                <li>• Garage slabs: 5-8% air entrainment for salt resistance</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Insulation Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Insulation Under Slabs</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">When Insulation is Required</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Heated Spaces:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Full coverage under slab</li>
+                    <li>• Minimum RSI 1.76 (R-10)</li>
+                    <li>• Extruded polystyrene typical</li>
+                    <li>• Protect from moisture</li>
+                    <li>• Continuous with wall insulation</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Unheated Spaces:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Perimeter insulation only</li>
+                    <li>• 1.2m (4') from walls</li>
+                    <li>• Frost protection</li>
+                    <li>• Garages and cold rooms</li>
+                    <li>• Horizontal or vertical placement</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-yellow-50 rounded-lg p-4 mt-6 border border-yellow-400">
+                <p class="text-gray-700">
+                  <strong>Radiant Heat Systems:</strong> Require minimum RSI 2.64 (R-15) under entire slab. 
+                  Use high-density foam rated for concrete loads. Edge losses require RSI 3.52 (R-20) vertical 
+                  insulation at perimeter.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Construction Sequence -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Typical Floor-on-Ground Assembly</h2>
+            
+            <div class="bg-gradient-to-b from-gray-100 to-gray-900 rounded-lg p-8">
+              <div class="space-y-3">
+                <div class="bg-white rounded p-4 shadow">
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-gray-500">↑</span>
+                    <div>
+                      <h4 class="font-semibold">Concrete Slab</h4>
+                      <p class="text-sm text-gray-600">75-150mm thick, 20-32 MPa strength</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded p-4 shadow">
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-gray-500">↑</span>
+                    <div>
+                      <h4 class="font-semibold">Welded Wire Mesh</h4>
+                      <p class="text-sm text-gray-600">152×152 MW9.1-MW18.7, chairs at 1.2m</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded p-4 shadow">
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-gray-500">↑</span>
+                    <div>
+                      <h4 class="font-semibold">Vapor Barrier</h4>
+                      <p class="text-sm text-gray-600">6 mil poly, lapped and sealed</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded p-4 shadow">
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-gray-500">↑</span>
+                    <div>
+                      <h4 class="font-semibold">Rigid Insulation (if required)</h4>
+                      <p class="text-sm text-gray-600">RSI 1.76-2.64, extruded polystyrene</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded p-4 shadow">
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-gray-500">↑</span>
+                    <div>
+                      <h4 class="font-semibold">Granular Base</h4>
+                      <p class="text-sm text-gray-600">100-200mm crushed stone, compacted</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="bg-white rounded p-4 shadow">
+                  <div class="flex items-center gap-3">
+                    <span class="text-2xl font-bold text-gray-500">↑</span>
+                    <div>
+                      <h4 class="font-semibold">Prepared Subgrade</h4>
+                      <p class="text-sm text-gray-600">Compacted native soil or engineered fill</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-red-600" />
+              Common Floor-on-Ground Problems
+            </h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Slab Cracking</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Shrinkage during curing, no bond break, inadequate thickness
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Bond break at footings (polyethylene), control joints at 4.5-6m spacing, 
+                  75mm minimum thickness. Joints should be 0.25 of slab depth, cut as soon as concrete can support saw.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Moisture Through Slab</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Missing or damaged vapor barrier, hydrostatic pressure
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Always install vapor barrier. Overlap and seal all joints. 
+                  Provide drainage layer. Test with plastic sheet before flooring.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Frost Heaving</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Inadequate drainage, shallow insulation, water accumulation
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Minimum 150mm drainage layer. Perimeter insulation to frost depth. 
+                  Slope grade away from building. Functioning perimeter drains.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Settlement</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Poor subgrade compaction, organic material, inadequate base
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Remove all organic material. Compact in 150mm lifts to 95% SPD. 
+                  Use engineered fill if needed. Proof roll before base placement.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Cold Floors</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Cause:</strong> Missing insulation, thermal bridging at edges
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Install proper insulation under heated slabs. Insulate perimeter. 
+                  Break thermal bridge between slab and foundation walls.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crack Control and Termite Protection -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Crack Control and Termite Protection</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Control Joint Recommendations</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Joint Spacing:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Maximum 4.5-6.0m (15-18 ft) spacing</li>
+                    <li>• Intersect at columns where present</li>
+                    <li>• Depth: 0.25 of slab thickness</li>
+                    <li>• Cut when concrete supports saw weight</li>
+                    <li>• Or use plastic strips in fresh concrete</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Termite Protection:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Seal perimeter cracks with asphalt</li>
+                    <li>• Use coal tar or termite-resistant caulking</li>
+                    <li>• Pay attention to drain openings</li>
+                    <li>• Critical where termites are known</li>
+                    <li>• Prevents entry points at shrinkage cracks</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Special Considerations -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Special Toronto Considerations</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Clay Soil Challenges</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Expansive clay requires deeper base</li>
+                  <li>• Use 200mm minimum granular</li>
+                  <li>• Consider geotextile separation</li>
+                  <li>• Extra drainage critical</li>
+                  <li>• Monitor for seasonal movement</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">High Water Table Areas</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Common near Lake Ontario</li>
+                  <li>• Require active drainage</li>
+                  <li>• Sump pumps mandatory</li>
+                  <li>• Consider waterproofing membrane</li>
+                  <li>• Hydrostatic relief valves</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Basement Lowering Projects</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Popular in older Toronto homes</li>
+                  <li>• New slab below original level</li>
+                  <li>• Underpinning coordination</li>
+                  <li>• Enhanced drainage required</li>
+                  <li>• Waterproofing critical</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Radiant Heat Popularity</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Increasing demand in Toronto</li>
+                  <li>• Requires special slab design</li>
+                  <li>• Higher insulation values</li>
+                  <li>• Control joint planning</li>
+                  <li>• Protect tubing during pour</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Breakdown -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Typical Cost Breakdown</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Floor-on-Ground Costs (per m²)</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Component</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Basic</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Standard</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Premium</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Excavation & prep</td>
+                    <td class="py-3 px-4 text-gray-700">$15</td>
+                    <td class="py-3 px-4 text-gray-700">$20</td>
+                    <td class="py-3 px-4 text-gray-700">$25</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Granular base</td>
+                    <td class="py-3 px-4 text-gray-700">$12</td>
+                    <td class="py-3 px-4 text-gray-700">$18</td>
+                    <td class="py-3 px-4 text-gray-700">$24</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Insulation</td>
+                    <td class="py-3 px-4 text-gray-700">-</td>
+                    <td class="py-3 px-4 text-gray-700">$15</td>
+                    <td class="py-3 px-4 text-gray-700">$25</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Vapor barrier</td>
+                    <td class="py-3 px-4 text-gray-700">$3</td>
+                    <td class="py-3 px-4 text-gray-700">$4</td>
+                    <td class="py-3 px-4 text-gray-700">$6</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Wire mesh</td>
+                    <td class="py-3 px-4 text-gray-700">$5</td>
+                    <td class="py-3 px-4 text-gray-700">$7</td>
+                    <td class="py-3 px-4 text-gray-700">$10</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Concrete (75-125mm)</td>
+                    <td class="py-3 px-4 text-gray-700">$45</td>
+                    <td class="py-3 px-4 text-gray-700">$60</td>
+                    <td class="py-3 px-4 text-gray-700">$80</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Finishing</td>
+                    <td class="py-3 px-4 text-gray-700">$10</td>
+                    <td class="py-3 px-4 text-gray-700">$15</td>
+                    <td class="py-3 px-4 text-gray-700">$25</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="py-3 px-4 font-semibold text-gray-900">Total per m²</td>
+                    <td class="py-3 px-4 font-semibold text-gray-900">$90</td>
+                    <td class="py-3 px-4 font-semibold text-gray-900">$139</td>
+                    <td class="py-3 px-4 font-semibold text-gray-900">$195</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-4">
+              * Prices include materials and labor. Premium includes radiant heat preparation.
+            </p>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Getting Floors-on-Ground Right</h2>
+            <p class="text-gray-700 mb-4">
+              A properly constructed floor-on-ground is invisible when done right - you never think about it. 
+              But cut corners on drainage, skip the vapor barrier, or skimp on base preparation, and that slab 
+              becomes a constant source of problems: cracks, moisture, cold spots, and settlement.
+            </p>
+            <p class="text-gray-700 mb-4">
+              In Toronto's challenging conditions - expansive clay, high water tables, and freeze-thaw cycles - 
+              following OBC minimums isn't enough. We always exceed requirements: thicker granular bases, better 
+              drainage, more insulation. The extra $20 per square meter prevents thousands in repairs.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, we've perfected floor-on-ground construction through 39 years of experience. 
+              We know when to add drainage, where to increase insulation, and how to prepare bases that won't 
+              settle. Every slab gets proper vapor barriers, adequate reinforcement, and professional finishing.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need a Floor-on-Ground Done Right?</h3>
+            <p class="text-lg mb-6">
+              Proper drainage, vapor barriers, and base preparation - guaranteed
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

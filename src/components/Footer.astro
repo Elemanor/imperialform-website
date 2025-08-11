@@ -1,0 +1,150 @@
+---
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Youtube, Linkedin } from 'lucide-astro';
+
+const services = [
+  "Concrete Driveways",
+  "Foundation Work",
+  "Concrete Patios",
+  "Garage Floors",
+  "Decorative Concrete",
+  "Concrete Repair",
+  "Stamped Concrete"
+];
+
+const areas = [
+  "Toronto",
+  "North York",
+  "Scarborough",
+  "Etobicoke",
+  "Mississauga",
+  "Brampton",
+  "Vaughan",
+  "Richmond Hill",
+  "Markham",
+  "Oakville"
+];
+---
+
+<footer id="contact" class="bg-slate-900 text-white pt-16 pb-8">
+  <div class="container mx-auto px-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div>
+        <div class="flex items-center space-x-2 mb-4">
+          <div class="w-10 h-10 bg-red-600 rounded-md flex items-center justify-center font-bold text-lg">
+            IF
+          </div>
+          <div>
+            <h3 class="text-xl font-bold">ImperialForm</h3>
+            <p class="text-xs text-gray-400">Est. 1985</p>
+          </div>
+        </div>
+        <p class="text-gray-400 mb-4">
+          Toronto's most trusted concrete contractor. Family-owned and operated for three generations.
+        </p>
+        <p class="text-gray-400 text-sm mb-4">
+          <a href="https://imperialform.ca" class="hover:text-red-500 transition-colors">imperialform.ca</a>
+        </p>
+        <div class="flex space-x-3">
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+            <Facebook class="w-5 h-5" />
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+            <Instagram class="w-5 h-5" />
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+            <Youtube class="w-5 h-5" />
+          </a>
+          <a href="#" class="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center hover:bg-red-600 transition-colors">
+            <Linkedin class="w-5 h-5" />
+          </a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Our Services</h4>
+        <ul class="space-y-2">
+          {services.map((service) => (
+            <li>
+              <a href="#services" class="text-gray-400 hover:text-red-500 transition-colors text-sm">
+                {service}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Service Areas</h4>
+        <ul class="grid grid-cols-2 gap-2">
+          {areas.map((area) => (
+            <li>
+              <a href="#" class="text-gray-400 hover:text-red-500 transition-colors text-sm">
+                {area}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-lg font-semibold mb-4">Contact Info</h4>
+        <div class="space-y-3">
+          <a href="tel:4375450067" class="flex items-center gap-3 text-gray-400 hover:text-red-500 transition-colors">
+            <Phone class="w-5 h-5" />
+            <span>(437) 545-0067</span>
+          </a>
+          <a href="mailto:info@imperialform.ca" class="flex items-center gap-3 text-gray-400 hover:text-red-500 transition-colors">
+            <Mail class="w-5 h-5" />
+            <span>info@imperialform.ca</span>
+          </a>
+          <div class="flex items-start gap-3 text-gray-400">
+            <MapPin class="w-5 h-5 flex-shrink-0 mt-0.5" />
+            <span>
+              123 Concrete Way<br />
+              Toronto, ON M5V 3A8
+            </span>
+          </div>
+          <div class="flex items-center gap-3 text-gray-400">
+            <Clock class="w-5 h-5" />
+            <span>Mon-Sat: 7AM-7PM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-red-600 rounded-lg p-6 mb-8">
+      <div class="grid md:grid-cols-2 gap-6 items-center">
+        <div>
+          <h3 class="text-2xl font-bold mb-2">Get Your Free Quote Today!</h3>
+          <p class="text-red-100">
+            No obligations, no hidden fees. Just honest pricing from Toronto's trusted concrete experts.
+          </p>
+        </div>
+        <form class="flex flex-col sm:flex-row gap-3">
+          <input 
+            type="tel" 
+            placeholder="Your phone number"
+            class="flex-1 px-4 py-3 rounded-md text-slate-900 focus:outline-none focus:ring-2 focus:ring-white"
+          />
+          <button type="submit" class="bg-slate-900 px-6 py-3 rounded-md font-semibold hover:bg-slate-800 transition-colors whitespace-nowrap">
+            Get Quote
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="border-t border-gray-800 pt-8">
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="text-sm text-gray-400">
+          © 2024 ImperialForm. All rights reserved. | 
+          <a href="#" class="hover:text-red-500 transition-colors"> Privacy Policy</a> | 
+          <a href="#" class="hover:text-red-500 transition-colors"> Terms of Service</a>
+        </div>
+        <div class="text-sm text-gray-400 md:text-right">
+          <p>Licensed & Insured | WSIB Coverage | BBB A+ Rating</p>
+          <p>Ontario License #: 123456 | HST #: 123456789RT0001</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

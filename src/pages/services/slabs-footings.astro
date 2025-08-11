@@ -1,0 +1,410 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Home, Phone, CheckCircle, Ruler } from 'lucide-astro';
+---
+
+<Layout title="Concrete Slabs & Footings Toronto | Foundation Support">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/services" class="hover:text-red-600">Services</a>
+            <span>/</span>
+            <span>Slabs & Footings</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Concrete Slabs & Footings
+          </h1>
+          <p class="text-xl text-gray-600">
+            Strong foundations start here - professional slabs and footings for any structure
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <!-- Left Content -->
+          <div class="lg:col-span-2">
+            <!-- Main Image -->
+            <img 
+              src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800" 
+              alt="Concrete slab pouring"
+              class="w-full h-96 object-cover rounded-lg shadow-md mb-8"
+            />
+
+            <!-- Overview -->
+            <div class="prose max-w-none mb-12">
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">The Foundation of Everything</h2>
+              <p class="text-gray-700 mb-4">
+                Every structure needs a solid base. Whether you're building a house, garage, shed, or addition, 
+                the slab and footings are critical to long-term stability. In Toronto's climate, with our 
+                frost line at 4 feet and clay soil that expands and contracts, proper slab and footing 
+                construction is essential.
+              </p>
+              <p class="text-gray-700 mb-4">
+                We've poured thousands of slabs and footings over 39 years. From simple shed pads to complex 
+                house foundations with radiant heating, we understand the engineering, drainage, and reinforcement 
+                required for each project. We don't just pour concrete - we build the foundation for your dreams.
+              </p>
+              <p class="text-gray-700">
+                Our slabs are level, properly reinforced, and built to handle Toronto's challenging conditions. 
+                We include vapor barriers, proper drainage, and insulation where needed to ensure your slab 
+                performs perfectly for decades.
+              </p>
+            </div>
+
+            <!-- Types of Slabs -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Concrete Slabs We Pour</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <Home class="w-8 h-8 text-red-600 mb-3" />
+                  <h4 class="font-bold text-gray-900 mb-3">House Slabs</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Basement floors</li>
+                    <li>• Slab-on-grade homes</li>
+                    <li>• Addition foundations</li>
+                    <li>• Radiant heat slabs</li>
+                    <li>• Monolithic slabs</li>
+                  </ul>
+                  <p class="text-sm text-red-600 font-semibold mt-3">$12-18/sq ft</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <Home class="w-8 h-8 text-red-600 mb-3" />
+                  <h4 class="font-bold text-gray-900 mb-3">Garage Slabs</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Single/double car</li>
+                    <li>• Workshop floors</li>
+                    <li>• RV pad extensions</li>
+                    <li>• Detached garages</li>
+                    <li>• Thickened edges</li>
+                  </ul>
+                  <p class="text-sm text-red-600 font-semibold mt-3">$10-15/sq ft</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <Home class="w-8 h-8 text-red-600 mb-3" />
+                  <h4 class="font-bold text-gray-900 mb-3">Shed & Equipment Pads</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Garden sheds</li>
+                    <li>• Hot tub pads</li>
+                    <li>• AC unit pads</li>
+                    <li>• Generator pads</li>
+                    <li>• Gazebo bases</li>
+                  </ul>
+                  <p class="text-sm text-red-600 font-semibold mt-3">$8-12/sq ft</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <Home class="w-8 h-8 text-red-600 mb-3" />
+                  <h4 class="font-bold text-gray-900 mb-3">Specialty Slabs</h4>
+                  <ul class="space-y-2 text-sm text-gray-600">
+                    <li>• Pool equipment pads</li>
+                    <li>• Basketball courts</li>
+                    <li>• Dog runs</li>
+                    <li>• Greenhouse floors</li>
+                    <li>• Workshop floors</li>
+                  </ul>
+                  <p class="text-sm text-red-600 font-semibold mt-3">Quote required</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Types of Footings -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Foundation Footings</h3>
+              <div class="space-y-4">
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Strip Footings</h4>
+                  <p class="text-gray-600 mb-2">
+                    Continuous footings that run under load-bearing walls. Standard for house foundations, 
+                    additions, and garages. Must be below frost line (4 feet in Toronto).
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">$150-250 per linear foot</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Pad Footings</h4>
+                  <p class="text-gray-600 mb-2">
+                    Square or rectangular pads that support columns, posts, or point loads. Used for 
+                    decks, porches, and structural posts.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">$200-500 each</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Spread Footings</h4>
+                  <p class="text-gray-600 mb-2">
+                    Wider footings that distribute heavy loads over larger areas. Essential for poor 
+                    soil conditions or heavy structures.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">$200-300 per linear foot</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Monolithic Footings</h4>
+                  <p class="text-gray-600 mb-2">
+                    Slab and footing poured as one unit. Faster installation, good for garages and 
+                    simple structures.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">$12-16 per sq ft</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Technical Specifications -->
+            <div class="bg-blue-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Standards Exceed Code</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Slab Specifications:</h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Minimum 4" thickness (6" for garages)</li>
+                    <li>• 32 MPA concrete strength</li>
+                    <li>• 6mil vapor barrier</li>
+                    <li>• Steel mesh or rebar reinforcement</li>
+                    <li>• Proper compacted base (6-8")</li>
+                    <li>• Control joints every 10-12 feet</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Footing Specifications:</h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Below frost line (4 feet minimum)</li>
+                    <li>• Width = 2x wall thickness minimum</li>
+                    <li>• 25 MPA concrete minimum</li>
+                    <li>• Rebar reinforcement (15M minimum)</li>
+                    <li>• Drainage tile where required</li>
+                    <li>• Keyway for wall connection</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Process -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Installation Process</h3>
+              <div class="space-y-4">
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Site Preparation</h4>
+                    <p class="text-gray-600">Excavate to proper depth, accounting for base material and slab thickness</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Base Installation</h4>
+                    <p class="text-gray-600">Install and compact gravel base, ensure proper drainage slope</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Vapor Barrier & Insulation</h4>
+                    <p class="text-gray-600">Install moisture barrier and rigid foam insulation if required</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Reinforcement</h4>
+                    <p class="text-gray-600">Place rebar or wire mesh, ensure proper coverage and support</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Pour & Finish</h4>
+                    <p class="text-gray-600">Pour concrete, level, finish to specification (smooth, broom, etc.)</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">6</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Curing & Protection</h4>
+                    <p class="text-gray-600">Apply curing compound, protect from traffic for proper strength development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Common Issues -->
+            <div class="bg-red-50 rounded-lg p-8 border-2 border-red-200">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Why Slabs & Footings Fail</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Common Mistakes:</h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Insufficient base preparation</li>
+                    <li>• Footings above frost line</li>
+                    <li>• No vapor barrier</li>
+                    <li>• Inadequate reinforcement</li>
+                    <li>• Poor drainage planning</li>
+                    <li>• Wrong concrete mix</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Results of Poor Work:</h4>
+                  <ul class="space-y-2 text-sm text-gray-700">
+                    <li>• Cracking and settling</li>
+                    <li>• Frost heaving</li>
+                    <li>• Water infiltration</li>
+                    <li>• Structural failure</li>
+                    <li>• Expensive repairs</li>
+                    <li>• Complete replacement</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="text-sm text-gray-600 mt-4">
+                <strong>Don't risk it:</strong> Proper slabs and footings cost less than fixing failures.
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="lg:col-span-1">
+            <!-- Quick Quote -->
+            <div class="bg-red-600 text-white rounded-lg p-6 mb-6 sticky top-24">
+              <h3 class="text-xl font-bold mb-4">Get Your Quote</h3>
+              <div class="space-y-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <Phone class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">(416) 555-0199</p>
+                    <p class="text-sm opacity-90">Free estimates</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <Ruler class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">Precise Work</p>
+                    <p class="text-sm opacity-90">Level & square guaranteed</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <CheckCircle class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">25 Year Warranty</p>
+                    <p class="text-sm opacity-90">We stand behind our work</p>
+                  </div>
+                </div>
+              </div>
+              <a href="/get-quote" class="block w-full bg-white text-red-600 text-center py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Get Free Quote
+              </a>
+            </div>
+
+            <!-- Quick Calculator -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h4 class="font-bold text-gray-900 mb-4">Quick Estimate</h4>
+              <div class="space-y-3 text-sm">
+                <div>
+                  <p class="text-gray-600 mb-1">10x10 Shed Pad</p>
+                  <p class="font-semibold text-gray-900">$800 - $1,200</p>
+                </div>
+                <div>
+                  <p class="text-gray-600 mb-1">20x20 Garage Slab</p>
+                  <p class="font-semibold text-gray-900">$4,000 - $6,000</p>
+                </div>
+                <div>
+                  <p class="text-gray-600 mb-1">1000 sq ft Basement</p>
+                  <p class="font-semibold text-gray-900">$12,000 - $18,000</p>
+                </div>
+                <div>
+                  <p class="text-gray-600 mb-1">House Footings (1500 sq ft)</p>
+                  <p class="font-semibold text-gray-900">$8,000 - $12,000</p>
+                </div>
+              </div>
+              <p class="text-xs text-gray-500 mt-3">
+                * Estimates only - site conditions affect pricing
+              </p>
+            </div>
+
+            <!-- What's Included -->
+            <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+              <h4 class="font-bold text-gray-900 mb-4">Always Included</h4>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Site excavation</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Gravel base & compaction</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Vapor barrier</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Steel reinforcement</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>32 MPA concrete</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Professional finishing</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>Control joints</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-4 h-4 text-green-600 mt-0.5" />
+                  <span>25-year warranty</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Perfect For -->
+            <div class="bg-yellow-50 rounded-lg p-6 border-2 border-yellow-400">
+              <h4 class="font-bold text-gray-900 mb-3">Perfect Timing For:</h4>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>• New home construction</li>
+                <li>• Home additions</li>
+                <li>• Garage builds</li>
+                <li>• Basement lowering</li>
+                <li>• Shed installation</li>
+                <li>• Hot tub installation</li>
+              </ul>
+              <p class="text-sm text-gray-600 mt-3">
+                Plan ahead - we book 2-3 weeks out in summer!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Start With a Solid Foundation</h2>
+        <p class="text-xl mb-8 text-gray-300">
+          Professional slabs and footings that last a lifetime
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:416-555-0199" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+            Call: (416) 555-0199
+          </a>
+          <a href="/get-quote" class="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get Free Quote
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

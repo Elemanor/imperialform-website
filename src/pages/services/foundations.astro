@@ -1,0 +1,340 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { CheckCircle, Phone, Calendar, AlertTriangle, Shield } from 'lucide-astro';
+---
+
+<Layout title="Foundation Repair & Waterproofing Toronto | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/services" class="hover:text-red-600">Services</a>
+            <span>/</span>
+            <span>Foundation Work</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Foundation Repair & Waterproofing
+          </h1>
+          <p class="text-xl text-gray-600">
+            Protect your home's foundation from Toronto's challenging climate
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <!-- Left Content -->
+          <div class="lg:col-span-2">
+            <!-- Main Image -->
+            <img 
+              src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800" 
+              alt="Foundation waterproofing work"
+              class="w-full h-96 object-cover rounded-lg shadow-md mb-8"
+            />
+
+            <!-- Overview -->
+            <div class="prose max-w-none mb-12">
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Foundation Experts You Can Trust</h2>
+              <p class="text-gray-700 mb-4">
+                Your foundation is literally what your home stands on. In Toronto's climate, with our freeze-thaw 
+                cycles, clay soil, and water table issues, foundations face unique challenges. Water infiltration, 
+                cracks, and settling can lead to serious structural problems if not addressed properly.
+              </p>
+              <p class="text-gray-700 mb-4">
+                For nearly 40 years, we've been fixing and waterproofing foundations across the GTA. We understand 
+                the local soil conditions, building codes, and most importantly, how to solve foundation problems 
+                permanently - not just patch them temporarily.
+              </p>
+              <p class="text-gray-700">
+                Whether you have water in your basement, visible cracks, or need preventive waterproofing, 
+                we have the expertise and equipment to protect your home's foundation.
+              </p>
+            </div>
+
+            <!-- Warning Signs -->
+            <div class="bg-red-50 border-2 border-red-200 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+                <AlertTriangle class="w-6 h-6 text-red-600" />
+                Signs You Need Foundation Work
+              </h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Water or moisture in basement
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Visible cracks in foundation walls
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Doors or windows sticking
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Gaps around window frames
+                  </li>
+                </ul>
+                <ul class="space-y-3 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Uneven or sloping floors
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Musty smell in basement
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    White powder on walls (efflorescence)
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <span class="text-red-600 mt-1">•</span>
+                    Cracks in interior walls
+                  </li>
+                </ul>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">
+                <strong>Don't wait!</strong> Foundation problems get worse and more expensive over time. 
+                Call us for a free inspection.
+              </p>
+            </div>
+
+            <!-- Services -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Foundation Services We Offer</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Poured Concrete Foundations</h4>
+                  <p class="text-gray-600 mb-3">Traditional poured concrete walls - strongest and most waterproof option</p>
+                  <ul class="space-y-1 text-sm text-gray-600">
+                    <li>• New home foundations</li>
+                    <li>• Addition foundations</li>
+                    <li>• Full basements</li>
+                    <li>• Crawl spaces</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Cement Block Foundations</h4>
+                  <p class="text-gray-600 mb-3">Cost-effective masonry block construction with reinforced cores</p>
+                  <ul class="space-y-1 text-sm text-gray-600">
+                    <li>• Filled & reinforced cores</li>
+                    <li>• Parging & waterproofing</li>
+                    <li>• Ideal for additions</li>
+                    <li>• Budget-friendly option</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">ICF Foundations</h4>
+                  <p class="text-gray-600 mb-3">Insulated Concrete Forms - superior insulation and strength</p>
+                  <ul class="space-y-1 text-sm text-gray-600">
+                    <li>• R-24+ insulation value</li>
+                    <li>• Energy efficient</li>
+                    <li>• Sound dampening</li>
+                    <li>• Disaster resistant</li>
+                  </ul>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-3">Foundation Repair</h4>
+                  <p class="text-gray-600 mb-3">Fix existing foundation problems permanently</p>
+                  <ul class="space-y-1 text-sm text-gray-600">
+                    <li>• Crack injection</li>
+                    <li>• Waterproofing</li>
+                    <li>• Underpinning</li>
+                    <li>• Block foundation repair</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Foundation Types Comparison -->
+            <div class="bg-blue-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Compare Foundation Types</h3>
+              <div class="overflow-x-auto">
+                <table class="w-full text-sm">
+                  <thead>
+                    <tr class="border-b border-blue-200">
+                      <th class="text-left py-2 px-2">Type</th>
+                      <th class="text-left py-2 px-2">Cost</th>
+                      <th class="text-left py-2 px-2">Strength</th>
+                      <th class="text-left py-2 px-2">Insulation</th>
+                      <th class="text-left py-2 px-2">Speed</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr class="border-b border-blue-100">
+                      <td class="py-2 px-2 font-semibold">Poured Concrete</td>
+                      <td class="py-2 px-2">$$$</td>
+                      <td class="py-2 px-2">Excellent</td>
+                      <td class="py-2 px-2">Good</td>
+                      <td class="py-2 px-2">Fast</td>
+                    </tr>
+                    <tr class="border-b border-blue-100">
+                      <td class="py-2 px-2 font-semibold">Cement Block</td>
+                      <td class="py-2 px-2">$$</td>
+                      <td class="py-2 px-2">Good</td>
+                      <td class="py-2 px-2">Fair</td>
+                      <td class="py-2 px-2">Moderate</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2 px-2 font-semibold">ICF</td>
+                      <td class="py-2 px-2">$$$$</td>
+                      <td class="py-2 px-2">Excellent</td>
+                      <td class="py-2 px-2">Superior</td>
+                      <td class="py-2 px-2">Fast</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+            <!-- Process -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Our Foundation Repair Process</h3>
+              <div class="space-y-4">
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Free Inspection</h4>
+                    <p class="text-gray-600">Thorough assessment of foundation issues, moisture testing, and structural evaluation</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Detailed Report</h4>
+                    <p class="text-gray-600">Written report with photos, explaining problems and recommended solutions</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Professional Repair</h4>
+                    <p class="text-gray-600">Expert execution using proven methods and quality materials</p>
+                  </div>
+                </div>
+                <div class="flex gap-4">
+                  <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <h4 class="font-bold text-gray-900">Warranty Protection</h4>
+                    <p class="text-gray-600">Comprehensive warranty on all work with lifetime options available</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Customer Story -->
+            <div class="bg-white rounded-lg p-6 border-l-4 border-red-600 shadow-md">
+              <h4 class="font-bold text-gray-900 mb-3">Real Customer Story</h4>
+              <p class="text-gray-700 italic mb-3">
+                "We had water coming into our basement for years. Three other companies gave us bandaid solutions 
+                that didn't work. Toronto Concrete did exterior waterproofing 4 years ago - haven't had a drop 
+                since, even during that massive storm last spring. Worth every penny."
+              </p>
+              <p class="text-sm font-semibold text-gray-600">
+                - Robert & Linda Chen, North York
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="lg:col-span-1">
+            <!-- Quick Quote -->
+            <div class="bg-red-600 text-white rounded-lg p-6 mb-6 sticky top-24">
+              <h3 class="text-xl font-bold mb-4">Free Foundation Inspection</h3>
+              <div class="space-y-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <Phone class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">(416) 555-0199</p>
+                    <p class="text-sm opacity-90">24/7 Emergency Service</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <Shield class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">Lifetime Warranty</p>
+                    <p class="text-sm opacity-90">Available on waterproofing</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <Calendar class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">Same Day Response</p>
+                    <p class="text-sm opacity-90">For water emergencies</p>
+                  </div>
+                </div>
+              </div>
+              <a href="/get-quote" class="block w-full bg-white text-red-600 text-center py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Schedule Free Inspection
+              </a>
+            </div>
+
+            <!-- Why Act Now -->
+            <div class="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 mb-6">
+              <h4 class="font-bold text-gray-900 mb-3">Why Fix It Now?</h4>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>• Small cracks become major problems</li>
+                <li>• Water damage gets expensive fast</li>
+                <li>• Mold can affect your health</li>
+                <li>• Property value decreases</li>
+                <li>• Repairs cost more over time</li>
+              </ul>
+            </div>
+
+            <!-- Coverage Areas -->
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h4 class="font-bold text-gray-900 mb-4">Emergency Service Areas</h4>
+              <p class="text-sm text-gray-600 mb-3">
+                24/7 foundation emergency service:
+              </p>
+              <div class="text-sm text-gray-700 space-y-1">
+                <p>• Toronto (all areas)</p>
+                <p>• North York</p>
+                <p>• Scarborough</p>
+                <p>• Etobicoke</p>
+                <p>• East York</p>
+                <p>• York</p>
+              </div>
+              <p class="text-xs text-gray-500 mt-3">
+                Same-day service for water emergencies
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Don't Let Foundation Problems Get Worse</h2>
+        <p class="text-xl mb-8 text-gray-300">
+          Free inspection • Honest assessment • Permanent solutions
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:416-555-0199" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+            Call Now: (416) 555-0199
+          </a>
+          <a href="/get-quote" class="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Schedule Inspection
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

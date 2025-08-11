@@ -1,0 +1,315 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { MapPin, Clock, Truck, Phone } from 'lucide-astro';
+---
+
+<Layout title="Service Areas | Toronto & GTA | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Service Areas
+          </h1>
+          <p class="text-xl text-gray-600">
+            Proudly serving Toronto and the Greater Toronto Area since 1985
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-2 gap-12">
+          <!-- Left - Service Areas List -->
+          <div>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Where We Work</h2>
+            <p class="text-gray-700 mb-8">
+              Based in North York, we provide residential and commercial concrete services throughout 
+              Toronto and the GTA. Our crews know these neighborhoods inside and out - we probably 
+              have a project on your street!
+            </p>
+
+            <!-- Primary Service Areas -->
+            <div class="bg-red-50 rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <MapPin class="w-5 h-5 text-red-600" />
+                Primary Service Areas (Same Day Estimates)
+              </h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Toronto Core</h4>
+                  <ul class="space-y-1 text-sm text-gray-700">
+                    <li>• Downtown Toronto</li>
+                    <li>• North York</li>
+                    <li>• Scarborough</li>
+                    <li>• Etobicoke</li>
+                    <li>• East York</li>
+                    <li>• York</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">Toronto Neighborhoods</h4>
+                  <ul class="space-y-1 text-sm text-gray-700">
+                    <li>• The Beaches</li>
+                    <li>• High Park</li>
+                    <li>• Yorkville</li>
+                    <li>• Forest Hill</li>
+                    <li>• Rosedale</li>
+                    <li>• Leaside</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Secondary Service Areas -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Extended GTA Service</h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">West GTA</h4>
+                  <ul class="space-y-1 text-sm text-gray-700">
+                    <li>• Mississauga</li>
+                    <li>• Brampton</li>
+                    <li>• Oakville</li>
+                    <li>• Burlington</li>
+                    <li>• Milton</li>
+                    <li>• Georgetown</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-2">North & East GTA</h4>
+                  <ul class="space-y-1 text-sm text-gray-700">
+                    <li>• Vaughan</li>
+                    <li>• Richmond Hill</li>
+                    <li>• Markham</li>
+                    <li>• Thornhill</li>
+                    <li>• Pickering</li>
+                    <li>• Ajax</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Service Radius -->
+            <div class="bg-white rounded-lg p-6 border border-gray-200 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+                <Truck class="w-5 h-5 text-red-600" />
+                Service Radius
+              </h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-red-600 mt-1">•</span>
+                  <span><strong>0-20 km:</strong> Same day estimates, priority scheduling</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-600 mt-1">•</span>
+                  <span><strong>20-40 km:</strong> Next day estimates, standard scheduling</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-600 mt-1">•</span>
+                  <span><strong>40-60 km:</strong> Within 48 hours, may have minimum project size</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-red-600 mt-1">•</span>
+                  <span><strong>60+ km:</strong> Large projects only, please call to discuss</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Emergency Service -->
+            <div class="bg-yellow-50 rounded-lg p-6 border-2 border-yellow-400">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Clock class="w-5 h-5 text-yellow-600" />
+                24/7 Emergency Service
+              </h3>
+              <p class="text-gray-700 mb-3">
+                Foundation water issues? Trip hazards? City compliance deadline? We offer emergency 
+                service throughout Toronto with crews on-call for urgent situations.
+              </p>
+              <a href="tel:416-555-0199" class="text-red-600 font-semibold">
+                Emergency Line: (416) 555-0199
+              </a>
+            </div>
+          </div>
+
+          <!-- Right - Map and Details -->
+          <div>
+            <!-- Map Placeholder -->
+            <div class="bg-gray-200 rounded-lg h-96 mb-6 flex items-center justify-center">
+              <div class="text-center">
+                <MapPin class="w-16 h-16 text-gray-400 mx-auto mb-4" />
+                <p class="text-gray-600">Interactive map showing our service areas</p>
+                <p class="text-sm text-gray-500 mt-2">Toronto & GTA Coverage</p>
+              </div>
+            </div>
+
+            <!-- Why Location Matters -->
+            <div class="bg-blue-50 rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Why Local Matters</h3>
+              <ul class="space-y-3 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-600 mt-1">✓</span>
+                  <span>We know Toronto's soil conditions and weather patterns</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-600 mt-1">✓</span>
+                  <span>Familiar with local building codes and permit requirements</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-600 mt-1">✓</span>
+                  <span>Quick response times for estimates and emergencies</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-600 mt-1">✓</span>
+                  <span>Established relationships with local suppliers</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="text-blue-600 mt-1">✓</span>
+                  <span>You can visit our past projects in your neighborhood</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Special Considerations -->
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Area-Specific Services</h3>
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Downtown Toronto</h4>
+                  <p class="text-sm text-gray-700">
+                    Experienced with tight spaces, permit requirements, and condo/townhouse projects
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">Older Neighborhoods (Beaches, High Park)</h4>
+                  <p class="text-sm text-gray-700">
+                    Specialists in matching existing concrete, heritage requirements
+                  </p>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-1">New Developments (Vaughan, Milton)</h4>
+                  <p class="text-sm text-gray-700">
+                    Builder warranty work, new construction driveways and walkways
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Popular Projects by Area -->
+        <div class="mt-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Popular Projects by Area</h2>
+          <div class="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-3">Toronto Core</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>• Victorian home restoration</li>
+                <li>• Townhouse driveways</li>
+                <li>• Basement waterproofing</li>
+                <li>• City sidewalk compliance</li>
+                <li>• Small space solutions</li>
+              </ul>
+            </div>
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-3">Suburban GTA</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li>• Large driveway installations</li>
+                <li>• Pool decks and patios</li>
+                <li>• Stamped concrete</li>
+                <li>• RV pads</li>
+                <li>• Full property concrete</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Travel Fees -->
+        <div class="bg-gray-50 rounded-lg p-8 mt-12 max-w-3xl mx-auto">
+          <h3 class="text-xl font-bold text-gray-900 mb-4 text-center">Travel & Service Fees</h3>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-2">No Travel Fees:</h4>
+              <ul class="space-y-1 text-sm text-gray-700">
+                <li>• All of Toronto</li>
+                <li>• North York</li>
+                <li>• Scarborough</li>
+                <li>• Etobicoke</li>
+                <li>• Mississauga</li>
+                <li>• Vaughan</li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="font-semibold text-gray-900 mb-2">Minimal Fees May Apply:</h4>
+              <ul class="space-y-1 text-sm text-gray-700">
+                <li>• Oakville</li>
+                <li>• Burlington</li>
+                <li>• Milton</li>
+                <li>• Ajax</li>
+                <li>• Pickering</li>
+                <li>• Projects over 50km</li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center text-sm text-gray-600 mt-4">
+            Travel fees waived for projects over $5,000
+          </p>
+        </div>
+
+        <!-- Not Sure Section -->
+        <div class="bg-red-600 text-white rounded-lg p-8 mt-12 text-center">
+          <h2 class="text-3xl font-bold mb-4">Not Sure If We Service Your Area?</h2>
+          <p class="text-xl mb-8">
+            Give us a call! If we can't help, we'll recommend someone trustworthy who can.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:416-555-0199" class="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              <Phone class="inline w-5 h-5 mr-2" />
+              Call: (416) 555-0199
+            </a>
+            <a href="/get-quote" class="bg-red-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-800 transition-colors">
+              Check Your Address
+            </a>
+          </div>
+        </div>
+
+        <!-- Recent Projects -->
+        <div class="mt-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Recent Projects in Your Area</h2>
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl mx-auto">
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+              <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=300" alt="Driveway project" class="w-full h-32 object-cover" />
+              <div class="p-3">
+                <p class="font-semibold text-sm">Forest Hill</p>
+                <p class="text-xs text-gray-600">Stamped driveway - Oct 2024</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+              <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=300" alt="Patio project" class="w-full h-32 object-cover" />
+              <div class="p-3">
+                <p class="font-semibold text-sm">Mississauga</p>
+                <p class="text-xs text-gray-600">Pool deck - Sept 2024</p>
+              </div>
+            </div>
+            <div class="bg-white rounded-lg overflow-hidden shadow-md">
+              <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=300" alt="Foundation project" class="w-full h-32 object-cover" />
+              <div class="p-3">
+                <p class="font-semibold text-sm">North York</p>
+                <p class="text-xs text-gray-600">Foundation repair - July 2024</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

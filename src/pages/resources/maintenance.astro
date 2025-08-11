@@ -1,0 +1,437 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { BookOpen, AlertTriangle, CheckCircle, Calendar } from 'lucide-astro';
+---
+
+<Layout title="Concrete Maintenance Guide | Care Tips | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Concrete Maintenance Guide
+          </h1>
+          <p class="text-xl text-gray-600">
+            Keep your concrete looking great and lasting decades with proper care
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="bg-white rounded-lg p-8 shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">
+              Protect Your Investment
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Concrete is incredibly durable, but it's not indestructible. With Toronto's harsh winters, 
+              road salt, and freeze-thaw cycles, proper maintenance is essential. The good news? It's 
+              easy and inexpensive to keep your concrete in top shape for decades.
+            </p>
+            <p class="text-gray-700">
+              Follow this guide and your concrete will outlast your mortgage. Ignore it, and you might 
+              be calling us for repairs sooner than necessary. We'd rather help you maintain it right!
+            </p>
+          </div>
+
+          <!-- First 30 Days -->
+          <div class="bg-yellow-50 rounded-lg p-8 mb-8 border-2 border-yellow-400">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <Calendar class="w-6 h-6 text-yellow-600" />
+              Critical: First 30 Days After Installation
+            </h2>
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Days 1-7: Initial Curing</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Keep all vehicles OFF - foot traffic only</li>
+                  <li>• Avoid dragging heavy objects across surface</li>
+                  <li>• Keep concrete moist if weather is very hot/dry</li>
+                  <li>• Don't apply any chemicals or sealers</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Days 7-28: Strength Development</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Light vehicles okay after 7 days</li>
+                  <li>• Heavy vehicles wait full 28 days</li>
+                  <li>• Avoid point loads (kickstands, jack stands)</li>
+                  <li>• No de-icing salts this first winter</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Day 30: Sealing</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Apply quality concrete sealer</li>
+                  <li>• Choose penetrating sealer for driveways</li>
+                  <li>• Follow manufacturer's instructions</li>
+                  <li>• Reapply every 2-3 years</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Seasonal Maintenance -->
+          <div class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Seasonal Maintenance Schedule</h2>
+            
+            <!-- Spring -->
+            <div class="bg-green-50 rounded-lg p-6 mb-4">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-2xl">🌱</span> Spring (March - May)
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <span>Power wash to remove winter salt and grime</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <span>Inspect for cracks or damage from winter</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <span>Fill any cracks immediately to prevent water damage</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-green-600 mt-0.5" />
+                  <span>Check drainage - water should run off, not pool</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Summer -->
+            <div class="bg-blue-50 rounded-lg p-6 mb-4">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-2xl">☀️</span> Summer (June - August)
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-blue-600 mt-0.5" />
+                  <span>Clean stains promptly (oil, rust, etc.)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-blue-600 mt-0.5" />
+                  <span>Apply sealer if it's been 2-3 years</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-blue-600 mt-0.5" />
+                  <span>Trim vegetation away from concrete edges</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-blue-600 mt-0.5" />
+                  <span>Best time for any repair work needed</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Fall -->
+            <div class="bg-orange-50 rounded-lg p-6 mb-4">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-2xl">🍂</span> Fall (September - November)
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-orange-600 mt-0.5" />
+                  <span>Final cleaning before winter</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-orange-600 mt-0.5" />
+                  <span>Seal any cracks before freeze-thaw cycles</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-orange-600 mt-0.5" />
+                  <span>Stock up on safe de-icer (no rock salt!)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-orange-600 mt-0.5" />
+                  <span>Clear leaves - they can stain concrete</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Winter -->
+            <div class="bg-gray-100 rounded-lg p-6 mb-4">
+              <h3 class="text-xl font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <span class="text-2xl">❄️</span> Winter (December - February)
+              </h3>
+              <ul class="space-y-2 text-gray-700">
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-gray-600 mt-0.5" />
+                  <span>Use calcium chloride or magnesium chloride - NOT rock salt</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-gray-600 mt-0.5" />
+                  <span>Shovel snow promptly to reduce de-icer needs</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-gray-600 mt-0.5" />
+                  <span>Use plastic shovel, not metal (prevents scratches)</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <CheckCircle class="w-5 h-5 text-gray-600 mt-0.5" />
+                  <span>Sand provides traction without chemical damage</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Do's and Don'ts -->
+          <div class="grid md:grid-cols-2 gap-6 mb-8">
+            <div class="bg-green-50 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4 text-green-600">✓ DO's</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Clean spills quickly (oil, gas, antifreeze)</li>
+                <li>• Reseal every 2-3 years</li>
+                <li>• Fix cracks immediately</li>
+                <li>• Keep water draining properly</li>
+                <li>• Use proper de-icers</li>
+                <li>• Protect edges from heavy equipment</li>
+                <li>• Wash regularly with mild detergent</li>
+                <li>• Keep expansion joints clear</li>
+              </ul>
+            </div>
+            <div class="bg-red-50 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4 text-red-600">✗ DON'Ts</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Never use rock salt (sodium chloride)</li>
+                <li>• Don't use ammonium nitrate/sulfate</li>
+                <li>• Avoid metal shovels or plows</li>
+                <li>• Don't let water pool on surface</li>
+                <li>• Never use harsh acids for cleaning</li>
+                <li>• Don't park heavy vehicles on edges</li>
+                <li>• Avoid fertilizer spills (can stain)</li>
+                <li>• Don't ignore small cracks</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-white rounded-lg p-8 shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Common Problems & Solutions</h2>
+            
+            <div class="space-y-6">
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="font-bold text-gray-900 mb-2">Hairline Cracks</h3>
+                <p class="text-gray-700 mb-2">
+                  <span class="text-red-600">Problem:</span> Small surface cracks (normal in concrete)
+                </p>
+                <p class="text-gray-700">
+                  <span class="text-green-600">Solution:</span> Fill with concrete crack sealer, available at any hardware store
+                </p>
+              </div>
+
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="font-bold text-gray-900 mb-2">Oil Stains</h3>
+                <p class="text-gray-700 mb-2">
+                  <span class="text-red-600">Problem:</span> Vehicle oil drips leave dark stains
+                </p>
+                <p class="text-gray-700">
+                  <span class="text-green-600">Solution:</span> Cat litter to absorb fresh oil, then degreaser and power wash
+                </p>
+              </div>
+
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="font-bold text-gray-900 mb-2">Salt Damage (Spalling)</h3>
+                <p class="text-gray-700 mb-2">
+                  <span class="text-red-600">Problem:</span> Surface flaking from road salt
+                </p>
+                <p class="text-gray-700">
+                  <span class="text-green-600">Solution:</span> Prevention is key - seal regularly and avoid rock salt
+                </p>
+              </div>
+
+              <div class="border-b border-gray-200 pb-4">
+                <h3 class="font-bold text-gray-900 mb-2">Discoloration</h3>
+                <p class="text-gray-700 mb-2">
+                  <span class="text-red-600">Problem:</span> Leaves, rust, or fertilizer stains
+                </p>
+                <p class="text-gray-700">
+                  <span class="text-green-600">Solution:</span> Mild acid wash (follow instructions carefully) or call professionals
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Settling/Sinking</h3>
+                <p class="text-gray-700 mb-2">
+                  <span class="text-red-600">Problem:</span> Section of concrete drops
+                </p>
+                <p class="text-gray-700">
+                  <span class="text-green-600">Solution:</span> Professional mudjacking or replacement - call us!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cleaning Guide -->
+          <div class="bg-gray-50 rounded-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Cleaning Your Concrete</h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Regular Cleaning (Monthly)</h3>
+                <ol class="list-decimal list-inside space-y-1 text-gray-700">
+                  <li>Sweep or blow off debris</li>
+                  <li>Rinse with garden hose</li>
+                  <li>Scrub with mild detergent if needed</li>
+                  <li>Rinse thoroughly</li>
+                </ol>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Deep Cleaning (Annually)</h3>
+                <ol class="list-decimal list-inside space-y-1 text-gray-700">
+                  <li>Clear the entire surface</li>
+                  <li>Apply concrete cleaner/degreaser</li>
+                  <li>Let sit for 10-15 minutes</li>
+                  <li>Power wash (2500-3000 PSI)</li>
+                  <li>Let dry completely before sealing</li>
+                </ol>
+              </div>
+
+              <div class="bg-yellow-100 rounded p-4 mt-4">
+                <p class="text-sm text-gray-700">
+                  <AlertTriangle class="inline w-4 h-4 text-yellow-600 mr-1" />
+                  <strong>Tip:</strong> Always test cleaners in an inconspicuous area first!
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Sealing Guide -->
+          <div class="bg-blue-50 rounded-lg p-8 mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Sealing Your Concrete</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Why Seal?</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Prevents water damage</li>
+                  <li>• Resists salt damage</li>
+                  <li>• Reduces staining</li>
+                  <li>• Easier to clean</li>
+                  <li>• Enhances appearance</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">When to Seal</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• 30 days after new concrete</li>
+                  <li>• Every 2-3 years after</li>
+                  <li>• Best in summer (warm, dry)</li>
+                  <li>• When water no longer beads</li>
+                  <li>• After deep cleaning</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-white rounded p-4">
+              <h3 class="font-bold text-gray-900 mb-2">Sealer Types</h3>
+              <ul class="space-y-2 text-sm text-gray-700">
+                <li><strong>Penetrating Sealers:</strong> Best for driveways - invisible protection</li>
+                <li><strong>Acrylic Sealers:</strong> Add shine, good for decorative concrete</li>
+                <li><strong>Epoxy Sealers:</strong> Heavy-duty for garage floors</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Product Recommendations -->
+          <div class="bg-white rounded-lg p-8 shadow-md mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <BookOpen class="inline w-6 h-6 text-red-600 mr-2" />
+              Recommended Products
+            </h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">De-Icers (Safe for Concrete)</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Calcium Chloride (CaCl2)</li>
+                  <li>• Magnesium Chloride (MgCl2)</li>
+                  <li>• Calcium Magnesium Acetate (CMA)</li>
+                  <li>• Sand for traction</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Sealers We Trust</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Sika Penetrating Sealer</li>
+                  <li>• Thompson's WaterSeal</li>
+                  <li>• Quikrete Concrete Sealer</li>
+                  <li>• Ghostshield Siloxa-Tek</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Cleaners</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Simple Green Concrete Cleaner</li>
+                  <li>• Zep Driveway Cleaner</li>
+                  <li>• CLR for rust stains</li>
+                  <li>• Dawn dish soap (general cleaning)</li>
+                </ul>
+              </div>
+              <div>
+                <h3 class="font-bold text-gray-900 mb-3">Crack Repair</h3>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Sika Crack Fix</li>
+                  <li>• Quikrete Concrete Crack Seal</li>
+                  <li>• DAP Concrete Sealant</li>
+                  <li>• Loctite PL Concrete</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- When to Call Professionals -->
+          <div class="bg-red-50 rounded-lg p-8 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-red-600" />
+              When to Call Us
+            </h2>
+            <p class="text-gray-700 mb-4">
+              Some problems need professional attention. Don't wait - small issues become expensive repairs!
+            </p>
+            <ul class="space-y-2 text-gray-700">
+              <li>• Large cracks (wider than 1/4 inch)</li>
+              <li>• Multiple cracks in same area</li>
+              <li>• Settling or sinking sections</li>
+              <li>• Severe spalling or surface damage</li>
+              <li>• Water pooling that won't drain</li>
+              <li>• Structural concerns</li>
+              <li>• Any foundation issues</li>
+            </ul>
+            <div class="mt-6 text-center">
+              <a href="tel:416-555-0199" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+                Call for Help: (416) 555-0199
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Guide -->
+    <section class="bg-gray-100 py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Save This Guide</h2>
+        <p class="text-xl text-gray-600 mb-8">
+          Keep this maintenance guide handy - your concrete will thank you!
+        </p>
+        <button class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+          Print This Guide
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

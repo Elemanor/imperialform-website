@@ -1,0 +1,112 @@
+---
+import { Phone, FileText, HardHat, CheckCircle2, Calendar, Sparkles } from 'lucide-astro';
+
+const steps = [
+  {
+    icon: Phone,
+    number: "01",
+    title: "Initial Consultation",
+    description: "Free on-site consultation to discuss your project requirements and vision",
+    timeline: "Same Day"
+  },
+  {
+    icon: FileText,
+    number: "02",
+    title: "Detailed Quote",
+    description: "Transparent, itemized quote with no hidden fees or surprise charges",
+    timeline: "24-48 Hours"
+  },
+  {
+    icon: Calendar,
+    number: "03",
+    title: "Schedule & Permits",
+    description: "We handle all City of Toronto permits and schedule your project",
+    timeline: "3-5 Days"
+  },
+  {
+    icon: HardHat,
+    number: "04",
+    title: "Preparation",
+    description: "Site preparation, excavation, and forming to exact specifications",
+    timeline: "1-2 Days"
+  },
+  {
+    icon: Sparkles,
+    number: "05",
+    title: "Pour & Finish",
+    description: "Professional concrete pouring with expert finishing techniques",
+    timeline: "1 Day"
+  },
+  {
+    icon: CheckCircle2,
+    number: "06",
+    title: "Final Inspection",
+    description: "Quality inspection and cleanup, ensuring your complete satisfaction",
+    timeline: "Final Day"
+  }
+];
+---
+
+<section id="process" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+        Our Proven Process
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        From consultation to completion, we make your concrete project seamless and stress-free
+      </p>
+    </div>
+
+    <div class="relative">
+      <div class="hidden lg:block absolute left-1/2 transform -translate-x-1/2 w-1 h-full bg-gradient-to-b from-red-600 via-red-500 to-red-600"></div>
+      
+      <div class="space-y-12">
+        {steps.map((step, index) => (
+          <div class={`flex flex-col lg:flex-row items-center gap-8 ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'}`}>
+            <div class={`flex-1 ${index % 2 === 0 ? 'lg:text-right' : 'lg:text-left'}`}>
+              <div class={`bg-white p-6 rounded-lg shadow-lg border-2 border-gray-200 hover:border-red-500 transition-colors ${index % 2 === 0 ? 'lg:mr-8' : 'lg:ml-8'}`}>
+                <div class={`flex items-center gap-4 mb-4 ${index % 2 === 0 ? 'lg:justify-end' : ''}`}>
+                  <div class="bg-red-100 p-3 rounded-lg">
+                    <step.icon class="w-6 h-6 text-red-600" />
+                  </div>
+                  <div>
+                    <span class="text-3xl font-bold text-red-600">{step.number}</span>
+                    <h3 class="text-xl font-bold text-slate-900">{step.title}</h3>
+                  </div>
+                </div>
+                <p class="text-gray-600 mb-2">{step.description}</p>
+                <p class="text-sm font-semibold text-red-600">Timeline: {step.timeline}</p>
+              </div>
+            </div>
+            
+            <div class="relative z-10 hidden lg:flex">
+              <div class="w-12 h-12 bg-red-600 rounded-full flex items-center justify-center text-white font-bold shadow-lg">
+                {step.number}
+              </div>
+            </div>
+            
+            <div class="flex-1"></div>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    <div class="mt-16 bg-slate-900 text-white rounded-lg p-8">
+      <div class="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div class="text-3xl font-bold text-red-500 mb-2">5-7 Days</div>
+          <p class="text-gray-300">Average Project Timeline</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-red-500 mb-2">100%</div>
+          <p class="text-gray-300">On-Time Completion Rate</p>
+        </div>
+        <div>
+          <div class="text-3xl font-bold text-red-500 mb-2">Zero</div>
+          <p class="text-gray-300">Hidden Fees or Surprises</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

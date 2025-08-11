@@ -1,0 +1,364 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Wrench, Phone, Clock, DollarSign } from 'lucide-astro';
+---
+
+<Layout title="Concrete Repair Services Toronto | Cracks, Settling, Restoration">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/services" class="hover:text-red-600">Services</a>
+            <span>/</span>
+            <span>Concrete Repairs</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Concrete Repair Services
+          </h1>
+          <p class="text-xl text-gray-600">
+            Expert repair solutions for damaged concrete - big or small
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-12">
+          <!-- Left Content -->
+          <div class="lg:col-span-2">
+            <!-- Main Image -->
+            <img 
+              src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=800" 
+              alt="Concrete repair work"
+              class="w-full h-96 object-cover rounded-lg shadow-md mb-8"
+            />
+
+            <!-- Overview -->
+            <div class="prose max-w-none mb-12">
+              <h2 class="text-2xl font-bold text-gray-900 mb-4">Don't Replace It - Repair It!</h2>
+              <p class="text-gray-700 mb-4">
+                Not all concrete damage requires complete replacement. In many cases, professional repair can 
+                restore your concrete to like-new condition at a fraction of the cost. Whether it's cracks from 
+                settling, surface damage from salt, or worn areas from heavy use, we have the solution.
+              </p>
+              <p class="text-gray-700 mb-4">
+                With Toronto's freeze-thaw cycles and road salt, concrete takes a beating. We've been repairing 
+                concrete across the GTA for 39 years, and we know exactly how to fix damage so it stays fixed.
+              </p>
+              <p class="text-gray-700">
+                From small residential repairs to large commercial restoration projects, we use professional-grade 
+                materials and proven techniques to ensure lasting results.
+              </p>
+            </div>
+
+            <!-- Common Repairs -->
+            <div class="bg-gray-50 rounded-lg p-8 mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Common Concrete Repairs We Handle</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Crack Repair</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Driveway cracks
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Sidewalk cracks
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Patio cracks
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Garage floor cracks
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Control joint repair
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Surface Repair</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Spalling (flaking surface)
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Salt damage
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Pitting and holes
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Worn surfaces
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Scaling repair
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Structural Repair</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Sunken sections
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Lifted edges (trip hazards)
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Settlement issues
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Broken corners
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Step repairs
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Specialty Repair</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      City sidewalk compliance
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Pool deck restoration
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Decorative concrete repair
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Color matching
+                    </li>
+                    <li class="flex items-start gap-2">
+                      <span class="text-red-600">•</span>
+                      Emergency repairs
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Repair Methods -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Professional Repair Methods</h3>
+              <div class="space-y-4">
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Concrete Lifting (Mudjacking)</h4>
+                  <p class="text-gray-600 mb-2">
+                    Raise sunken concrete slabs back to original position by pumping material underneath. 
+                    Much cheaper than replacement.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">Starting at $500</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Crack Injection</h4>
+                  <p class="text-gray-600 mb-2">
+                    Seal cracks permanently with polyurethane or epoxy injection. Prevents water infiltration 
+                    and further damage.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">$150-300 per crack</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Resurfacing</h4>
+                  <p class="text-gray-600 mb-2">
+                    Apply new layer over existing concrete to restore appearance and function. Great for 
+                    worn or damaged surfaces.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">$5-8 per sq ft</p>
+                </div>
+                <div class="bg-white rounded-lg p-6 border border-gray-200">
+                  <h4 class="font-bold text-gray-900 mb-2">Patching & Rebuilding</h4>
+                  <p class="text-gray-600 mb-2">
+                    Remove damaged sections and rebuild with new concrete. For severe damage or broken areas.
+                  </p>
+                  <p class="text-sm text-red-600 font-semibold">Varies by size</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- When to Repair vs Replace -->
+            <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+              <h3 class="text-2xl font-bold text-gray-900 mb-4">Repair or Replace?</h3>
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Good for Repair:</h4>
+                  <ul class="space-y-1 text-gray-700 text-sm">
+                    <li>✓ Small to medium cracks</li>
+                    <li>✓ Surface damage less than 25%</li>
+                    <li>✓ Concrete less than 20 years old</li>
+                    <li>✓ Isolated problem areas</li>
+                    <li>✓ Minor settling (under 2 inches)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Needs Replacement:</h4>
+                  <ul class="space-y-1 text-gray-700 text-sm">
+                    <li>✗ Extensive cracking throughout</li>
+                    <li>✗ Major structural issues</li>
+                    <li>✗ Concrete over 30 years old</li>
+                    <li>✗ Multiple previous repairs</li>
+                    <li>✗ Base/drainage problems</li>
+                  </ul>
+                </div>
+              </div>
+              <p class="mt-4 text-sm text-gray-600">
+                <strong>Not sure?</strong> We'll give you an honest assessment - we'll only recommend replacement 
+                if repair won't last.
+              </p>
+            </div>
+
+            <!-- Gallery -->
+            <div class="mb-12">
+              <h3 class="text-2xl font-bold text-gray-900 mb-6">Before & After Repairs</h3>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div>
+                  <p class="text-sm font-semibold text-gray-600 mb-2">Driveway Crack Repair</p>
+                  <img src="https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400" alt="Before repair" class="w-full h-48 object-cover rounded-lg shadow-md" />
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-gray-600 mb-2">After Professional Repair</p>
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400" alt="After repair" class="w-full h-48 object-cover rounded-lg shadow-md" />
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-gray-600 mb-2">Sunken Sidewalk</p>
+                  <img src="https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=400" alt="Before lifting" class="w-full h-48 object-cover rounded-lg shadow-md" />
+                </div>
+                <div>
+                  <p class="text-sm font-semibold text-gray-600 mb-2">After Lifting</p>
+                  <img src="https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=400" alt="After lifting" class="w-full h-48 object-cover rounded-lg shadow-md" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Sidebar -->
+          <div class="lg:col-span-1">
+            <!-- Quick Quote -->
+            <div class="bg-red-600 text-white rounded-lg p-6 mb-6 sticky top-24">
+              <h3 class="text-xl font-bold mb-4">Fast Repair Service</h3>
+              <div class="space-y-4 mb-6">
+                <div class="flex items-center gap-3">
+                  <Phone class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">(416) 555-0199</p>
+                    <p class="text-sm opacity-90">Same day estimates</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <Clock class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">Quick Turnaround</p>
+                    <p class="text-sm opacity-90">Most repairs in 1 day</p>
+                  </div>
+                </div>
+                <div class="flex items-center gap-3">
+                  <DollarSign class="w-5 h-5" />
+                  <div>
+                    <p class="font-semibold">Save Money</p>
+                    <p class="text-sm opacity-90">Repair costs less than replace</p>
+                  </div>
+                </div>
+              </div>
+              <a href="/get-quote" class="block w-full bg-white text-red-600 text-center py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                Get Repair Quote
+              </a>
+            </div>
+
+            <!-- Emergency Service -->
+            <div class="bg-yellow-50 border-2 border-yellow-400 rounded-lg p-6 mb-6">
+              <h4 class="font-bold text-gray-900 mb-3">
+                <Wrench class="inline w-5 h-5 text-yellow-600 mr-1" />
+                Emergency Repairs
+              </h4>
+              <p class="text-sm text-gray-700 mb-3">
+                Trip hazards? City compliance issues? We offer emergency repair service.
+              </p>
+              <a href="tel:416-555-0199" class="text-red-600 font-semibold">
+                Call Now: (416) 555-0199
+              </a>
+            </div>
+
+            <!-- Customer Review -->
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h4 class="font-bold text-gray-900 mb-3">Recent Review</h4>
+              <p class="text-gray-700 italic mb-3 text-sm">
+                "City gave us 30 days to fix our sidewalk. Joe's crew came next day, fixed the trip hazard, 
+                and handled all the paperwork. Saved us thousands vs replacement."
+              </p>
+              <p class="text-sm font-semibold text-gray-600">
+                - Tom H., Etobicoke
+              </p>
+            </div>
+
+            <!-- Service Areas -->
+            <div class="bg-white rounded-lg p-6 border border-gray-200">
+              <h4 class="font-bold text-gray-900 mb-4">Repair Service Areas</h4>
+              <p class="text-sm text-gray-600 mb-3">
+                Fast repair service throughout:
+              </p>
+              <div class="text-sm text-gray-700 space-y-1">
+                <p>• Toronto</p>
+                <p>• North York</p>
+                <p>• Scarborough</p>
+                <p>• Etobicoke</p>
+                <p>• Mississauga</p>
+                <p>• Brampton</p>
+                <p>• Vaughan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bottom CTA -->
+    <section class="bg-gray-900 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Save Money with Professional Repair</h2>
+        <p class="text-xl mb-8 text-gray-300">
+          Why replace when you can repair? Free estimates on all repair work.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:416-555-0199" class="bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+            Call Now: (416) 555-0199
+          </a>
+          <a href="/get-quote" class="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            Get Online Quote
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

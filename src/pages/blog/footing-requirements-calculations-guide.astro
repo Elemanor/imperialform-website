@@ -1,0 +1,676 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Calendar, Clock, ArrowLeft, CheckCircle, AlertCircle, Calculator } from 'lucide-astro';
+---
+
+<Layout title="OBC Footing Requirements & Calculations: Complete Guide | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <a href="/blog" class="inline-flex items-center gap-2 text-red-600 hover:text-red-700 mb-4 transition-colors">
+            <ArrowLeft class="w-4 h-4" />
+            Back to Blog
+          </a>
+          
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            OBC Footing Requirements & Calculations: Complete Guide
+          </h1>
+          
+          <p class="text-xl text-gray-600 mb-6">
+            Master OBC 9.15.3 footing design with detailed calculations, adjustment factors, and practical examples for Toronto residential construction.
+          </p>
+          
+          <div class="flex flex-wrap items-center gap-6 text-sm text-gray-500">
+            <div class="flex items-center gap-2">
+              <Calendar class="w-4 h-4" />
+              <span>January 2024</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <Clock class="w-4 h-4" />
+              <span>25 min read</span>
+            </div>
+            <span class="px-3 py-1 bg-red-100 text-red-700 rounded-full font-semibold">
+              Foundation Design
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Table of Contents -->
+    <section class="py-8 bg-white border-b">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Quick Navigation</h2>
+          <div class="grid md:grid-cols-2 gap-2 text-gray-600">
+            <a href="#basic-requirements" class="hover:text-red-600 transition-colors">1. Basic Footing Requirements</a>
+            <a href="#size-calculations" class="hover:text-red-600 transition-colors">2. Footing Size Calculations</a>
+            <a href="#adjustment-factors" class="hover:text-red-600 transition-colors">3. Adjustment Factors</a>
+            <a href="#column-footings" class="hover:text-red-600 transition-colors">4. Column Footing Design</a>
+            <a href="#step-footings" class="hover:text-red-600 transition-colors">5. Step Footing Requirements</a>
+            <a href="#practical-examples" class="hover:text-red-600 transition-colors">6. Practical Calculation Examples</a>
+            <a href="#thickness-requirements" class="hover:text-red-600 transition-colors">7. Footing Thickness</a>
+            <a href="#common-mistakes" class="hover:text-red-600 transition-colors">8. Common Mistakes & Solutions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 leading-relaxed">
+              Proper footing design is the foundation of every successful construction project. This comprehensive guide covers OBC 9.15.3 requirements for residential footings, including detailed calculations, adjustment factors, and practical examples for Toronto contractors.
+            </p>
+          </div>
+
+          <!-- Basic Requirements -->
+          <section id="basic-requirements" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Basic Footing Requirements</h2>
+            
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6 mb-6">
+              <h3 class="font-bold text-gray-900 mb-2">Minimum OBC Requirements</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• <strong>Depth:</strong> Minimum 1.2m (4 feet) below grade for heated buildings in Toronto</li>
+                <li>• <strong>Bearing Surface:</strong> Must rest on undisturbed soil or compacted granular fill</li>
+                <li>• <strong>Projection:</strong> Minimum 100mm beyond supported wall face</li>
+                <li>• <strong>Level Tolerance:</strong> Maximum 1:50 slope unless designed as stepped footing</li>
+              </ul>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Standard Footing Dimensions (Table 9.15.3.4)</h3>
+            
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 px-4 py-3 text-left">Supported Load</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Number of Floors</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Min. Width (mm)</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Min. Area (m²)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3" rowspan="3">Exterior Wall</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">1</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">250</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">0.05</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3 text-center">2</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">350</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">0.07</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3 text-center">3</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">450</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">0.09</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3" rowspan="3">Interior Wall</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">1</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">200</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">0.04</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 text-center">2</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">300</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">0.06</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3 text-center">3</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">400</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">0.08</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6">
+              <div class="flex items-start gap-3">
+                <AlertCircle class="w-6 h-6 text-yellow-600 flex-shrink-0 mt-1" />
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-2">Important Note</h4>
+                  <p class="text-gray-700">These are minimum dimensions for 75 kPa soil bearing capacity. Toronto's clay soils often require larger footings. Always verify soil conditions with proper testing.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Size Calculations -->
+          <section id="size-calculations" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Footing Size Calculations</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Basic Calculation Formula</h3>
+              <div class="bg-white rounded p-4 font-mono text-center mb-4">
+                Required Area = Total Load ÷ Soil Bearing Capacity
+              </div>
+              
+              <h4 class="font-bold text-gray-900 mb-2">Step-by-Step Process:</h4>
+              <ol class="space-y-3 text-gray-700">
+                <li><strong>1. Calculate Dead Loads:</strong>
+                  <ul class="ml-6 mt-2 space-y-1">
+                    <li>• Roof: 0.5 kPa (asphalt shingles)</li>
+                    <li>• Floors: 0.55 kPa (wood frame)</li>
+                    <li>• Walls: 0.20 kPa (wood frame with siding)</li>
+                    <li>• Foundation wall: 2.4 kPa/m (200mm concrete)</li>
+                  </ul>
+                </li>
+                <li><strong>2. Calculate Live Loads:</strong>
+                  <ul class="ml-6 mt-2 space-y-1">
+                    <li>• Residential floors: 1.9 kPa</li>
+                    <li>• Attic (no storage): 0.35 kPa</li>
+                    <li>• Snow load (Toronto): 1.55 kPa</li>
+                  </ul>
+                </li>
+                <li><strong>3. Calculate Tributary Areas:</strong>
+                  <ul class="ml-6 mt-2 space-y-1">
+                    <li>• Exterior wall: Half of adjacent floor/roof spans</li>
+                    <li>• Interior wall: Half spans on each side</li>
+                  </ul>
+                </li>
+                <li><strong>4. Apply Safety Factor:</strong>
+                  <ul class="ml-6 mt-2 space-y-1">
+                    <li>• Typical factor: 1.5 for residential</li>
+                  </ul>
+                </li>
+              </ol>
+            </div>
+
+            <div class="bg-green-50 border-l-4 border-green-500 p-6 mb-6">
+              <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                <Calculator class="w-5 h-5" />
+                Example Calculation: 2-Storey House Exterior Wall
+              </h3>
+              <div class="space-y-2 text-gray-700">
+                <p><strong>Given:</strong> 5m floor span, 6m roof span, 2.7m storey height</p>
+                <p><strong>Tributary width:</strong> 5m/2 + 6m/2 = 5.5m</p>
+                <p><strong>Loads per meter of wall:</strong></p>
+                <ul class="ml-6 space-y-1">
+                  <li>• Roof: 5.5m × (0.5 + 1.55) = 11.3 kN/m</li>
+                  <li>• Floor: 2.5m × (0.55 + 1.9) = 6.1 kN/m</li>
+                  <li>• Walls: 5.4m × 0.20 = 1.1 kN/m</li>
+                  <li>• Foundation: 2.4 kN/m</li>
+                </ul>
+                <p><strong>Total:</strong> 20.9 kN/m</p>
+                <p><strong>Required width:</strong> 20.9 ÷ 75 = 0.28m → Use 350mm minimum</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Adjustment Factors -->
+          <section id="adjustment-factors" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Adjustment Factors for Footing Sizes</h2>
+            
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Exterior Walls with Masonry Veneer</h3>
+            
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 px-4 py-3 text-left">Floor Span (m)</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Width Increase (%)</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Area Increase (%)</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3">Up to 4.9</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">15%</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">25%</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3">4.9 to 6.1</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">30%</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">50%</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3">6.1 to 7.3</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">50%</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">75%</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3">Over 7.3</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Design Required</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">Design Required</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Interior Walls Supporting Multiple Floors</h3>
+            
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h4 class="font-bold text-gray-900 mb-3">Width Adjustments:</h4>
+              <ul class="space-y-2 text-gray-700">
+                <li>• <strong>Supporting floor + roof:</strong> Add 25% to base width</li>
+                <li>• <strong>Supporting 2 floors + roof:</strong> Add 50% to base width</li>
+                <li>• <strong>Concentrated loads (beams):</strong> Add 100mm for each concentrated load</li>
+                <li>• <strong>Offset walls:</strong> Increase by offset distance</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Column Footings -->
+          <section id="column-footings" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Column Footing Design</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div class="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Minimum Sizes</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• <strong>Steel columns:</strong> 0.4m² (typically 635mm × 635mm)</li>
+                  <li>• <strong>Wood posts:</strong> 0.3m² (typically 550mm × 550mm)</li>
+                  <li>• <strong>Masonry columns:</strong> 0.5m² (typically 710mm × 710mm)</li>
+                  <li>• <strong>Thickness:</strong> Minimum 200mm</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Load Limits</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• <strong>Adjustable steel:</strong> 36 kN maximum</li>
+                  <li>• <strong>Wood post (89mm):</strong> 30 kN maximum</li>
+                  <li>• <strong>Wood post (140mm):</strong> 55 kN maximum</li>
+                  <li>• <strong>Above limits:</strong> Engineering required</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="bg-blue-50 border-l-4 border-blue-500 p-6">
+              <h3 class="font-bold text-gray-900 mb-2 flex items-center gap-2">
+                <Calculator class="w-5 h-5" />
+                Column Footing Calculation Example
+              </h3>
+              <div class="space-y-2 text-gray-700">
+                <p><strong>Given:</strong> Steel column supporting 8m × 6m floor area</p>
+                <p><strong>Tributary area:</strong> 48 m²</p>
+                <p><strong>Loads:</strong></p>
+                <ul class="ml-6 space-y-1">
+                  <li>• Floor dead load: 48 × 0.55 = 26.4 kN</li>
+                  <li>• Floor live load: 48 × 1.9 = 91.2 kN</li>
+                  <li>• Total: 117.6 kN</li>
+                </ul>
+                <p><strong>Required area:</strong> 117.6 ÷ 75 = 1.57 m²</p>
+                <p><strong>Size:</strong> 1.25m × 1.25m = 1.56 m² (Use 1.3m × 1.3m)</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Step Footings -->
+          <section id="step-footings" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Step Footing Requirements</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">When Step Footings Are Required</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>• Sloping sites exceeding 1:10 (10%) grade</li>
+                <li>• Maximum slope between steps: 1:2 (horizontal:vertical)</li>
+                <li>• Minimum horizontal distance between steps: 600mm</li>
+                <li>• Maximum vertical step: 600mm</li>
+              </ul>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+              <div class="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Construction Requirements</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Pour monolithically or with keyway</li>
+                  <li>• Reinforcement through steps: 2-15M bars</li>
+                  <li>• Maintain frost protection at all levels</li>
+                  <li>• Bottom of all steps below frost line</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white rounded-lg border border-gray-200 p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Common Applications</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Walk-out basements</li>
+                  <li>• Hillside construction</li>
+                  <li>• Split-level homes</li>
+                  <li>• Retaining wall foundations</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Practical Examples -->
+          <section id="practical-examples" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Practical Calculation Examples</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-green-50 rounded-lg p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Example 1: Corner Footing with Concentrated Loads</h3>
+                <div class="space-y-2 text-gray-700">
+                  <p><strong>Situation:</strong> Corner of 2-storey house with brick veneer, beam pocket</p>
+                  <p><strong>Base requirement:</strong> 450mm (2-storey exterior)</p>
+                  <p><strong>Adjustments:</strong></p>
+                  <ul class="ml-6 space-y-1">
+                    <li>• Brick veneer (5.5m span): +30% = 135mm</li>
+                    <li>• Corner (perpendicular walls): +25% = 113mm</li>
+                    <li>• Beam pocket: +100mm</li>
+                  </ul>
+                  <p><strong>Total width:</strong> 450 + 135 + 113 + 100 = 798mm</p>
+                  <p><strong>Use:</strong> 800mm × 800mm footing</p>
+                </div>
+              </div>
+
+              <div class="bg-green-50 rounded-lg p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Example 2: Interior Load-Bearing Wall</h3>
+                <div class="space-y-2 text-gray-700">
+                  <p><strong>Situation:</strong> Center wall supporting 2 floors + roof, 7m spans each side</p>
+                  <p><strong>Base requirement:</strong> 400mm (3-storey equivalent)</p>
+                  <p><strong>Tributary width:</strong> 7m (3.5m each side)</p>
+                  <p><strong>Load calculation:</strong></p>
+                  <ul class="ml-6 space-y-1">
+                    <li>• Roof: 7m × 2.05 kPa = 14.4 kN/m</li>
+                    <li>• 2 Floors: 2 × 7m × 2.45 kPa = 34.3 kN/m</li>
+                    <li>• Walls: 8.1m × 0.20 kPa = 1.6 kN/m</li>
+                    <li>• Total: 50.3 kN/m</li>
+                  </ul>
+                  <p><strong>Required width:</strong> 50.3 ÷ 75 = 0.67m</p>
+                  <p><strong>Use:</strong> 700mm continuous footing</p>
+                </div>
+              </div>
+
+              <div class="bg-green-50 rounded-lg p-6">
+                <h3 class="text-xl font-bold text-gray-900 mb-3">Example 3: Garage Foundation with Poor Soil</h3>
+                <div class="space-y-2 text-gray-700">
+                  <p><strong>Situation:</strong> Detached garage, 50 kPa soil capacity</p>
+                  <p><strong>Standard requirement:</strong> 250mm (1-storey exterior)</p>
+                  <p><strong>Soil adjustment:</strong> 75 kPa ÷ 50 kPa = 1.5×</p>
+                  <p><strong>Adjusted width:</strong> 250mm × 1.5 = 375mm</p>
+                  <p><strong>Vehicle impact allowance:</strong> +100mm</p>
+                  <p><strong>Use:</strong> 500mm wide footing</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Thickness Requirements -->
+          <section id="thickness-requirements" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Footing Thickness Requirements</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-6 mb-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Minimum Thickness Rules</h3>
+              
+              <div class="space-y-4">
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-2">Plain Concrete Footings</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• <strong>Minimum:</strong> 100mm for any footing</li>
+                    <li>• <strong>Projection rule:</strong> Thickness ≥ 2 × projection beyond wall</li>
+                    <li>• <strong>Example:</strong> 150mm projection = 300mm thickness minimum</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-2">Reinforced Footings</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• <strong>Minimum:</strong> 150mm for reinforced concrete</li>
+                    <li>• <strong>Projection rule:</strong> Thickness ≥ projection beyond wall</li>
+                    <li>• <strong>Cover requirements:</strong> 75mm to bottom steel</li>
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-2">Column Footings</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• <strong>Minimum:</strong> 200mm thickness</li>
+                    <li>• <strong>With steel base plate:</strong> 250mm minimum</li>
+                    <li>• <strong>Reinforcement:</strong> Required if projection > 150mm</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="overflow-x-auto mb-6">
+              <table class="w-full border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+                <thead>
+                  <tr class="bg-gray-100">
+                    <th class="border border-gray-300 px-4 py-3 text-left">Footing Width</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Wall Width</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Projection</th>
+                    <th class="border border-gray-300 px-4 py-3 text-center">Min. Thickness</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3">350mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">200mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">75mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">150mm</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3">450mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">200mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">125mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">250mm</td>
+                  </tr>
+                  <tr>
+                    <td class="border border-gray-300 px-4 py-3">600mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">200mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">200mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">400mm*</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-3">800mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">250mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">275mm</td>
+                    <td class="border border-gray-300 px-4 py-3 text-center">275mm**</td>
+                  </tr>
+                </tbody>
+              </table>
+              <p class="text-sm text-gray-600 mt-2">
+                * Use reinforcement to reduce to 200mm<br />
+                ** With reinforcement
+              </p>
+            </div>
+          </section>
+
+          <!-- Common Mistakes -->
+          <section id="common-mistakes" class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Common Mistakes & Solutions</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-red-50 border-l-4 border-red-500 p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <AlertCircle class="w-5 h-5 text-red-600" />
+                  Mistake 1: Ignoring Soil Conditions
+                </h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Using standard 75 kPa footings on Toronto clay (often 50 kPa or less)
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Always test soil. Increase footing size by ratio of 75/actual capacity. Consider soil improvement or engineered design for very poor soils.
+                </p>
+              </div>
+
+              <div class="bg-red-50 border-l-4 border-red-500 p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <AlertCircle class="w-5 h-5 text-red-600" />
+                  Mistake 2: Undersizing Corner Footings
+                </h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Using same size as straight wall footings
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Corner footings carry loads from two perpendicular walls. Increase size by minimum 25% or calculate actual loads from both directions.
+                </p>
+              </div>
+
+              <div class="bg-red-50 border-l-4 border-red-500 p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <AlertCircle class="w-5 h-5 text-red-600" />
+                  Mistake 3: Incorrect Thickness for Projection
+                </h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Using standard 200mm thickness for wide footings
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Plain concrete thickness must be 2× projection. Use reinforcement to maintain reasonable thickness on wide footings.
+                </p>
+              </div>
+
+              <div class="bg-red-50 border-l-4 border-red-500 p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <AlertCircle class="w-5 h-5 text-red-600" />
+                  Mistake 4: Missing Concentrated Load Adjustments
+                </h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Not accounting for beam pockets, posts bearing on walls
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Add 100mm width for each concentrated load. For heavy loads, calculate actual bearing requirement and size accordingly.
+                </p>
+              </div>
+
+              <div class="bg-red-50 border-l-4 border-red-500 p-6">
+                <h3 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                  <AlertCircle class="w-5 h-5 text-red-600" />
+                  Mistake 5: Improper Step Footing Design
+                </h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Steps too tall, not maintaining frost protection
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Maximum 600mm vertical steps, minimum 600mm horizontal. All portions must extend below frost line (1.2m in Toronto).
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Quality Control -->
+          <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Quality Control Checklist</h2>
+            
+            <div class="bg-gray-50 rounded-lg p-6">
+              <h3 class="text-xl font-bold text-gray-900 mb-4">Pre-Pour Inspection</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Dimensional Checks</h4>
+                  <ul class="space-y-2">
+                    {[
+                      "Width matches plans (±10mm)",
+                      "Depth below frost line (1.2m minimum)",
+                      "Level within 1:50 tolerance",
+                      "Corners square (3-4-5 method)",
+                      "Projection beyond walls correct",
+                      "Thickness adequate for projection"
+                    ].map((item) => (
+                      <li class="flex items-start gap-2">
+                        <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span class="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+                
+                <div>
+                  <h4 class="font-bold text-gray-900 mb-3">Site Conditions</h4>
+                  <ul class="space-y-2">
+                    {[
+                      "Bearing surface undisturbed/compacted",
+                      "No organic material in bearing area",
+                      "Excavation free of water",
+                      "Forms secure and braced",
+                      "Reinforcement positioned with chairs",
+                      "Keyway forms installed (if required)"
+                    ].map((item) => (
+                      <li class="flex items-start gap-2">
+                        <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                        <span class="text-gray-700">{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Best Practices -->
+          <section class="mb-12">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6">Best Practices for Toronto Construction</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Design Considerations</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Always exceed minimums in poor soil</li>
+                  <li>• Consider drainage when sizing</li>
+                  <li>• Plan for future additions</li>
+                  <li>• Document soil conditions</li>
+                  <li>• Include inspection ports for waterproofing</li>
+                </ul>
+              </div>
+              
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Construction Tips</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Over-excavate and use clear stone base</li>
+                  <li>• Install drainage tile during footing work</li>
+                  <li>• Place concrete in continuous pour</li>
+                  <li>• Protect from freezing for 7 days</li>
+                  <li>• Maintain detailed records for warranty</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- Conclusion -->
+          <section class="mb-12">
+            <div class="bg-gradient-to-r from-red-600 to-red-700 rounded-lg p-8 text-white">
+              <h2 class="text-2xl font-bold mb-4">Need Professional Footing Design?</h2>
+              <p class="mb-6">
+                Proper footing design is critical for long-term structural integrity. Our team provides expert footing design and installation following all OBC requirements.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4">
+                <a href="/contact" class="inline-block px-6 py-3 bg-white text-red-600 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-center">
+                  Get Free Consultation
+                </a>
+                <a href="tel:437-545-0067" class="inline-block px-6 py-3 bg-red-800 text-white rounded-lg font-semibold hover:bg-red-900 transition-colors text-center">
+                  Call: (437) 545-0067
+                </a>
+              </div>
+            </div>
+          </section>
+
+          <!-- Related Articles -->
+          <section>
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Related Articles</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+              <a href="/blog/foundation-design-comprehensive-guide" class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <h3 class="font-bold text-gray-900 mb-2">Foundation Design Guide</h3>
+                <p class="text-sm text-gray-600">Complete OBC Part 9.15 requirements</p>
+              </a>
+              <a href="/blog/obc-rebar-requirements-footings-slabs" class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <h3 class="font-bold text-gray-900 mb-2">Rebar Requirements</h3>
+                <p class="text-sm text-gray-600">Reinforcement specifications and placement</p>
+              </a>
+              <a href="/blog/concrete-materials-specifications-guide" class="bg-white rounded-lg border border-gray-200 p-4 hover:shadow-md transition-shadow">
+                <h3 class="font-bold text-gray-900 mb-2">Concrete Specifications</h3>
+                <p class="text-sm text-gray-600">Mix design and material requirements</p>
+              </a>
+            </div>
+          </section>
+
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

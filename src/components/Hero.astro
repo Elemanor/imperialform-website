@@ -1,0 +1,124 @@
+---
+import { Phone, MapPin, Clock } from 'lucide-astro';
+---
+
+<section id="home" class="relative bg-white pt-24 pb-12">
+  <!-- Simple background pattern -->
+  <div class="absolute inset-0 opacity-5">
+    <div class="absolute inset-0" style="background-image: url('data:image/svg+xml,%3Csvg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23000000" fill-opacity="0.03"%3E%3Cpath d="M0 0h40v40H0V0zm20 20v20H0V20h20zm20 0v20H20V20h20z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');"></div>
+  </div>
+  
+  <div class="container mx-auto px-4 relative">
+    <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <!-- Left content -->
+      <div>
+        <!-- Trust badge -->
+        <div class="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-medium mb-6">
+          <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+          Family Owned & Operated Since 1985
+        </div>
+        
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4 leading-tight">
+          Toronto's Trusted
+          <span class="text-red-600 block">Concrete Contractors</span>
+        </h1>
+        
+        <p class="text-xl text-gray-600 mb-8">
+          Honest pricing, quality work, and old-fashioned service. 
+          We treat your property like our own.
+        </p>
+        
+        <!-- Key points -->
+        <ul class="space-y-3 mb-8">
+          <li class="flex items-center gap-3 text-gray-700">
+            <span class="w-5 h-5 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-white text-xs">✓</span>
+            </span>
+            Free estimates - no obligations
+          </li>
+          <li class="flex items-center gap-3 text-gray-700">
+            <span class="w-5 h-5 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-white text-xs">✓</span>
+            </span>
+            Licensed, insured & WSIB covered
+          </li>
+          <li class="flex items-center gap-3 text-gray-700">
+            <span class="w-5 h-5 bg-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+              <span class="text-white text-xs">✓</span>
+            </span>
+            Serving all of Greater Toronto Area
+          </li>
+        </ul>
+        
+        <!-- CTAs -->
+        <div class="flex flex-col sm:flex-row gap-4 mb-8">
+          <a href="tel:4375450067" class="bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors flex items-center justify-center gap-2">
+            <Phone class="w-5 h-5" />
+            (437) 545-0067
+          </a>
+          <a href="#contact" class="bg-gray-100 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
+            Get Free Quote
+          </a>
+        </div>
+        
+        <!-- Quick info -->
+        <div class="flex flex-wrap gap-6 text-sm text-gray-600">
+          <div class="flex items-center gap-2">
+            <Clock class="w-4 h-4 text-red-600" />
+            Mon-Sat: 7AM-6PM
+          </div>
+          <div class="flex items-center gap-2">
+            <MapPin class="w-4 h-4 text-red-600" />
+            Toronto & GTA
+          </div>
+        </div>
+      </div>
+      
+      <!-- Right side - Images -->
+      <div class="relative">
+        <!-- Main image -->
+        <div class="relative rounded-lg overflow-hidden shadow-xl">
+          <img 
+            src="https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=800" 
+            alt="Our crew working on a driveway"
+            class="w-full h-[400px] object-cover"
+          />
+          <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
+            <p class="text-white font-semibold">Our crew finishing a stamped concrete driveway in North York</p>
+          </div>
+        </div>
+        
+        <!-- Small floating card -->
+        <div class="absolute -bottom-6 -left-6 bg-white rounded-lg shadow-xl p-4 border-2 border-red-600">
+          <div class="flex items-center gap-3">
+            <div class="text-center">
+              <div class="text-2xl font-bold text-red-600">39</div>
+              <div class="text-xs text-gray-600">Years in</div>
+              <div class="text-xs text-gray-600">Business</div>
+            </div>
+            <div class="w-px h-12 bg-gray-300"></div>
+            <div class="text-center">
+              <div class="text-2xl font-bold text-red-600">5000+</div>
+              <div class="text-xs text-gray-600">Happy</div>
+              <div class="text-xs text-gray-600">Customers</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Simple banner -->
+<div class="bg-red-600 text-white py-3">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap items-center justify-center gap-8 text-sm">
+      <span>✓ Driveways</span>
+      <span>✓ Patios</span>
+      <span>✓ Foundations</span>
+      <span>✓ Garage Floors</span>
+      <span>✓ Repairs</span>
+      <span>✓ Waterproofing</span>
+    </div>
+  </div>
+</div>

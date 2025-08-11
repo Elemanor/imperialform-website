@@ -1,0 +1,666 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Droplets, Shield, AlertTriangle } from 'lucide-astro';
+---
+
+<Layout title="Waterstop Application in Concrete | Installation Guide">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Waterstop Application</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Waterstop Application in Concrete Construction
+          </h1>
+          <p class="text-xl text-gray-600">
+            Complete guide to waterstop selection, installation, and best practices
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>14 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              Waterstops are the unsung heroes of waterproof concrete construction. These flexible or rigid 
+              strips create a physical barrier against water infiltration at concrete joints - the weakest 
+              points in any structure. Whether you're building a basement, water tank, or parking garage, 
+              proper waterstop installation is critical for long-term waterproofing. Here's everything contractors 
+              and engineers need to know.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8 border-2 border-blue-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Droplets class="w-5 h-5 text-blue-600" />
+                What is a Waterstop?
+              </h3>
+              <p class="text-gray-700">
+                A waterstop is a material embedded in concrete joints to prevent water passage. Made from PVC, 
+                rubber, or hydrophilic materials, waterstops physically block water migration through joints 
+                while allowing for movement and settlement.
+              </p>
+            </div>
+          </div>
+
+          <!-- Types of Waterstops -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Types of Waterstops</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">1. PVC Waterstops</h3>
+                <p class="text-gray-700 mb-3">
+                  Most common type, available in various profiles for different applications.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Advantages:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• Chemical resistant</li>
+                      <li>• Long service life (50+ years)</li>
+                      <li>• Wide temperature range</li>
+                      <li>• Various sizes available</li>
+                      <li>• Can be welded on site</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Applications:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• Construction joints</li>
+                      <li>• Expansion joints</li>
+                      <li>• Water treatment plants</li>
+                      <li>• Basements & foundations</li>
+                      <li>• Tunnels & dams</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">2. Rubber Waterstops</h3>
+                <p class="text-gray-700 mb-3">
+                  Flexible option for joints with significant movement.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Advantages:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• High flexibility</li>
+                      <li>• Excellent elongation</li>
+                      <li>• Good for seismic zones</li>
+                      <li>• Handles large movements</li>
+                      <li>• Resistant to aging</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Applications:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• Bridge decks</li>
+                      <li>• Parking structures</li>
+                      <li>• Expansion joints</li>
+                      <li>• Seismic joints</li>
+                      <li>• Settlement joints</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">3. Hydrophilic Waterstops</h3>
+                <p class="text-gray-700 mb-3">
+                  Swells when in contact with water, creating a compression seal.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Advantages:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• Easy installation</li>
+                      <li>• No special forming</li>
+                      <li>• Self-healing properties</li>
+                      <li>• Works in irregular joints</li>
+                      <li>• Expands up to 300%</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Applications:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• Pipe penetrations</li>
+                      <li>• Construction joints</li>
+                      <li>• Precast connections</li>
+                      <li>• Retrofitting</li>
+                      <li>• Complex geometries</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">4. Metal Waterstops</h3>
+                <p class="text-gray-700 mb-3">
+                  Steel or copper strips for minimal movement joints.
+                </p>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Advantages:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• High strength</li>
+                      <li>• Permanent solution</li>
+                      <li>• No deterioration</li>
+                      <li>• Thin profile</li>
+                      <li>• Fire resistant</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Applications:</h4>
+                    <ul class="space-y-1 text-sm text-gray-700">
+                      <li>• Floor slabs</li>
+                      <li>• Non-moving joints</li>
+                      <li>• Industrial floors</li>
+                      <li>• Heavy-duty areas</li>
+                      <li>• Fire-rated joints</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Waterstop Profiles -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Common Waterstop Profiles</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Profile Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Description</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Best Use</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700 font-semibold">Dumbbell</td>
+                    <td class="py-3 px-4 text-gray-700">Central bulb with ribs</td>
+                    <td class="py-3 px-4 text-gray-700">Construction joints, minimal movement</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700 font-semibold">Centerbulb</td>
+                    <td class="py-3 px-4 text-gray-700">Large center bulb for movement</td>
+                    <td class="py-3 px-4 text-gray-700">Expansion/contraction joints</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700 font-semibold">Base Seal</td>
+                    <td class="py-3 px-4 text-gray-700">Flat with anchoring ribs</td>
+                    <td class="py-3 px-4 text-gray-700">Slab-on-grade joints</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700 font-semibold">Tear Web</td>
+                    <td class="py-3 px-4 text-gray-700">Removable center section</td>
+                    <td class="py-3 px-4 text-gray-700">Joints requiring future movement</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700 font-semibold">Ribbed</td>
+                    <td class="py-3 px-4 text-gray-700">Multiple ribs, no bulb</td>
+                    <td class="py-3 px-4 text-gray-700">Non-moving construction joints</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Installation Process -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Waterstop Installation Process</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Construction Joint Installation</h3>
+                <div class="space-y-4">
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Position Waterstop</h4>
+                      <p class="text-gray-700">Center waterstop at joint location, ensuring equal embedment on both sides</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Secure in Place</h4>
+                      <p class="text-gray-700">Use hog rings, wire ties, or split forming to hold position during pour</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">First Pour</h4>
+                      <p class="text-gray-700">Pour concrete to joint, vibrate thoroughly around waterstop</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Clean & Protect</h4>
+                      <p class="text-gray-700">Clean exposed waterstop, protect from damage until second pour</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Second Pour</h4>
+                      <p class="text-gray-700">Complete joint with careful vibration to ensure full encapsulation</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Hydrophilic Waterstop Installation</h3>
+                <div class="space-y-4">
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Surface Preparation</h4>
+                      <p class="text-gray-700">Clean and dry concrete surface, remove laitance and debris</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Apply Adhesive</h4>
+                      <p class="text-gray-700">Use recommended adhesive or concrete nails at 300mm intervals</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Install Waterstop</h4>
+                      <p class="text-gray-700">Press firmly into adhesive, ensure continuous contact</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Join Ends</h4>
+                      <p class="text-gray-700">Butt joints tightly, no gaps allowed</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-4">
+                    <div class="w-8 h-8 bg-blue-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                    <div>
+                      <h4 class="font-semibold text-gray-900">Protect Until Pour</h4>
+                      <p class="text-gray-700">Keep dry, protect from premature hydration</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Critical Installation Details -->
+          <div class="bg-yellow-50 rounded-lg p-8 mb-12 border-2 border-yellow-400">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-yellow-600" />
+              Critical Installation Requirements
+            </h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Minimum Concrete Cover</h3>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• PVC/Rubber: 75mm (3") minimum each side</li>
+                  <li>• Hydrophilic: 50mm (2") minimum cover</li>
+                  <li>• Metal: 40mm (1.5") minimum cover</li>
+                  <li>• Never expose waterstop at surface</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Splicing Requirements</h3>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• PVC: Heat weld with proper equipment</li>
+                  <li>• Rubber: Vulcanize or use manufacturer's adhesive</li>
+                  <li>• Hydrophilic: Butt joint with no gaps</li>
+                  <li>• Never overlap PVC or rubber waterstops</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Concrete Consolidation</h3>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Vibrate thoroughly around waterstop</li>
+                  <li>• Avoid direct vibrator contact with waterstop</li>
+                  <li>• Ensure no voids or honeycombing</li>
+                  <li>• Use smaller aggregate near waterstop if needed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Applications -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Waterstop Applications in Toronto Construction</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Basement Construction</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Wall-to-footing joint: Ribbed PVC 150mm</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Wall construction joints: Dumbbell PVC 200mm</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Slab joints: Base seal or hydrophilic</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Pipe penetrations: Hydrophilic strips</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Parking Structures</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Expansion joints: Centerbulb rubber 250mm</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Construction joints: Ribbed PVC 200mm</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Ramp joints: Tear-web PVC</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Column connections: Hydrophilic</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Water Tanks/Pools</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>All joints: Centerbulb PVC 230mm minimum</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Pipe penetrations: Link-seal or hydrophilic</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Movement joints: Rubber waterstop</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Retrofit: Injectable hydrophilic</span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-3">Tunnels/Subways</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Segment joints: Compression gaskets</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Cast-in-place: Centerbulb PVC 300mm</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>Emergency repair: Injectable hydrophilic</span>
+                  </li>
+                  <li class="flex items-start gap-2">
+                    <Shield class="w-4 h-4 text-green-600 mt-0.5" />
+                    <span>High pressure: Steel-edged rubber</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Selection Guide -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Waterstop Selection Guide</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full text-sm">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Condition</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Recommended Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Size</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Non-moving joint, <300mm thick</td>
+                    <td class="py-3 px-4 text-gray-700">Ribbed PVC</td>
+                    <td class="py-3 px-4 text-gray-700">150mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Non-moving joint, >300mm thick</td>
+                    <td class="py-3 px-4 text-gray-700">Dumbbell PVC</td>
+                    <td class="py-3 px-4 text-gray-700">200-230mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Expansion joint, <10mm movement</td>
+                    <td class="py-3 px-4 text-gray-700">Centerbulb PVC</td>
+                    <td class="py-3 px-4 text-gray-700">230mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Expansion joint, >10mm movement</td>
+                    <td class="py-3 px-4 text-gray-700">Centerbulb rubber</td>
+                    <td class="py-3 px-4 text-gray-700">250-300mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Retrofit/repair</td>
+                    <td class="py-3 px-4 text-gray-700">Hydrophilic strip</td>
+                    <td class="py-3 px-4 text-gray-700">20x25mm</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">High water pressure (>30m head)</td>
+                    <td class="py-3 px-4 text-gray-700">Steel-edge rubber</td>
+                    <td class="py-3 px-4 text-gray-700">300mm+</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Common Mistakes -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Common Waterstop Installation Mistakes</h2>
+            
+            <ul class="space-y-3 text-gray-700">
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Inadequate support:</strong> Waterstop sags or moves during pour, creating bypass path
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Poor consolidation:</strong> Voids around waterstop from inadequate vibration
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Damaged waterstop:</strong> Punctures from rebar, torn by equipment, or heat damage
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Improper splicing:</strong> Gaps, overlaps, or cold joints in continuous waterstop
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Wrong type/size:</strong> Using construction joint waterstop for expansion joint
+                </span>
+              </li>
+              <li class="flex items-start gap-3">
+                <AlertTriangle class="w-5 h-5 text-red-600 mt-0.5" />
+                <span>
+                  <strong>Contamination:</strong> Oil, dirt, or concrete on waterstop prevents adhesion
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quality Control -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Quality Control Checklist</h2>
+            
+            <div class="bg-green-50 rounded-lg p-8">
+              <h3 class="font-bold text-gray-900 mb-4">Before Pour:</h3>
+              <ul class="space-y-2 text-gray-700 mb-6">
+                <li>☐ Correct waterstop type and size specified</li>
+                <li>☐ Waterstop positioned at center of joint</li>
+                <li>☐ Adequate support to prevent movement</li>
+                <li>☐ All splices properly welded/sealed</li>
+                <li>☐ No damage to waterstop material</li>
+                <li>☐ Clean and free of contamination</li>
+              </ul>
+
+              <h3 class="font-bold text-gray-900 mb-4">During Pour:</h3>
+              <ul class="space-y-2 text-gray-700 mb-6">
+                <li>☐ Concrete placed carefully around waterstop</li>
+                <li>☐ Adequate vibration without damaging waterstop</li>
+                <li>☐ No segregation of concrete near waterstop</li>
+                <li>☐ Waterstop remains in correct position</li>
+              </ul>
+
+              <h3 class="font-bold text-gray-900 mb-4">After Pour:</h3>
+              <ul class="space-y-2 text-gray-700">
+                <li>☐ Exposed waterstop cleaned and protected</li>
+                <li>☐ No visible voids around waterstop</li>
+                <li>☐ Documentation of installation completed</li>
+                <li>☐ Protection maintained until next pour</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Cost Considerations -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Cost Analysis</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Waterstop Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Material Cost</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Installation Cost</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Total/Linear Meter</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">PVC 200mm</td>
+                    <td class="py-3 px-4 text-gray-700">$25-35</td>
+                    <td class="py-3 px-4 text-gray-700">$15-20</td>
+                    <td class="py-3 px-4 font-semibold">$40-55</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Rubber 250mm</td>
+                    <td class="py-3 px-4 text-gray-700">$45-60</td>
+                    <td class="py-3 px-4 text-gray-700">$20-25</td>
+                    <td class="py-3 px-4 font-semibold">$65-85</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Hydrophilic 20x25mm</td>
+                    <td class="py-3 px-4 text-gray-700">$15-20</td>
+                    <td class="py-3 px-4 text-gray-700">$10-15</td>
+                    <td class="py-3 px-4 font-semibold">$25-35</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Metal waterstop</td>
+                    <td class="py-3 px-4 text-gray-700">$30-40</td>
+                    <td class="py-3 px-4 text-gray-700">$25-30</td>
+                    <td class="py-3 px-4 font-semibold">$55-70</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-4">
+              * Prices are approximate and vary based on quantity, project complexity, and site conditions
+            </p>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">The Bottom Line on Waterstops</h2>
+            <p class="text-gray-700 mb-4">
+              Waterstops are cheap insurance against expensive water damage. A properly installed waterstop 
+              system typically costs less than 1% of the total concrete work but prevents failures that can 
+              cost hundreds of thousands to repair. In Toronto's climate, with high water tables and freeze-thaw 
+              cycles, waterstops aren't optional - they're essential.
+            </p>
+            <p class="text-gray-700 mb-4">
+              Success depends on three factors: selecting the right waterstop for the application, installing 
+              it correctly, and protecting it during construction. Cut corners on any of these, and you'll have 
+              water problems for the life of the structure.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, we include appropriate waterstops in all below-grade work and water-retaining 
+              structures. It's not an upgrade or an extra - it's the only way to build watertight concrete.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Waterproof Concrete Construction?</h3>
+            <p class="text-lg mb-6">
+              We ensure every joint is properly waterproofed
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

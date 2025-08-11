@@ -1,0 +1,365 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Phone, Calendar, Hammer, CheckCircle } from 'lucide-astro';
+---
+
+<Layout title="Our Process | How We Work | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/about" class="hover:text-red-600">About</a>
+            <span>/</span>
+            <span>Our Process</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Our Process
+          </h1>
+          <p class="text-xl text-gray-600">
+            Simple, transparent, and stress-free from start to finish
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Steps -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto">
+          <!-- Step 1 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                1
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Initial Contact</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">Same Day Response</p>
+              <p class="text-gray-700 mb-4">
+                Call us at (416) 555-0199 or fill out our online form. We'll discuss your project, 
+                answer your questions, and schedule a free on-site consultation. Unlike other contractors 
+                who take weeks to respond, we get back to you the same day - usually within 2 hours.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">What we'll ask:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Type of project (driveway, patio, foundation, etc.)</li>
+                  <li>• Approximate size or area</li>
+                  <li>• Your timeline and budget range</li>
+                  <li>• Any specific concerns or requirements</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                2
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Free On-Site Consultation</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">Within 48 Hours</p>
+              <p class="text-gray-700 mb-4">
+                Joe or one of his sons will visit your property to assess the project. We'll measure 
+                the area, evaluate soil conditions, check drainage, and discuss your options. This is 
+                your chance to ask questions and share your vision. No high-pressure sales - just honest advice.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">What we evaluate:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Site conditions and accessibility</li>
+                  <li>• Drainage and grading requirements</li>
+                  <li>• Base preparation needs</li>
+                  <li>• Design options and finishes</li>
+                  <li>• Potential challenges or issues</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                3
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Detailed Written Quote</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">No Hidden Costs</p>
+              <p class="text-gray-700 mb-4">
+                Within 24 hours of our visit, you'll receive a detailed written quote. Everything is 
+                itemized and explained clearly - no confusing contractor jargon. Our price is our price - 
+                no surprises, no hidden fees, no "unexpected" costs halfway through.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">Your quote includes:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Complete scope of work</li>
+                  <li>• Materials and specifications</li>
+                  <li>• Timeline for completion</li>
+                  <li>• Payment terms (50% down, 50% on completion)</li>
+                  <li>• 25-year warranty details</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                4
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Scheduling & Preparation</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">Clear Communication</p>
+              <p class="text-gray-700 mb-4">
+                Once you approve the quote, we schedule your project - typically within 1-2 weeks. 
+                We'll call you 2 days before to confirm, and again the morning we start. If weather 
+                is an issue, we'll reschedule immediately and keep you informed.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">Before we arrive:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• We'll mark any utilities (free service)</li>
+                  <li>• Advise you on any prep needed</li>
+                  <li>• Confirm start time and crew size</li>
+                  <li>• Review the project plan with you</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                5
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Excavation & Base Preparation</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">The Foundation of Quality</p>
+              <p class="text-gray-700 mb-4">
+                This is where quality really matters. We excavate to the proper depth (minimum 8-10 inches 
+                for driveways), install proper gravel base, compact it thoroughly, and ensure perfect 
+                drainage. Many contractors skip or rush this step - we never do.
+              </p>
+              <div class="grid md:grid-cols-2 gap-4">
+                <div class="bg-gray-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Our standards:</h4>
+                  <ul class="space-y-1 text-sm text-gray-700">
+                    <li>• Proper excavation depth</li>
+                    <li>• Quality gravel base</li>
+                    <li>• Machine compaction</li>
+                    <li>• Slope for drainage</li>
+                  </ul>
+                </div>
+                <div class="bg-gray-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Others often skip:</h4>
+                  <ul class="space-y-1 text-sm text-gray-700">
+                    <li>• Insufficient excavation</li>
+                    <li>• Cheap or no base material</li>
+                    <li>• Hand tamping only</li>
+                    <li>• Poor drainage planning</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                6
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Forming & Reinforcement</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">Built to Last</p>
+              <p class="text-gray-700 mb-4">
+                We set up strong, straight forms and install steel rebar reinforcement grid throughout. 
+                The rebar prevents cracking and adds decades to your concrete's life. Control joints 
+                are carefully planned to manage the natural expansion and contraction.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">Quality details:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Steel rebar grid (not just wire mesh)</li>
+                  <li>• Proper joint spacing and placement</li>
+                  <li>• Forms secured and perfectly level</li>
+                  <li>• Expansion joints where needed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 7 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                7
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Pouring & Finishing</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">The Big Day</p>
+              <p class="text-gray-700 mb-4">
+                Pour day is exciting! Our crew arrives early, the concrete trucks roll in, and we work 
+                quickly but carefully. We use 32 MPA concrete (higher than standard), vibrate it for 
+                proper consolidation, and finish it to your specifications - whether that's broom finish, 
+                exposed aggregate, or decorative stamping.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">Pour day process:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Concrete testing for quality</li>
+                  <li>• Proper vibration and consolidation</li>
+                  <li>• Expert finishing techniques</li>
+                  <li>• Control joint cutting</li>
+                  <li>• Immediate sealing if required</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 8 -->
+          <div class="flex gap-8 mb-12 pb-12 border-b border-gray-200">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                8
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Curing & Protection</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">Critical for Strength</p>
+              <p class="text-gray-700 mb-4">
+                Concrete needs proper curing to reach full strength. We apply curing compound, set up 
+                barriers to keep vehicles off, and monitor the curing process. After 7 days you can 
+                walk on it, after 28 days you can drive on it. We'll give you clear instructions.
+              </p>
+              <div class="bg-yellow-50 border border-yellow-400 rounded-lg p-4">
+                <h4 class="font-semibold text-gray-900 mb-2">Important timing:</h4>
+                <p class="text-sm text-gray-700">
+                  • 24 hours: Surface dry<br/>
+                  • 7 days: Foot traffic okay<br/>
+                  • 28 days: Vehicle traffic okay<br/>
+                  • 30 days: Apply sealer (if desired)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 9 -->
+          <div class="flex gap-8 mb-12">
+            <div class="flex-shrink-0">
+              <div class="w-16 h-16 bg-red-600 text-white rounded-full flex items-center justify-center text-2xl font-bold">
+                9
+              </div>
+            </div>
+            <div class="flex-1">
+              <h2 class="text-2xl font-bold text-gray-900 mb-2">Final Inspection & Cleanup</h2>
+              <p class="text-lg text-red-600 font-semibold mb-4">Your Satisfaction Matters</p>
+              <p class="text-gray-700 mb-4">
+                Before we consider the job done, Joe personally inspects every project. We walk through 
+                it with you, address any concerns, and ensure you're 100% satisfied. We clean up completely - 
+                you'd never know we were there except for your beautiful new concrete.
+              </p>
+              <div class="bg-gray-50 rounded-lg p-4 mb-4">
+                <h4 class="font-semibold text-gray-900 mb-2">Final steps:</h4>
+                <ul class="space-y-1 text-sm text-gray-700">
+                  <li>• Complete site cleanup</li>
+                  <li>• Final quality inspection</li>
+                  <li>• Walk-through with you</li>
+                  <li>• Warranty documentation</li>
+                  <li>• Care instructions provided</li>
+                </ul>
+              </div>
+              <div class="bg-green-50 border border-green-400 rounded-lg p-4">
+                <p class="text-sm text-gray-700">
+                  <strong>Payment:</strong> Final 50% due only after you're completely satisfied with the work.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Why Our Process Works -->
+        <div class="bg-gray-50 rounded-lg p-8 mt-12 max-w-5xl mx-auto">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6 text-center">Why Our Process Works</h2>
+          <div class="grid md:grid-cols-3 gap-6">
+            <div class="text-center">
+              <Calendar class="w-12 h-12 text-red-600 mx-auto mb-3" />
+              <h3 class="font-bold text-gray-900 mb-2">On Schedule</h3>
+              <p class="text-sm text-gray-700">
+                We show up when we say we will and finish on time. No excuses, no delays.
+              </p>
+            </div>
+            <div class="text-center">
+              <Hammer class="w-12 h-12 text-red-600 mx-auto mb-3" />
+              <h3 class="font-bold text-gray-900 mb-2">Done Right</h3>
+              <p class="text-sm text-gray-700">
+                Every step follows industry best practices. No shortcuts, ever.
+              </p>
+            </div>
+            <div class="text-center">
+              <CheckCircle class="w-12 h-12 text-red-600 mx-auto mb-3" />
+              <h3 class="font-bold text-gray-900 mb-2">Guaranteed</h3>
+              <p class="text-sm text-gray-700">
+                25-year warranty backs every project. We stand behind our work.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Customer Quote -->
+        <div class="bg-white rounded-lg p-8 shadow-lg mt-12 max-w-3xl mx-auto border-l-4 border-red-600">
+          <p class="text-gray-700 italic mb-4 text-lg">
+            "What impressed me most was how organized everything was. They told me exactly what would 
+            happen each day, and that's exactly what happened. No surprises, no drama, just professional 
+            work from start to finish."
+          </p>
+          <p class="font-semibold text-gray-900">
+            - David Thompson, Mississauga
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="bg-red-600 text-white py-12">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4">Experience the Difference</h2>
+        <p class="text-xl mb-8">
+          See why Toronto homeowners choose our proven process
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:416-555-0199" class="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+            <Phone class="inline w-5 h-5 mr-2" />
+            Call: (416) 555-0199
+          </a>
+          <a href="/get-quote" class="bg-red-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-800 transition-colors">
+            Start Your Project
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

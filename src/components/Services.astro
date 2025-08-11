@@ -1,0 +1,142 @@
+---
+const services = [
+  {
+    title: "Concrete Driveways",
+    description: "New driveways, replacements, and extensions. Stamped, colored, or standard finish.",
+    price: "Starting at $12/sq ft",
+    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400"
+  },
+  {
+    title: "Foundations",
+    description: "Poured concrete, block, and ICF foundations. New construction and repairs.",
+    price: "Free inspection & quote",
+    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=400"
+  },
+  {
+    title: "Concrete Formwork", 
+    description: "Professional forming for walls, columns, and custom concrete structures.",
+    price: "Quote based on project",
+    image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=400"
+  },
+  {
+    title: "Slabs & Footings",
+    description: "House slabs, garage slabs, shed bases, and structural footings.",
+    price: "Starting at $10/sq ft",
+    image: "https://images.unsplash.com/photo-1581094271901-8022df4466f9?w=400"
+  },
+  {
+    title: "Patios & Walkways", 
+    description: "Create beautiful outdoor spaces. Pool decks, garden paths, and entertainment areas.",
+    price: "Starting at $15/sq ft",
+    image: "https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=400"
+  },
+  {
+    title: "Garage Floors",
+    description: "Durable garage floor coatings. Epoxy finish or polished concrete options.",
+    price: "Starting at $8/sq ft",
+    image: "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?w=400"
+  },
+  {
+    title: "Concrete Repairs",
+    description: "Fix cracks, settling, and damaged concrete. Small repairs to major restoration.",
+    price: "Starting at $500",
+    image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=400"
+  },
+  {
+    title: "Steps & Porches",
+    description: "Safe, attractive entrance ways. Repair or replace concrete steps and porches.",
+    price: "Starting at $2,000",
+    image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=400"
+  },
+  {
+    title: "Basement Floors",
+    description: "New basement slabs, underpinning, and moisture barrier installation.",
+    price: "Starting at $12/sq ft",
+    image: "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?w=400"
+  }
+];
+---
+
+<section id="services" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Our Services
+        </h2>
+        <p class="text-lg text-gray-600">
+          Complete concrete solutions from foundations to finishing
+        </p>
+      </div>
+
+      <!-- Services Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        {services.map((service) => (
+          <div class="bg-white border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-shadow">
+            <img 
+              src={service.image} 
+              alt={service.title}
+              class="w-full h-48 object-cover"
+            />
+            <div class="p-5">
+              <h3 class="text-xl font-bold text-gray-900 mb-2">{service.title}</h3>
+              <p class="text-gray-600 text-sm mb-3">{service.description}</p>
+              <p class="text-red-600 font-semibold text-sm">{service.price}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <!-- Additional Services List -->
+      <div class="bg-gray-50 rounded-lg p-8">
+        <h3 class="text-xl font-bold text-gray-900 mb-4">We Also Offer:</h3>
+        <div class="grid md:grid-cols-2 gap-x-8 gap-y-2">
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Stamped & decorative concrete
+            </li>
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Concrete sealing & staining
+            </li>
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Retaining walls
+            </li>
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> ICF (Insulated Concrete Forms)
+            </li>
+          </ul>
+          <ul class="space-y-2">
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Cement block foundations
+            </li>
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Heated driveway systems
+            </li>
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Concrete cutting & removal
+            </li>
+            <li class="flex items-center gap-2 text-gray-700">
+              <span class="text-red-600">•</span> Emergency repairs
+            </li>
+          </ul>
+        </div>
+        
+        <div class="mt-6 pt-6 border-t border-gray-200">
+          <p class="text-gray-700 mb-4">
+            <strong>Not sure what you need?</strong> We offer free on-site consultations. 
+            We'll assess your project, explain your options, and provide a detailed written quote - no pressure, no obligations.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="tel:416-555-0199" class="inline-block bg-red-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors text-center">
+              Call for Free Quote: (416) 555-0199
+            </a>
+            <a href="#contact" class="inline-block bg-gray-200 text-gray-900 px-6 py-3 rounded-lg font-semibold hover:bg-gray-300 transition-colors text-center">
+              Request Online Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

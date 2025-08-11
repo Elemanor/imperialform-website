@@ -1,0 +1,769 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Beaker, Thermometer, AlertTriangle } from 'lucide-astro';
+---
+
+<Layout title="Concrete Materials & Mix Design | Complete Specifications Guide">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Concrete Materials</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Concrete Materials & Mix Design: The Science Behind Strong Foundations
+          </h1>
+          <p class="text-xl text-gray-600">
+            Master concrete specifications, mix designs, and material requirements for residential construction
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>24 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              Concrete is only as strong as its weakest ingredient. After 39 years of pouring foundations in Toronto, 
+              we've seen what happens when contractors cut corners on materials - crumbling driveways, spalling 
+              foundations, and catastrophic failures. The difference between 25-year concrete and 5-year concrete 
+              often comes down to a few dollars per cubic meter in material quality. Here's everything you need to 
+              know about concrete materials, mix designs, and specifications for lasting construction.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8 border-2 border-blue-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Beaker class="w-5 h-5 text-blue-600" />
+                Concrete Fundamentals
+              </h3>
+              <p class="text-gray-700 mb-3">
+                Concrete = Cement + Water + Aggregates + Air (+ Admixtures)
+              </p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Cement: 10-15% by volume (binding agent)</li>
+                <li>• Water: 15-20% by volume (hydration)</li>
+                <li>• Fine aggregate: 25-30% (sand)</li>
+                <li>• Coarse aggregate: 30-40% (stone)</li>
+                <li>• Air: 1-8% (workability/freeze protection)</li>
+              </ul>
+              <p class="text-gray-700 mt-3">
+                <strong>Key:</strong> Proportions determine strength, durability, and workability
+              </p>
+            </div>
+          </div>
+
+          <!-- Cement Types -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Portland Cement Types & Applications
+            </h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Designation</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Characteristics</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Toronto Use</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">GU</td>
+                    <td class="py-3 px-4 text-gray-700">General Use</td>
+                    <td class="py-3 px-4 text-gray-700">Normal strength gain</td>
+                    <td class="py-3 px-4 text-gray-700">Most foundations</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">MS</td>
+                    <td class="py-3 px-4 text-gray-700">Moderate Sulfate</td>
+                    <td class="py-3 px-4 text-gray-700">Sulfate resistance</td>
+                    <td class="py-3 px-4 text-gray-700">Near salt/sewer</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">MH</td>
+                    <td class="py-3 px-4 text-gray-700">Moderate Heat</td>
+                    <td class="py-3 px-4 text-gray-700">Lower heat generation</td>
+                    <td class="py-3 px-4 text-gray-700">Mass concrete</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">HE</td>
+                    <td class="py-3 px-4 text-gray-700">High Early</td>
+                    <td class="py-3 px-4 text-gray-700">Fast strength gain</td>
+                    <td class="py-3 px-4 text-gray-700">Winter/repairs</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">LH</td>
+                    <td class="py-3 px-4 text-gray-700">Low Heat</td>
+                    <td class="py-3 px-4 text-gray-700">Minimal heat</td>
+                    <td class="py-3 px-4 text-gray-700">Large pours</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">HS</td>
+                    <td class="py-3 px-4 text-gray-700">High Sulfate</td>
+                    <td class="py-3 px-4 text-gray-700">Maximum resistance</td>
+                    <td class="py-3 px-4 text-gray-700">Aggressive soils</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-yellow-50 rounded-lg p-4 mt-4 border border-yellow-400">
+              <p class="text-gray-700">
+                <strong>Toronto Standard:</strong> GU (Type 10) for most work. MS (Type 20) near Lake Ontario 
+                or where de-icing salts used. HE (Type 30) for winter pours below 5°C.
+              </p>
+            </div>
+          </div>
+
+          <!-- Strength Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <Thermometer class="inline w-6 h-6 text-red-600 mr-2" />
+              Concrete Strength Requirements by Application
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">OBC Minimum Strength Requirements</h3>
+              
+              <div class="space-y-6">
+                <div class="bg-gray-50 rounded-lg overflow-hidden">
+                  <table class="w-full">
+                    <thead class="bg-gray-200">
+                      <tr>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Application</th>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Min. Strength</th>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Air Content</th>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Exposure</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200 bg-white">
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Interior footings</td>
+                        <td class="py-3 px-4 text-gray-700">15 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">None</td>
+                        <td class="py-3 px-4 text-gray-700">Protected</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Foundation walls</td>
+                        <td class="py-3 px-4 text-gray-700">15 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">None</td>
+                        <td class="py-3 px-4 text-gray-700">Below grade</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Basement slabs</td>
+                        <td class="py-3 px-4 text-gray-700">20 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">None</td>
+                        <td class="py-3 px-4 text-gray-700">Interior</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Garage slabs</td>
+                        <td class="py-3 px-4 text-gray-700">32 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">5-8%</td>
+                        <td class="py-3 px-4 text-gray-700">C-1 (salt)</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Exterior slabs</td>
+                        <td class="py-3 px-4 text-gray-700">32 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">5-8%</td>
+                        <td class="py-3 px-4 text-gray-700">C-1/C-2</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Driveways</td>
+                        <td class="py-3 px-4 text-gray-700">32 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">5-8%</td>
+                        <td class="py-3 px-4 text-gray-700">C-1 severe</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Sidewalks</td>
+                        <td class="py-3 px-4 text-gray-700">32 MPa</td>
+                        <td class="py-3 px-4 text-gray-700">5-8%</td>
+                        <td class="py-3 px-4 text-gray-700">C-1 severe</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="bg-blue-50 rounded-lg p-4">
+                  <h4 class="font-semibold text-gray-900 mb-2">Exposure Classes Explained:</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• <strong>C-1:</strong> Exposed to freeze-thaw and de-icing chemicals</li>
+                    <li>• <strong>C-2:</strong> Exposed to freeze-thaw, no de-icing chemicals</li>
+                    <li>• <strong>F-1:</strong> Exposed to freeze-thaw when saturated</li>
+                    <li>• <strong>S-1/S-2:</strong> Sulfate exposure (soil/groundwater)</li>
+                    <li>• <strong>A-1/A-2:</strong> Aggregate reactivity concerns</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Water-Cement Ratio -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Water-Cement Ratio: The Critical Factor</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">W/C Ratio Impact on Concrete Properties</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Maximum W/C Ratios:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Normal exposure: 0.70</li>
+                    <li>• Freeze-thaw (C-2): 0.55</li>
+                    <li>• Freeze-thaw + salt (C-1): 0.45</li>
+                    <li>• Severe exposure: 0.40</li>
+                    <li>• Waterproof concrete: 0.45</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Effects of High W/C:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Reduced strength</li>
+                    <li>• Increased permeability</li>
+                    <li>• More shrinkage cracking</li>
+                    <li>• Poor durability</li>
+                    <li>• Surface scaling</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-red-50 rounded-lg p-4 mt-6 border border-red-400">
+                <p class="text-gray-700">
+                  <strong>Field Warning:</strong> Adding water on site increases W/C ratio. Each 20L per m³ 
+                  added reduces strength by 5 MPa and doubles permeability. Never exceed specified slump.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Aggregate Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Aggregate Specifications</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Fine Aggregate (Sand) Requirements</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Gradation Limits:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• 9.5mm: 100% passing</li>
+                      <li>• 4.75mm: 95-100% passing</li>
+                      <li>• 2.36mm: 80-100% passing</li>
+                      <li>• 1.18mm: 50-85% passing</li>
+                      <li>• 600μm: 25-60% passing</li>
+                      <li>• 300μm: 10-30% passing</li>
+                      <li>• 150μm: 2-10% passing</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Quality Requirements:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Fineness modulus: 2.3-3.1</li>
+                      <li>• Organic impurities: < Color 3</li>
+                      <li>• Clay lumps: < 1%</li>
+                      <li>• Coal/lignite: < 0.5%</li>
+                      <li>• Material < 80μm: < 3%</li>
+                      <li>• Soundness loss: < 10%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Coarse Aggregate (Stone) Requirements</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Common Sizes:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• 19mm (3/4"): Standard</li>
+                      <li>• 14mm: Pumped concrete</li>
+                      <li>• 10mm: Thin sections</li>
+                      <li>• 40mm: Mass concrete</li>
+                      <li>• Max size = 1/3 slab depth</li>
+                      <li>• Max size = 3/4 rebar spacing</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Quality Limits:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• LA abrasion: < 50%</li>
+                      <li>• Soundness: < 12%</li>
+                      <li>• Flat/elongated: < 20%</li>
+                      <li>• Clay lumps: < 0.25%</li>
+                      <li>• Soft particles: < 5%</li>
+                      <li>• Absorption: < 2%</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Admixtures -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Chemical Admixtures</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Purpose</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Typical Dosage</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Toronto Use</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Air entraining</td>
+                    <td class="py-3 px-4 text-gray-700">Freeze-thaw resistance</td>
+                    <td class="py-3 px-4 text-gray-700">15-60 mL/100kg</td>
+                    <td class="py-3 px-4 text-gray-700">All exterior</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Water reducer</td>
+                    <td class="py-3 px-4 text-gray-700">Reduce water 5-10%</td>
+                    <td class="py-3 px-4 text-gray-700">200-400 mL/100kg</td>
+                    <td class="py-3 px-4 text-gray-700">Most pours</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Superplasticizer</td>
+                    <td class="py-3 px-4 text-gray-700">High slump/strength</td>
+                    <td class="py-3 px-4 text-gray-700">400-1500 mL/100kg</td>
+                    <td class="py-3 px-4 text-gray-700">Pumping</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Accelerator</td>
+                    <td class="py-3 px-4 text-gray-700">Fast setting</td>
+                    <td class="py-3 px-4 text-gray-700">2-6% by cement</td>
+                    <td class="py-3 px-4 text-gray-700">Winter</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Retarder</td>
+                    <td class="py-3 px-4 text-gray-700">Slow setting</td>
+                    <td class="py-3 px-4 text-gray-700">200-500 mL/100kg</td>
+                    <td class="py-3 px-4 text-gray-700">Hot weather</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Corrosion inhibitor</td>
+                    <td class="py-3 px-4 text-gray-700">Protect rebar</td>
+                    <td class="py-3 px-4 text-gray-700">5-10 L/m³</td>
+                    <td class="py-3 px-4 text-gray-700">Parking</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Mix Design Examples -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Typical Toronto Mix Designs</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Foundation Mix (25 MPa, Interior)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Cement (GU): 300 kg/m³</li>
+                    <li>• Water: 180 L/m³</li>
+                    <li>• W/C ratio: 0.60</li>
+                    <li>• Sand: 750 kg/m³</li>
+                  </ul>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Stone (19mm): 1050 kg/m³</li>
+                    <li>• Air: None required</li>
+                    <li>• Slump: 80-100mm</li>
+                    <li>• Cost: ~$180/m³</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Driveway Mix (32 MPa, C-1 Exposure)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Cement (GU): 380 kg/m³</li>
+                    <li>• Water: 160 L/m³</li>
+                    <li>• W/C ratio: 0.42</li>
+                    <li>• Sand: 700 kg/m³</li>
+                  </ul>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Stone (14mm): 1080 kg/m³</li>
+                    <li>• Air: 6% ± 1%</li>
+                    <li>• Slump: 100-120mm</li>
+                    <li>• Cost: ~$220/m³</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">High-Performance Mix (40 MPa, Waterproof)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Cement (GU): 350 kg/m³</li>
+                    <li>• Slag/Fly ash: 100 kg/m³</li>
+                    <li>• Water: 155 L/m³</li>
+                    <li>• W/CM ratio: 0.35</li>
+                  </ul>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Sand: 680 kg/m³</li>
+                    <li>• Stone (14mm): 1100 kg/m³</li>
+                    <li>• Superplasticizer: Yes</li>
+                    <li>• Cost: ~$260/m³</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quality Control -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Quality Control & Testing</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Required Testing Schedule</h3>
+              
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">At Delivery:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Slump test: Every load for critical, 1 per 40m³ standard</li>
+                    <li>✓ Air content: Every load if air-entrained</li>
+                    <li>✓ Temperature: When < 10°C or > 27°C</li>
+                    <li>✓ Unit weight: When density critical</li>
+                    <li>✓ Visual inspection: Every load</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Cylinder Testing:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Minimum: 3 cylinders per test</li>
+                    <li>✓ Frequency: 1 set per 100m³ or per day</li>
+                    <li>✓ 7-day break: 1 cylinder (65% of 28-day)</li>
+                    <li>✓ 28-day break: 2 cylinders (specified strength)</li>
+                    <li>✓ Store on-site 24-48 hours, then lab cure</li>
+                  </ul>
+                </div>
+
+                <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-400">
+                  <h4 class="font-semibold text-gray-900 mb-2">Acceptance Criteria:</h4>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Average of 3 consecutive tests ≥ f'c</li>
+                    <li>• No individual test < f'c - 3.5 MPa</li>
+                    <li>• If failed: Core testing required</li>
+                    <li>• Core strength ≥ 85% f'c acceptable</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cold Weather Concreting -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Cold Weather Concreting (Toronto Critical)</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-blue-300">
+              <h3 class="font-bold text-gray-900 mb-4">CSA A23.1 Cold Weather Requirements</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Temperature Limits:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Mix temp at delivery: 10-25°C</li>
+                    <li>• Minimum placing: 10°C</li>
+                    <li>• < 300mm sections: 13°C min</li>
+                    <li>• 300-900mm: 10°C min</li>
+                    <li>• 900-1800mm: 7°C min</li>
+                    <li>• > 1800mm: 5°C min</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Protection Required:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• 0 to -5°C: Insulation blankets</li>
+                    <li>• -5 to -10°C: Heated enclosure</li>
+                    <li>• Below -10°C: Stop pouring</li>
+                    <li>• Maintain 10°C for 72 hours</li>
+                    <li>• Gradual cooling < 20°C/day</li>
+                    <li>• Double cure time if < 10°C</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-red-50 rounded-lg p-4 mt-6 border border-red-400">
+                <p class="text-gray-700">
+                  <strong>Never:</strong> Pour on frozen ground, use frozen aggregates, or allow concrete to 
+                  freeze in first 24 hours. Frozen concrete = zero strength = total replacement.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hot Weather Concreting -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Hot Weather Concreting</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-orange-300">
+              <h3 class="font-bold text-gray-900 mb-4">Summer Concrete Challenges</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Problems Above 30°C:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Rapid slump loss</li>
+                    <li>• Flash setting</li>
+                    <li>• Plastic shrinkage cracks</li>
+                    <li>• Lower ultimate strength</li>
+                    <li>• Difficult finishing</li>
+                    <li>• Cold joints</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Mitigation Strategies:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Schedule early morning pours</li>
+                    <li>• Cool aggregates with water</li>
+                    <li>• Use ice in mix water</li>
+                    <li>• Add retarders</li>
+                    <li>• Erect shade/windbreaks</li>
+                    <li>• Fog spray surface</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-red-600" />
+              Common Concrete Problems & Solutions
+            </h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Low Strength Test Results</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Causes:</strong> High W/C, improper curing, frozen, wrong mix, poor consolidation
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Core testing immediately. If cores fail, remove and replace. 
+                  Document everything for legal protection. Never accept "it'll be fine" - it won't.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Plastic Shrinkage Cracking</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Causes:</strong> Rapid surface drying, wind, low humidity, high temperature
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Fog spray, windbreaks, evaporation retarders, earlier curing. 
+                  Start curing as soon as bleed water disappears. Can't repair after - prevent only.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Scaling and Spalling</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Causes:</strong> No air entrainment, high W/C, poor curing, early salt exposure
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Always use air for exterior. Apply sealer first year. No de-icers 
+                  for 30 days minimum. Once scaled, only fix is overlay or replacement.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Discoloration</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Causes:</strong> Calcium chloride, uneven curing, trowel burn, different batches
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Consistent practices, same crew, uniform curing. For existing: 
+                  acid wash, stain, or live with it. Prevention is only real solution.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Dusting Surface</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Causes:</strong> Overworking, bleed water troweling, carbonation, no curing
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Never trowel bleed water. Wait for surface sheen to disappear. 
+                  Apply hardener to existing. Grind and seal if severe.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ordering Checklist -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Concrete Ordering Checklist</h2>
+            
+            <div class="bg-green-50 rounded-lg p-8">
+              <h3 class="font-bold text-gray-900 mb-4">Information Required When Ordering</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Mix Specifications:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>☐ Strength (MPa at 28 days)</li>
+                    <li>☐ Exposure class (C-1, C-2, etc.)</li>
+                    <li>☐ Maximum aggregate size</li>
+                    <li>☐ Slump range (mm)</li>
+                    <li>☐ Air content if required (%)</li>
+                    <li>☐ Any special requirements</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Delivery Details:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>☐ Total quantity (m³)</li>
+                    <li>☐ Delivery rate (m³/hour)</li>
+                    <li>☐ Pour sequence/locations</li>
+                    <li>☐ Access restrictions</li>
+                    <li>☐ Pump required?</li>
+                    <li>☐ Hot/cold weather plan</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-4 mt-6">
+                <p class="text-gray-700 font-semibold">
+                  Example Order: "32 MPa, C-1 exposure, 14mm aggregate, 100mm slump, 6% air, 
+                  40 m³ for driveway, need 10 m³/hour, pump required, delivery Tuesday 7 AM"
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Factors -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Concrete Pricing Factors (Toronto 2024)</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Factor</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Base</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Addition</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Cost Impact</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Base mix 20 MPa</td>
+                    <td class="py-3 px-4 text-gray-700">$170/m³</td>
+                    <td class="py-3 px-4 text-gray-700">-</td>
+                    <td class="py-3 px-4 text-gray-700">Base price</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Strength increase</td>
+                    <td class="py-3 px-4 text-gray-700">20 MPa</td>
+                    <td class="py-3 px-4 text-gray-700">Per 5 MPa</td>
+                    <td class="py-3 px-4 text-gray-700">+$8-12/m³</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Air entrainment</td>
+                    <td class="py-3 px-4 text-gray-700">None</td>
+                    <td class="py-3 px-4 text-gray-700">5-8%</td>
+                    <td class="py-3 px-4 text-gray-700">+$5/m³</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Superplasticizer</td>
+                    <td class="py-3 px-4 text-gray-700">None</td>
+                    <td class="py-3 px-4 text-gray-700">High slump</td>
+                    <td class="py-3 px-4 text-gray-700">+$8-15/m³</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Accelerator</td>
+                    <td class="py-3 px-4 text-gray-700">None</td>
+                    <td class="py-3 px-4 text-gray-700">Winter</td>
+                    <td class="py-3 px-4 text-gray-700">+$10-20/m³</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Small load</td>
+                    <td class="py-3 px-4 text-gray-700">>5m³</td>
+                    <td class="py-3 px-4 text-gray-700"><5m³</td>
+                    <td class="py-3 px-4 text-gray-700">+$50-100</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Saturday delivery</td>
+                    <td class="py-3 px-4 text-gray-700">Weekday</td>
+                    <td class="py-3 px-4 text-gray-700">Weekend</td>
+                    <td class="py-3 px-4 text-gray-700">+$25/m³</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Pump truck</td>
+                    <td class="py-3 px-4 text-gray-700">Direct</td>
+                    <td class="py-3 px-4 text-gray-700">Required</td>
+                    <td class="py-3 px-4 text-gray-700">+$800-1500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">The Bottom Line on Concrete Quality</h2>
+            <p class="text-gray-700 mb-4">
+              Good concrete isn't expensive - bad concrete is. The difference between 20 MPa and 32 MPa is about 
+              $50 per cubic meter. The cost to remove and replace failed concrete starts at $500 per cubic meter. 
+              In 39 years, we've never had a client regret ordering better concrete, but we've demolished plenty 
+              of cheap concrete that didn't make it through two winters.
+            </p>
+            <p class="text-gray-700 mb-4">
+              Toronto's freeze-thaw cycles are brutal. Salt exposure is constant. Our clay soils move. If you're 
+              not using air-entrained, low W/C concrete for exterior work, you're building in failure. Follow the 
+              specifications, test everything, and never let anyone add water on site.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, we don't compromise on materials. Every mix is designed for its specific application 
+              and exposure conditions. We test, we document, and we stand behind our work with a 25-year warranty. 
+              Because concrete done right lasts generations - concrete done wrong doesn't last a decade.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Quality Concrete Work?</h3>
+            <p class="text-lg mb-6">
+              Proper materials, tested mixes, 25-year warranty on all foundations
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

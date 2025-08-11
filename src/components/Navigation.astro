@@ -1,0 +1,137 @@
+---
+import { Menu, X, Phone, ChevronDown } from 'lucide-astro';
+---
+
+<nav class="fixed top-0 w-full bg-white border-b border-gray-200 z-50 shadow-sm">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center space-x-2">
+        <div class="w-10 h-10 bg-red-600 rounded flex items-center justify-center font-bold text-white text-lg">
+          IF
+        </div>
+        <div>
+          <h1 class="text-xl font-bold text-gray-900">ImperialForm</h1>
+          <p class="text-xs text-gray-600">Est. 1985</p>
+        </div>
+      </a>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden lg:flex items-center space-x-8">
+        <a href="/" class="text-gray-700 hover:text-red-600 transition-colors">Home</a>
+        
+        <!-- Services Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-gray-700 hover:text-red-600 transition-colors">
+            Services
+            <ChevronDown class="w-4 h-4" />
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="/services/driveways" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Driveways</a>
+            <a href="/services/foundations" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Foundations</a>
+            <a href="/services/slabs-footings" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Slabs & Footings</a>
+            <a href="/services/formwork" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Concrete Formwork</a>
+            <a href="/services/patios" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Patios & Walkways</a>
+            <a href="/services/repairs" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Repairs</a>
+          </div>
+        </div>
+
+        <!-- About Dropdown -->
+        <div class="relative group">
+          <button class="flex items-center gap-1 text-gray-700 hover:text-red-600 transition-colors">
+            About
+            <ChevronDown class="w-4 h-4" />
+          </button>
+          <div class="absolute top-full left-0 mt-2 w-48 bg-white rounded-lg shadow-lg border border-gray-200 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+            <a href="/about/team" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Our Team</a>
+            <a href="/about/process" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Our Process</a>
+            <a href="/warranty" class="block px-4 py-2 text-gray-700 hover:bg-gray-50 hover:text-red-600">Warranty</a>
+          </div>
+        </div>
+
+        <a href="/#calculator" class="text-gray-700 hover:text-red-600 transition-colors">Calculator</a>
+        <a href="/gallery" class="text-gray-700 hover:text-red-600 transition-colors">Gallery</a>
+        <a href="/faq" class="text-gray-700 hover:text-red-600 transition-colors">FAQ</a>
+        <a href="/service-areas" class="text-gray-700 hover:text-red-600 transition-colors">Areas</a>
+        
+        <!-- Phone -->
+        <a href="tel:4375450067" class="flex items-center gap-2 text-red-600 font-semibold">
+          <Phone class="w-4 h-4" />
+          (437) 545-0067
+        </a>
+        
+        <!-- CTA Button -->
+        <a href="/get-quote" class="bg-red-600 text-white px-6 py-2 rounded-lg hover:bg-red-700 transition-colors">
+          Get Quote
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="mobile-menu-button" class="lg:hidden">
+        <Menu class="w-6 h-6 text-gray-700" />
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-gray-200">
+    <div class="px-4 py-4 space-y-3">
+      <a href="/" class="block py-2 text-gray-700 hover:text-red-600 transition-colors">Home</a>
+      
+      <!-- Mobile Services -->
+      <div>
+        <p class="font-semibold text-gray-900 py-2">Services</p>
+        <div class="pl-4 space-y-2">
+          <a href="/services/driveways" class="block py-1 text-gray-600 hover:text-red-600">Driveways</a>
+          <a href="/services/foundations" class="block py-1 text-gray-600 hover:text-red-600">Foundations</a>
+          <a href="/services/slabs-footings" class="block py-1 text-gray-600 hover:text-red-600">Slabs & Footings</a>
+          <a href="/services/formwork" class="block py-1 text-gray-600 hover:text-red-600">Concrete Formwork</a>
+          <a href="/services/patios" class="block py-1 text-gray-600 hover:text-red-600">Patios & Walkways</a>
+          <a href="/services/repairs" class="block py-1 text-gray-600 hover:text-red-600">Repairs</a>
+        </div>
+      </div>
+
+      <!-- Mobile About -->
+      <div>
+        <p class="font-semibold text-gray-900 py-2">About</p>
+        <div class="pl-4 space-y-2">
+          <a href="/about/team" class="block py-1 text-gray-600 hover:text-red-600">Our Team</a>
+          <a href="/about/process" class="block py-1 text-gray-600 hover:text-red-600">Our Process</a>
+          <a href="/warranty" class="block py-1 text-gray-600 hover:text-red-600">Warranty</a>
+        </div>
+      </div>
+
+      <a href="/#calculator" class="block py-2 text-gray-700 hover:text-red-600 transition-colors">Calculator</a>
+      <a href="/gallery" class="block py-2 text-gray-700 hover:text-red-600 transition-colors">Gallery</a>
+      <a href="/faq" class="block py-2 text-gray-700 hover:text-red-600 transition-colors">FAQ</a>
+      <a href="/service-areas" class="block py-2 text-gray-700 hover:text-red-600 transition-colors">Service Areas</a>
+      
+      <div class="pt-4 border-t border-gray-200">
+        <a href="tel:4375450067" class="flex items-center gap-2 text-red-600 font-semibold py-2">
+          <Phone class="w-4 h-4" />
+          (437) 545-0067
+        </a>
+        <a href="/get-quote" class="block bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition-colors text-center mt-3">
+          Get Free Quote
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  mobileMenuButton?.addEventListener('click', () => {
+    mobileMenu?.classList.toggle('hidden');
+  });
+</script>
+
+<style>
+  /* Dropdown menu styles */
+  .group:hover .group-hover\:visible {
+    visibility: visible;
+    opacity: 1;
+  }
+</style>

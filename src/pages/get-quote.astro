@@ -1,0 +1,356 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Phone, Mail, MapPin, Calendar, CheckCircle } from 'lucide-astro';
+---
+
+<Layout title="Get a Free Quote | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Get Your Free Quote
+          </h1>
+          <p class="text-xl text-gray-600">
+            No obligations, no hidden fees - just honest pricing from Toronto's trusted contractors
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Form Section -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-6xl mx-auto">
+          <div class="grid lg:grid-cols-3 gap-12">
+            <!-- Form -->
+            <div class="lg:col-span-2">
+              <div class="bg-white rounded-lg shadow-lg p-8">
+                <h2 class="text-2xl font-bold text-gray-900 mb-6">Request Your Quote</h2>
+                
+                <form class="space-y-6">
+                  <!-- Contact Information -->
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Contact Information</h3>
+                    <div class="grid md:grid-cols-2 gap-4">
+                      <div>
+                        <label for="first_name" class="block text-sm font-medium text-gray-700 mb-1">
+                          First Name *
+                        </label>
+                        <input 
+                          type="text" 
+                          id="first_name" 
+                          name="first_name" 
+                          required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        />
+                      </div>
+                      <div>
+                        <label for="last_name" class="block text-sm font-medium text-gray-700 mb-1">
+                          Last Name *
+                        </label>
+                        <input 
+                          type="text" 
+                          id="last_name" 
+                          name="last_name" 
+                          required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        />
+                      </div>
+                      <div>
+                        <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+                          Phone Number *
+                        </label>
+                        <input 
+                          type="tel" 
+                          id="phone" 
+                          name="phone" 
+                          required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        />
+                      </div>
+                      <div>
+                        <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                          Email Address
+                        </label>
+                        <input 
+                          type="email" 
+                          id="email" 
+                          name="email"
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Property Information -->
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Property Information</h3>
+                    <div class="space-y-4">
+                      <div>
+                        <label for="address" class="block text-sm font-medium text-gray-700 mb-1">
+                          Property Address *
+                        </label>
+                        <input 
+                          type="text" 
+                          id="address" 
+                          name="address" 
+                          required
+                          placeholder="Street address"
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        />
+                      </div>
+                      <div class="grid md:grid-cols-3 gap-4">
+                        <div>
+                          <label for="city" class="block text-sm font-medium text-gray-700 mb-1">
+                            City *
+                          </label>
+                          <input 
+                            type="text" 
+                            id="city" 
+                            name="city" 
+                            required
+                            placeholder="Toronto"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                          />
+                        </div>
+                        <div>
+                          <label for="postal" class="block text-sm font-medium text-gray-700 mb-1">
+                            Postal Code *
+                          </label>
+                          <input 
+                            type="text" 
+                            id="postal" 
+                            name="postal" 
+                            required
+                            placeholder="M5V 3A8"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                          />
+                        </div>
+                        <div>
+                          <label for="property_type" class="block text-sm font-medium text-gray-700 mb-1">
+                            Property Type
+                          </label>
+                          <select 
+                            id="property_type" 
+                            name="property_type"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                          >
+                            <option>Residential</option>
+                            <option>Commercial</option>
+                            <option>Industrial</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Project Details -->
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Project Details</h3>
+                    <div class="space-y-4">
+                      <div>
+                        <label for="service" class="block text-sm font-medium text-gray-700 mb-1">
+                          Service Needed *
+                        </label>
+                        <select 
+                          id="service" 
+                          name="service"
+                          required
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        >
+                          <option value="">Select a service...</option>
+                          <option>Driveway - New Installation</option>
+                          <option>Driveway - Replacement</option>
+                          <option>Patio / Walkway</option>
+                          <option>Pool Deck</option>
+                          <option>Foundation Work</option>
+                          <option>Garage Floor</option>
+                          <option>Steps / Porch</option>
+                          <option>Concrete Repair</option>
+                          <option>Commercial Project</option>
+                          <option>Other</option>
+                        </select>
+                      </div>
+                      
+                      <div class="grid md:grid-cols-2 gap-4">
+                        <div>
+                          <label for="size" class="block text-sm font-medium text-gray-700 mb-1">
+                            Approximate Size (sq ft)
+                          </label>
+                          <input 
+                            type="text" 
+                            id="size" 
+                            name="size"
+                            placeholder="e.g., 600"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                          />
+                        </div>
+                        <div>
+                          <label for="timeline" class="block text-sm font-medium text-gray-700 mb-1">
+                            Desired Timeline
+                          </label>
+                          <select 
+                            id="timeline" 
+                            name="timeline"
+                            class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                          >
+                            <option>As soon as possible</option>
+                            <option>Within 2 weeks</option>
+                            <option>Within 1 month</option>
+                            <option>Within 3 months</option>
+                            <option>Just getting quotes</option>
+                          </select>
+                        </div>
+                      </div>
+
+                      <div>
+                        <label for="details" class="block text-sm font-medium text-gray-700 mb-1">
+                          Project Description
+                        </label>
+                        <textarea 
+                          id="details" 
+                          name="details" 
+                          rows="4"
+                          placeholder="Please describe your project, including any specific requirements or concerns..."
+                          class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+                        ></textarea>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Additional Options -->
+                  <div>
+                    <h3 class="text-lg font-semibold text-gray-900 mb-4">Additional Information</h3>
+                    <div class="space-y-3">
+                      <label class="flex items-start gap-3">
+                        <input type="checkbox" name="remove_existing" class="mt-1" />
+                        <span class="text-sm text-gray-700">Need to remove existing concrete</span>
+                      </label>
+                      <label class="flex items-start gap-3">
+                        <input type="checkbox" name="decorative" class="mt-1" />
+                        <span class="text-sm text-gray-700">Interested in decorative options (stamped, colored, etc.)</span>
+                      </label>
+                      <label class="flex items-start gap-3">
+                        <input type="checkbox" name="heating" class="mt-1" />
+                        <span class="text-sm text-gray-700">Interested in heated driveway system</span>
+                      </label>
+                    </div>
+                  </div>
+
+                  <!-- Submit -->
+                  <div>
+                    <button 
+                      type="submit"
+                      class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+                    >
+                      Submit Quote Request
+                    </button>
+                    <p class="text-xs text-gray-600 text-center mt-3">
+                      We'll call you within 24 hours to discuss your project and schedule a free on-site consultation
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <!-- Sidebar -->
+            <div class="lg:col-span-1">
+              <!-- Contact Card -->
+              <div class="bg-red-600 text-white rounded-lg p-6 mb-6">
+                <h3 class="text-xl font-bold mb-4">Prefer to Call?</h3>
+                <a href="tel:416-555-0199" class="flex items-center gap-3 mb-4">
+                  <Phone class="w-6 h-6" />
+                  <div>
+                    <p class="font-semibold text-lg">(416) 555-0199</p>
+                    <p class="text-sm opacity-90">Mon-Sat 7AM-6PM</p>
+                  </div>
+                </a>
+                <p class="text-sm">
+                  Speak directly with Joe or one of our estimators for immediate assistance
+                </p>
+              </div>
+
+              <!-- What Happens Next -->
+              <div class="bg-white rounded-lg shadow-md p-6 mb-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">What Happens Next?</h3>
+                <div class="space-y-3">
+                  <div class="flex gap-3">
+                    <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-red-600 font-bold text-sm">1</span>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-gray-900">We Call You</p>
+                      <p class="text-sm text-gray-600">Within 24 hours to discuss your project</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-red-600 font-bold text-sm">2</span>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-gray-900">Site Visit</p>
+                      <p class="text-sm text-gray-600">Free on-site consultation at your convenience</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-red-600 font-bold text-sm">3</span>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-gray-900">Written Quote</p>
+                      <p class="text-sm text-gray-600">Detailed quote with clear pricing</p>
+                    </div>
+                  </div>
+                  <div class="flex gap-3">
+                    <div class="w-8 h-8 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                      <span class="text-red-600 font-bold text-sm">4</span>
+                    </div>
+                    <div>
+                      <p class="font-semibold text-gray-900">Your Decision</p>
+                      <p class="text-sm text-gray-600">No pressure - take your time</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Why Choose Us -->
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="text-lg font-bold text-gray-900 mb-4">Why Get a Quote from Us?</h3>
+                <ul class="space-y-2">
+                  <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>No sales pressure - ever</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Detailed written quotes</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>All costs included upfront</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>Valid for 30 days</span>
+                  </li>
+                  <li class="flex items-start gap-2 text-sm text-gray-700">
+                    <CheckCircle class="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span>No deposit required</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

@@ -1,0 +1,761 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { HardHat, AlertTriangle, Shovel } from 'lucide-astro';
+---
+
+<Layout title="Excavation & Backfill Complete Guide | Safety, Methods & Requirements">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Excavation & Backfill</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Excavation & Backfill: Safety, Methods, and Code Requirements
+          </h1>
+          <p class="text-xl text-gray-600">
+            Complete guide to safe excavation practices, soil management, and proper backfill techniques
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>20 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              Excavation collapses kill. In Toronto, we average two excavation-related fatalities per year - all 
+              preventable. After 39 years of digging foundations in everything from stable bedrock to running sand, 
+              we've learned that successful excavation isn't about courage - it's about methodology, proper shoring, 
+              and never cutting corners on safety. Here's your complete guide to excavation and backfill, from the 
+              first shovel to final grade.
+            </p>
+
+            <div class="bg-red-50 rounded-lg p-6 mb-8 border-2 border-red-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <AlertTriangle class="w-5 h-5 text-red-600" />
+                Critical Safety Warning
+              </h3>
+              <p class="text-gray-700 mb-3">
+                Excavations over 1.2m (4 ft) deep require:
+              </p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Engineered shoring system OR</li>
+                <li>• Slopes cut back to safe angle OR</li>
+                <li>• Trench box protection</li>
+                <li>• Never enter unprotected excavation over 1.2m</li>
+                <li>• One cubic meter of soil = 1,600 kg = instant death</li>
+              </ul>
+              <p class="text-gray-700 mt-3">
+                <strong>Ontario Regulation 213/91 is law - violations = criminal charges</strong>
+              </p>
+            </div>
+          </div>
+
+          <!-- Soil Classification -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <Shovel class="inline w-6 h-6 text-brown-600 mr-2" />
+              Soil Classification System
+            </h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Description</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Safe Slope</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Toronto Examples</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Type 1</td>
+                    <td class="py-3 px-4 text-gray-700">Hard, intact clay/till</td>
+                    <td class="py-3 px-4 text-gray-700">1:1 (45°)</td>
+                    <td class="py-3 px-4 text-gray-700">Rare - some bedrock</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Type 2</td>
+                    <td class="py-3 px-4 text-gray-700">Stiff clay, compact silt</td>
+                    <td class="py-3 px-4 text-gray-700">1:1 (45°)</td>
+                    <td class="py-3 px-4 text-gray-700">Scarborough clay</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Type 3</td>
+                    <td class="py-3 px-4 text-gray-700">Soft clay, loose silt</td>
+                    <td class="py-3 px-4 text-gray-700">3:1 (70°)</td>
+                    <td class="py-3 px-4 text-gray-700">Most Toronto clay</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Type 4</td>
+                    <td class="py-3 px-4 text-gray-700">Wet clay, sand, gravel</td>
+                    <td class="py-3 px-4 text-gray-700">3:1 (70°)</td>
+                    <td class="py-3 px-4 text-gray-700">Waterfront, valleys</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Running</td>
+                    <td class="py-3 px-4 text-gray-700">Water-saturated</td>
+                    <td class="py-3 px-4 text-gray-700">Requires shoring</td>
+                    <td class="py-3 px-4 text-gray-700">High water table</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-yellow-50 rounded-lg p-4 mt-4 border border-yellow-400">
+              <p class="text-gray-700">
+                <strong>Toronto Reality:</strong> Assume Type 3 or 4 unless proven otherwise. Our clay is 
+                moisture-sensitive - Type 2 when dry becomes Type 4 when wet. Always plan for worst case.
+              </p>
+            </div>
+          </div>
+
+          <!-- Excavation Planning -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Pre-Excavation Requirements</h2>
+            
+            <div class="space-y-4">
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">1. Utility Locates (Ontario One Call)</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Call 1-800-400-2255 minimum 5 business days before</li>
+                  <li>✓ Valid for 30 days from mark date</li>
+                  <li>✓ Hand dig within 1m of marks</li>
+                  <li>✓ Private locates required for: irrigation, landscape lighting, pools</li>
+                  <li>✓ Document all locate numbers and marking photos</li>
+                  <li>✓ <strong>Hit a line = automatic $10,000+ fine plus damages</strong></li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">2. Site Survey & Planning</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Property boundaries confirmed</li>
+                  <li>✓ Setbacks marked and verified</li>
+                  <li>✓ Existing structures documented</li>
+                  <li>✓ Trees and landscaping protected</li>
+                  <li>✓ Access routes planned</li>
+                  <li>✓ Soil stockpile locations identified</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">3. Permits & Notifications</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Building permit with excavation included</li>
+                  <li>✓ Street occupation permit if required</li>
+                  <li>✓ Notice to neighbors (recommended)</li>
+                  <li>✓ Insurance notification</li>
+                  <li>✓ MOL notification if > 3m deep</li>
+                  <li>✓ Environmental permits near water</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">4. Dewatering Plan</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Test pits for water table</li>
+                  <li>✓ Pump sizing and backup</li>
+                  <li>✓ Discharge location approved</li>
+                  <li>✓ Sediment control measures</li>
+                  <li>✓ 24/7 monitoring if critical</li>
+                  <li>✓ Well points if sand/gravel</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Excavation Methods -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Excavation Methods & Equipment</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Open Cut Method</h3>
+                <h4 class="font-semibold text-gray-900 mb-2">When to Use:</h4>
+                <ul class="space-y-1 text-gray-700 mb-3">
+                  <li>• Adequate space available</li>
+                  <li>• Stable soil conditions</li>
+                  <li>• No adjacent structures</li>
+                  <li>• Depth < 4m typically</li>
+                </ul>
+                <h4 class="font-semibold text-gray-900 mb-2">Equipment:</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Excavator (20-30 ton)</li>
+                  <li>• Dump trucks</li>
+                  <li>• Bulldozer for stripping</li>
+                  <li>• Compactor for ramps</li>
+                </ul>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Shored Excavation</h3>
+                <h4 class="font-semibold text-gray-900 mb-2">When Required:</h4>
+                <ul class="space-y-1 text-gray-700 mb-3">
+                  <li>• Limited space</li>
+                  <li>• Adjacent structures</li>
+                  <li>• Unstable soils</li>
+                  <li>• Deep excavations</li>
+                </ul>
+                <h4 class="font-semibold text-gray-900 mb-2">Systems:</h4>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• Soldier piles & lagging</li>
+                  <li>• Sheet piling</li>
+                  <li>• Trench boxes</li>
+                  <li>• Engineered shores</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Safe Slopes -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Safe Slope Requirements</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Calculating Safe Slopes</h3>
+              
+              <div class="bg-gray-50 rounded-lg overflow-hidden mb-6">
+                <table class="w-full">
+                  <thead class="bg-gray-200">
+                    <tr>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Depth</th>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Type 3 Soil (3:1)</th>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Type 2 Soil (1:1)</th>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Space Required</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200 bg-white">
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">1.2m (4')</td>
+                      <td class="py-3 px-4 text-gray-700">3.6m slope</td>
+                      <td class="py-3 px-4 text-gray-700">1.2m slope</td>
+                      <td class="py-3 px-4 text-gray-700">+7.2m width</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">2.4m (8')</td>
+                      <td class="py-3 px-4 text-gray-700">7.2m slope</td>
+                      <td class="py-3 px-4 text-gray-700">2.4m slope</td>
+                      <td class="py-3 px-4 text-gray-700">+14.4m width</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">3.0m (10')</td>
+                      <td class="py-3 px-4 text-gray-700">9.0m slope</td>
+                      <td class="py-3 px-4 text-gray-700">3.0m slope</td>
+                      <td class="py-3 px-4 text-gray-700">+18m width</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">3.6m (12')</td>
+                      <td class="py-3 px-4 text-gray-700">10.8m slope</td>
+                      <td class="py-3 px-4 text-gray-700">3.6m slope</td>
+                      <td class="py-3 px-4 text-gray-700">+21.6m width</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-400">
+                <p class="text-gray-700">
+                  <strong>Reality Check:</strong> For a typical 2.4m basement in Type 3 soil, you need 14.4m 
+                  extra width just for slopes. Most Toronto lots don't have this - shoring is required.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Shoring Systems -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <HardHat class="inline w-6 h-6 text-yellow-600 mr-2" />
+              Shoring Systems
+            </h2>
+            
+            <div class="space-y-6">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Trench Boxes</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Advantages:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Quick installation</li>
+                      <li>• Reusable</li>
+                      <li>• No engineering required</li>
+                      <li>• Move with work</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Limitations:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Linear work only</li>
+                      <li>• Max depth ~6m</li>
+                      <li>• Need crane/excavator</li>
+                      <li>• $500-1000/day rental</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Soldier Pile & Lagging</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Process:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Drive H-piles @ 2-3m</li>
+                      <li>• Excavate in lifts</li>
+                      <li>• Install wood lagging</li>
+                      <li>• Brace or tieback</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Costs:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Design: $5,000+</li>
+                      <li>• Install: $300-500/m²</li>
+                      <li>• Good for deep/permanent</li>
+                      <li>• Leaves piles in ground</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <h3 class="font-bold text-gray-900 mb-4">Sheet Piling</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">When Used:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Water conditions</li>
+                      <li>• Running soils</li>
+                      <li>• Tight spaces</li>
+                      <li>• Contaminated soil</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Considerations:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Vibration issues</li>
+                      <li>• Expensive ($400-600/m²)</li>
+                      <li>• Can be extracted</li>
+                      <li>• Watertight joints</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Protection of Adjacent Structures -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Protecting Adjacent Structures</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-red-300">
+              <h3 class="font-bold text-gray-900 mb-4">Zone of Influence Rule</h3>
+              
+              <div class="bg-red-50 rounded-lg p-6 mb-6">
+                <p class="text-gray-700 mb-3">
+                  <strong>Critical:</strong> Excavation affects soil in 1:1 slope from bottom of excavation
+                </p>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• If neighbor's foundation is within zone: underpinning required</li>
+                  <li>• Document existing conditions before starting</li>
+                  <li>• Monitor for movement daily</li>
+                  <li>• Stop work if movement detected</li>
+                  <li>• You're liable for all damage</li>
+                </ul>
+              </div>
+
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Pre-Construction Survey:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Photo/video everything</li>
+                    <li>✓ Document existing cracks</li>
+                    <li>✓ Survey monitoring points</li>
+                    <li>✓ Get neighbor signatures</li>
+                    <li>✓ Notify insurance</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">During Excavation:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>✓ Daily monitoring</li>
+                    <li>✓ Vibration limits</li>
+                    <li>✓ Stage excavation</li>
+                    <li>✓ Immediate backfill</li>
+                    <li>✓ Emergency plan ready</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dewatering -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Dewatering Systems</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Method</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Soil Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Depth</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Cost/Day</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Sump pumping</td>
+                    <td class="py-3 px-4 text-gray-700">Clay/silt</td>
+                    <td class="py-3 px-4 text-gray-700"><3m</td>
+                    <td class="py-3 px-4 text-gray-700">$100-200</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Well points</td>
+                    <td class="py-3 px-4 text-gray-700">Sand/gravel</td>
+                    <td class="py-3 px-4 text-gray-700"><6m</td>
+                    <td class="py-3 px-4 text-gray-700">$500-1000</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Deep wells</td>
+                    <td class="py-3 px-4 text-gray-700">All types</td>
+                    <td class="py-3 px-4 text-gray-700">>6m</td>
+                    <td class="py-3 px-4 text-gray-700">$1000-2000</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Eductor system</td>
+                    <td class="py-3 px-4 text-gray-700">Fine sand/silt</td>
+                    <td class="py-3 px-4 text-gray-700"><10m</td>
+                    <td class="py-3 px-4 text-gray-700">$800-1500</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div class="bg-blue-50 rounded-lg p-4 mt-4">
+              <p class="text-gray-700">
+                <strong>Discharge Requirements:</strong> Never discharge to storm sewer without permit. 
+                Sediment bags required. Test for contaminants if industrial site. Monitor neighbors' wells.
+              </p>
+            </div>
+          </div>
+
+          <!-- Backfill Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Backfill Specifications & Methods</h2>
+            
+            <div class="space-y-6">
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Material Requirements</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Acceptable Materials:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Native soil (if suitable)</li>
+                      <li>• Granular A or B</li>
+                      <li>• Approved fill</li>
+                      <li>• No organics</li>
+                      <li>• No frozen material</li>
+                      <li>• Max 75mm particles</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Special Zones:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Against foundation: granular</li>
+                      <li>• Under slabs: granular</li>
+                      <li>• Utility trenches: sand</li>
+                      <li>• Final 300mm: topsoil</li>
+                      <li>• Drainage layer: clear stone</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Compaction Requirements</h3>
+                <div class="bg-white rounded-lg overflow-hidden">
+                  <table class="w-full">
+                    <thead class="bg-gray-200">
+                      <tr>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Location</th>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Lift Thickness</th>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Compaction</th>
+                        <th class="text-left py-3 px-4 font-semibold text-gray-900">Method</th>
+                      </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Under slabs</td>
+                        <td class="py-3 px-4 text-gray-700">150mm</td>
+                        <td class="py-3 px-4 text-gray-700">98% SPD</td>
+                        <td class="py-3 px-4 text-gray-700">Plate compactor</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Under footings</td>
+                        <td class="py-3 px-4 text-gray-700">150mm</td>
+                        <td class="py-3 px-4 text-gray-700">100% SPD</td>
+                        <td class="py-3 px-4 text-gray-700">Jumping jack</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">General backfill</td>
+                        <td class="py-3 px-4 text-gray-700">300mm</td>
+                        <td class="py-3 px-4 text-gray-700">95% SPD</td>
+                        <td class="py-3 px-4 text-gray-700">Roller/plate</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 px-4 text-gray-700">Landscaping</td>
+                        <td class="py-3 px-4 text-gray-700">300mm</td>
+                        <td class="py-3 px-4 text-gray-700">90% SPD</td>
+                        <td class="py-3 px-4 text-gray-700">Minimal</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">Backfill Sequence</h3>
+                <ol class="space-y-2 text-gray-700">
+                  <li>1. Install drainage tile and granular surround</li>
+                  <li>2. Apply dampproofing/waterproofing protection</li>
+                  <li>3. Place drainage layer against wall (300mm min)</li>
+                  <li>4. Backfill in uniform lifts around perimeter</li>
+                  <li>5. Maintain moisture content (±2% optimum)</li>
+                  <li>6. Compact each lift before next</li>
+                  <li>7. Test compaction every 3rd lift</li>
+                  <li>8. Rough grade to drain away (2% min)</li>
+                  <li>9. Allow settlement before final grade</li>
+                  <li>10. Final grade and topsoil</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <!-- Safety Equipment -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Required Safety Equipment</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-orange-300">
+              <h3 class="font-bold text-gray-900 mb-4">Minimum Safety Requirements</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Personal Protection:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>☐ Hard hats (always)</li>
+                    <li>☐ Safety boots (CSA approved)</li>
+                    <li>☐ High-vis vests</li>
+                    <li>☐ Safety glasses</li>
+                    <li>☐ Work gloves</li>
+                    <li>☐ Fall protection (>3m)</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Site Equipment:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>☐ Ladder (1m above edge)</li>
+                    <li>☐ Barricades/fence</li>
+                    <li>☐ Warning signs</li>
+                    <li>☐ Gas monitor (confined)</li>
+                    <li>☐ Emergency evacuation plan</li>
+                    <li>☐ First aid kit</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-orange-50 rounded-lg p-4 mt-6 border border-orange-400">
+                <p class="text-gray-700">
+                  <strong>Daily Inspection Required:</strong> Competent person must inspect excavation before 
+                  each shift, after rain, and after any event that could affect stability. Document all inspections.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-red-600" />
+              Critical Excavation Failures
+            </h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Cave-In During Rain</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Scenario:</strong> Excavation left open overnight, rain saturates soil, walls collapse
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Cover excavations, pump immediately after rain, re-slope if needed. 
+                  Never enter until inspected. Rain changes everything - re-evaluate soil type.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Utility Strike</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Scenario:</strong> Gas line hit despite locates, explosion/evacuation
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Hand dig within 1m of marks. Locates aren't perfect. Private utilities 
+                  aren't marked. When in doubt, hand dig. Hit = minimum $10,000 fine plus damages.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Adjacent Building Settlement</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Scenario:</strong> Excavation undermines neighbor's foundation, cracks appear
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Calculate zone of influence. Underpin if required. Monitor daily. 
+                  Stop immediately if movement detected. You're 100% liable.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Trapped Worker</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Scenario:</strong> Worker in 1.5m trench, partial collapse, suffocation
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> No entry over 1.2m without protection. Period. One cubic meter 
+                  of soil = 1,600kg. Takes 3 minutes to suffocate. Never worth the risk.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Backfill Settlement</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Scenario:</strong> Improper compaction, driveway sinks 300mm in first year
+                </p>
+                <p class="text-gray-700">
+                  <strong>Prevention:</strong> Compact in lifts. Test compaction. No frozen material. Proper moisture. 
+                  Settlement = complete redo = lawsuit.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Breakdown -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Excavation & Backfill Costs</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Operation</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Unit Cost</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Typical House</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Notes</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Excavation</td>
+                    <td class="py-3 px-4 text-gray-700">$15-25/m³</td>
+                    <td class="py-3 px-4 text-gray-700">$3,000-5,000</td>
+                    <td class="py-3 px-4 text-gray-700">Open cut</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Soil disposal</td>
+                    <td class="py-3 px-4 text-gray-700">$35-60/m³</td>
+                    <td class="py-3 px-4 text-gray-700">$4,000-7,000</td>
+                    <td class="py-3 px-4 text-gray-700">Clean soil</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Shoring</td>
+                    <td class="py-3 px-4 text-gray-700">$300-500/m²</td>
+                    <td class="py-3 px-4 text-gray-700">$15,000-25,000</td>
+                    <td class="py-3 px-4 text-gray-700">If required</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Dewatering</td>
+                    <td class="py-3 px-4 text-gray-700">$500-1500/day</td>
+                    <td class="py-3 px-4 text-gray-700">$5,000-15,000</td>
+                    <td class="py-3 px-4 text-gray-700">If water table</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Granular backfill</td>
+                    <td class="py-3 px-4 text-gray-700">$45-65/m³</td>
+                    <td class="py-3 px-4 text-gray-700">$2,000-3,000</td>
+                    <td class="py-3 px-4 text-gray-700">Delivered</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Compaction</td>
+                    <td class="py-3 px-4 text-gray-700">$5-10/m³</td>
+                    <td class="py-3 px-4 text-gray-700">$500-1,000</td>
+                    <td class="py-3 px-4 text-gray-700">Testing extra</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="py-3 px-4 font-semibold text-gray-900">Total Range</td>
+                    <td class="py-3 px-4 font-semibold text-gray-900">-</td>
+                    <td class="py-3 px-4 font-semibold text-gray-900">$15,000-60,000</td>
+                    <td class="py-3 px-4 text-gray-700">Varies greatly</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Excavation Success = Planning + Safety</h2>
+            <p class="text-gray-700 mb-4">
+              Every excavation collapse is preventable. Every utility strike is avoidable. Every settlement failure 
+              can be prevented. The difference between a successful excavation and a disaster is planning, proper 
+              shoring, and never taking shortcuts on safety.
+            </p>
+            <p class="text-gray-700 mb-4">
+              In Toronto's challenging soils - clay that swells, high water tables, unknown fill - assume the worst 
+              and protect accordingly. The cost of proper shoring is nothing compared to a collapse. The time for 
+              utility locates is nothing compared to hitting a gas line. The effort of proper compaction is nothing 
+              compared to settlement lawsuits.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, safety isn't negotiable. Every excavation is properly shored or sloped. Every 
+              locate is verified by hand digging. Every backfill is compacted and tested. Because in excavation, 
+              there are no second chances - you either do it right or someone gets hurt.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Safe, Professional Excavation?</h3>
+            <p class="text-lg mb-6">
+              Proper shoring, engineered solutions, zero compromise on safety
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

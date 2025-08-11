@@ -1,0 +1,265 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { MapPin, Calendar } from 'lucide-astro';
+
+const projects = [
+  {
+    category: "Driveways",
+    projects: [
+      {
+        title: "Stamped Driveway - Forest Hill",
+        location: "Forest Hill, Toronto",
+        date: "October 2024",
+        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+        description: "Ashlar slate pattern with charcoal release"
+      },
+      {
+        title: "Exposed Aggregate - Rosedale",
+        location: "Rosedale, Toronto",
+        date: "September 2024",
+        image: "https://images.unsplash.com/photo-1587582423116-ec07293f0395?w=600",
+        description: "River rock aggregate with salt finish borders"
+      },
+      {
+        title: "Heated Driveway - Yorkville",
+        location: "Yorkville, Toronto",
+        date: "August 2024",
+        image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600",
+        description: "Broom finish with integrated heating system"
+      }
+    ]
+  },
+  {
+    category: "Patios",
+    projects: [
+      {
+        title: "Pool Deck - North York",
+        location: "North York, Toronto",
+        date: "July 2024",
+        image: "https://images.unsplash.com/photo-1572297894736-0e3c8927883f?w=600",
+        description: "Non-slip texture with coping stones"
+      },
+      {
+        title: "Backyard Patio - High Park",
+        location: "High Park, Toronto",
+        date: "June 2024",
+        image: "https://images.unsplash.com/photo-1584738766473-61c083514bf4?w=600",
+        description: "Stamped concrete with fire pit area"
+      },
+      {
+        title: "Garden Walkway - Beaches",
+        location: "The Beaches, Toronto",
+        date: "May 2024",
+        image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+        description: "Curved walkway with decorative borders"
+      }
+    ]
+  },
+  {
+    category: "Foundations",
+    projects: [
+      {
+        title: "Foundation Waterproofing - Yorkville",
+        location: "Yorkville, Toronto",
+        date: "October 2024",
+        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600",
+        description: "Complete exterior waterproofing system"
+      },
+      {
+        title: "Basement Underpinning - Riverdale",
+        location: "Riverdale, Toronto",
+        date: "September 2024",
+        image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600",
+        description: "Lowered basement floor by 2 feet"
+      },
+      {
+        title: "Crack Repair - Etobicoke",
+        location: "Etobicoke, Toronto",
+        date: "August 2024",
+        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600",
+        description: "Injection repair with lifetime warranty"
+      }
+    ]
+  },
+  {
+    category: "Repairs",
+    projects: [
+      {
+        title: "Sidewalk Lifting - Downtown",
+        location: "Downtown Toronto",
+        date: "October 2024",
+        image: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600",
+        description: "Mudjacking to level trip hazard"
+      },
+      {
+        title: "Driveway Crack Repair - Scarborough",
+        location: "Scarborough, Toronto",
+        date: "September 2024",
+        image: "https://images.unsplash.com/photo-1621905251189-08b45d6a269e?w=600",
+        description: "Professional crack sealing"
+      },
+      {
+        title: "Garage Floor Resurfacing - Markham",
+        location: "Markham, ON",
+        date: "August 2024",
+        image: "https://images.unsplash.com/photo-1565610222536-ef125c59da2e?w=600",
+        description: "Epoxy coating over repaired surface"
+      }
+    ]
+  }
+];
+---
+
+<Layout title="Project Gallery | Our Work | Toronto Concrete">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Project Gallery
+          </h1>
+          <p class="text-xl text-gray-600">
+            Browse our recent concrete projects across Toronto and the GTA
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="py-8 bg-white border-b border-gray-200">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap gap-3 justify-center">
+          <button data-filter="all" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 hover:border-red-600 hover:bg-red-600 hover:text-white transition-colors active">
+            All Projects
+          </button>
+          <button data-filter="Driveways" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 hover:border-red-600 hover:bg-red-600 hover:text-white transition-colors">
+            Driveways
+          </button>
+          <button data-filter="Patios" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 hover:border-red-600 hover:bg-red-600 hover:text-white transition-colors">
+            Patios
+          </button>
+          <button data-filter="Foundations" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 hover:border-red-600 hover:bg-red-600 hover:text-white transition-colors">
+            Foundations
+          </button>
+          <button data-filter="Repairs" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-300 hover:border-red-600 hover:bg-red-600 hover:text-white transition-colors">
+            Repairs
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        {projects.map((category) => (
+          <div data-category={category.category} class="category-section mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-red-600">
+              {category.category}
+            </h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {category.projects.map((project) => (
+                <div class="group relative bg-white rounded-lg overflow-hidden shadow-md hover:shadow-xl transition-shadow">
+                  <div class="aspect-video overflow-hidden">
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                  </div>
+                  <div class="p-5">
+                    <h3 class="font-bold text-gray-900 mb-2">{project.title}</h3>
+                    <p class="text-sm text-gray-600 mb-3">{project.description}</p>
+                    <div class="flex items-center gap-4 text-xs text-gray-500">
+                      <div class="flex items-center gap-1">
+                        <MapPin class="w-4 h-4" />
+                        <span>{project.location}</span>
+                      </div>
+                      <div class="flex items-center gap-1">
+                        <Calendar class="w-4 h-4" />
+                        <span>{project.date}</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        ))}
+
+        <!-- Stats -->
+        <div class="bg-gray-50 rounded-lg p-8 mt-12">
+          <div class="grid md:grid-cols-4 gap-6 text-center">
+            <div>
+              <div class="text-3xl font-bold text-red-600 mb-1">5000+</div>
+              <p class="text-gray-600">Projects Completed</p>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-red-600 mb-1">39</div>
+              <p class="text-gray-600">Years Experience</p>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-red-600 mb-1">100%</div>
+              <p class="text-gray-600">Satisfaction Rate</p>
+            </div>
+            <div>
+              <div class="text-3xl font-bold text-red-600 mb-1">25</div>
+              <p class="text-gray-600">Year Warranty</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="bg-red-600 text-white rounded-lg p-8 mt-12 text-center">
+          <h2 class="text-3xl font-bold mb-4">Like What You See?</h2>
+          <p class="text-xl mb-8">
+            Let's discuss your concrete project. Free quotes, no obligations.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4 justify-center">
+            <a href="tel:416-555-0199" class="bg-white text-red-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+              Call: (416) 555-0199
+            </a>
+            <a href="/get-quote" class="bg-red-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-800 transition-colors">
+              Get Free Quote
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>
+
+<script>
+  // Filter functionality
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const categorySections = document.querySelectorAll('.category-section');
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const filter = btn.getAttribute('data-filter');
+      
+      // Update active button
+      filterBtns.forEach(b => b.classList.remove('bg-red-600', 'text-white', 'border-red-600'));
+      btn.classList.add('bg-red-600', 'text-white', 'border-red-600');
+      
+      // Show/hide categories
+      categorySections.forEach(section => {
+        const category = section.getAttribute('data-category');
+        if (filter === 'all' || category === filter) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  });
+  
+  // Set initial state
+  filterBtns[0]?.classList.add('bg-red-600', 'text-white', 'border-red-600');
+</script>

@@ -1,0 +1,179 @@
+---
+import { Phone, Mail, MapPin, Clock } from 'lucide-astro';
+---
+
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Get Your Free Quote
+        </h2>
+        <p class="text-lg text-gray-600">
+          Contact us today for a free, no-obligation estimate
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Form -->
+        <div class="bg-white rounded-lg shadow-md p-8">
+          <h3 class="text-xl font-bold text-gray-900 mb-6">Request a Quote</h3>
+          <form class="space-y-4">
+            <div>
+              <label for="name" class="block text-sm font-medium text-gray-700 mb-1">
+                Your Name *
+              </label>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              />
+            </div>
+            
+            <div>
+              <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">
+                Phone Number *
+              </label>
+              <input 
+                type="tel" 
+                id="phone" 
+                name="phone" 
+                required
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              />
+            </div>
+            
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700 mb-1">
+                Email Address
+              </label>
+              <input 
+                type="email" 
+                id="email" 
+                name="email"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              />
+            </div>
+            
+            <div>
+              <label for="service" class="block text-sm font-medium text-gray-700 mb-1">
+                Service Needed
+              </label>
+              <select 
+                id="service" 
+                name="service"
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              >
+                <option value="">Select a service...</option>
+                <option>Driveway</option>
+                <option>Patio/Walkway</option>
+                <option>Foundation</option>
+                <option>Garage Floor</option>
+                <option>Repairs</option>
+                <option>Other</option>
+              </select>
+            </div>
+            
+            <div>
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1">
+                Project Details
+              </label>
+              <textarea 
+                id="message" 
+                name="message" 
+                rows="4"
+                placeholder="Tell us about your project..."
+                class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500"
+              ></textarea>
+            </div>
+            
+            <button 
+              type="submit"
+              class="w-full bg-red-600 text-white py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors"
+            >
+              Send Quote Request
+            </button>
+            
+            <p class="text-xs text-gray-600 text-center">
+              We'll call you within 24 hours to schedule a free on-site consultation
+            </p>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div>
+          <!-- Direct Contact -->
+          <div class="bg-white rounded-lg shadow-md p-8 mb-6">
+            <h3 class="text-xl font-bold text-gray-900 mb-6">Prefer to Call?</h3>
+            
+            <div class="space-y-4">
+              <a href="tel:4375450067" class="flex items-start gap-4 group">
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-red-600 transition-colors">
+                  <Phone class="w-6 h-6 text-red-600 group-hover:text-white" />
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900">(437) 545-0067</p>
+                  <p class="text-sm text-gray-600">Mon-Sat 7AM-6PM</p>
+                  <p class="text-sm text-gray-600">Emergency service available</p>
+                </div>
+              </a>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <Mail class="w-6 h-6 text-gray-600" />
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900">info@imperialform.ca</p>
+                  <p class="text-sm text-gray-600">We respond within 24 hours</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <MapPin class="w-6 h-6 text-gray-600" />
+                </div>
+                <div>
+                  <p class="font-semibold text-gray-900">Serving All GTA</p>
+                  <p class="text-sm text-gray-600">Toronto, North York, Scarborough,</p>
+                  <p class="text-sm text-gray-600">Etobicoke, Mississauga, Brampton,</p>
+                  <p class="text-sm text-gray-600">Vaughan, Richmond Hill, Markham</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Why Choose Us Box -->
+          <div class="bg-red-50 rounded-lg p-6 border-2 border-red-200">
+            <h4 class="font-bold text-gray-900 mb-3">What Happens Next?</h4>
+            <ol class="space-y-2 text-sm text-gray-700">
+              <li class="flex gap-2">
+                <span class="font-bold text-red-600">1.</span>
+                We'll call you within 24 hours to discuss your project
+              </li>
+              <li class="flex gap-2">
+                <span class="font-bold text-red-600">2.</span>
+                Schedule a free on-site consultation at your convenience
+              </li>
+              <li class="flex gap-2">
+                <span class="font-bold text-red-600">3.</span>
+                Receive a detailed written quote with no hidden fees
+              </li>
+              <li class="flex gap-2">
+                <span class="font-bold text-red-600">4.</span>
+                No pressure - take your time to decide
+              </li>
+            </ol>
+          </div>
+
+          <!-- Map placeholder -->
+          <div class="mt-6 bg-gray-200 rounded-lg h-48 flex items-center justify-center">
+            <p class="text-gray-600">Serving Toronto & Greater Toronto Area</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

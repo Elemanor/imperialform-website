@@ -1,0 +1,377 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Phone, Mail, MapPin, Clock, MessageSquare, Truck, HardHat, AlertCircle } from 'lucide-astro';
+---
+
+<Layout title="Contact Toronto Concrete | Free Estimates & 24/7 Emergency">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Contact Toronto Concrete
+          </h1>
+          <p class="text-xl text-gray-600">
+            Free estimates, 24/7 emergency service, and expert concrete solutions since 1985
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Options -->
+    <section class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-3 gap-8">
+          <!-- Quick Contact -->
+          <div class="lg:col-span-1">
+            <div class="bg-white rounded-lg p-8 border border-gray-200 sticky top-24">
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">Quick Contact</h2>
+              
+              <div class="space-y-6">
+                <div>
+                  <div class="flex items-center gap-3 mb-2">
+                    <Phone class="w-5 h-5 text-red-600" />
+                    <h3 class="font-semibold text-gray-900">Phone</h3>
+                  </div>
+                  <a href="tel:416-555-0199" class="text-xl text-red-600 hover:text-red-700 font-semibold">
+                    (416) 555-0199
+                  </a>
+                  <p class="text-sm text-gray-600 mt-1">24/7 Emergency Service Available</p>
+                </div>
+
+                <div>
+                  <div class="flex items-center gap-3 mb-2">
+                    <Mail class="w-5 h-5 text-red-600" />
+                    <h3 class="font-semibold text-gray-900">Email</h3>
+                  </div>
+                  <a href="mailto:info@torontoconcrete.ca" class="text-gray-700 hover:text-red-600">
+                    info@torontoconcrete.ca
+                  </a>
+                  <p class="text-sm text-gray-600 mt-1">Response within 2 hours</p>
+                </div>
+
+                <div>
+                  <div class="flex items-center gap-3 mb-2">
+                    <MapPin class="w-5 h-5 text-red-600" />
+                    <h3 class="font-semibold text-gray-900">Service Area</h3>
+                  </div>
+                  <p class="text-gray-700">Toronto & GTA</p>
+                  <p class="text-sm text-gray-600 mt-1">
+                    Etobicoke, North York, Scarborough, East York, York, Downtown
+                  </p>
+                </div>
+
+                <div>
+                  <div class="flex items-center gap-3 mb-2">
+                    <Clock class="w-5 h-5 text-red-600" />
+                    <h3 class="font-semibold text-gray-900">Business Hours</h3>
+                  </div>
+                  <div class="text-gray-700 space-y-1">
+                    <p>Mon-Fri: 7:00 AM - 6:00 PM</p>
+                    <p>Saturday: 8:00 AM - 4:00 PM</p>
+                    <p>Sunday: Emergency Only</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Emergency Notice -->
+              <div class="mt-6 p-4 bg-red-50 rounded-lg border border-red-200">
+                <div class="flex items-start gap-3">
+                  <AlertCircle class="w-5 h-5 text-red-600 mt-0.5" />
+                  <div>
+                    <p class="font-semibold text-gray-900">Emergency Service</p>
+                    <p class="text-sm text-gray-700 mt-1">
+                      Foundation failures, water damage, structural issues - call immediately
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="lg:col-span-2">
+            <div class="bg-white rounded-lg p-8 border border-gray-200">
+              <h2 class="text-2xl font-bold text-gray-900 mb-6">Get Your Free Estimate</h2>
+              <p class="text-gray-600 mb-8">
+                Fill out the form below and we'll contact you within 2 hours to discuss your project
+              </p>
+
+              <form class="space-y-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="firstName" class="block text-sm font-semibold text-gray-700 mb-2">
+                      First Name *
+                    </label>
+                    <input 
+                      type="text" 
+                      id="firstName" 
+                      name="firstName"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label for="lastName" class="block text-sm font-semibold text-gray-700 mb-2">
+                      Last Name *
+                    </label>
+                    <input 
+                      type="text" 
+                      id="lastName" 
+                      name="lastName"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                  <div>
+                    <label for="email" class="block text-sm font-semibold text-gray-700 mb-2">
+                      Email *
+                    </label>
+                    <input 
+                      type="email" 
+                      id="email" 
+                      name="email"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                    />
+                  </div>
+                  <div>
+                    <label for="phone" class="block text-sm font-semibold text-gray-700 mb-2">
+                      Phone *
+                    </label>
+                    <input 
+                      type="tel" 
+                      id="phone" 
+                      name="phone"
+                      required
+                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label for="address" class="block text-sm font-semibold text-gray-700 mb-2">
+                    Project Address
+                  </label>
+                  <input 
+                    type="text" 
+                    id="address" 
+                    name="address"
+                    placeholder="Street address, Toronto, ON"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                  />
+                </div>
+
+                <div>
+                  <label for="projectType" class="block text-sm font-semibold text-gray-700 mb-2">
+                    Project Type *
+                  </label>
+                  <select 
+                    id="projectType" 
+                    name="projectType"
+                    required
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                  >
+                    <option value="">Select a project type</option>
+                    <option value="foundation">Foundation (New or Repair)</option>
+                    <option value="driveway">Driveway</option>
+                    <option value="patio">Patio/Walkway</option>
+                    <option value="slab">Concrete Slab</option>
+                    <option value="formwork">Formwork</option>
+                    <option value="repair">Concrete Repair</option>
+                    <option value="waterproofing">Waterproofing</option>
+                    <option value="emergency">Emergency Service</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="timeline" class="block text-sm font-semibold text-gray-700 mb-2">
+                    Project Timeline
+                  </label>
+                  <select 
+                    id="timeline" 
+                    name="timeline"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                  >
+                    <option value="">Select timeline</option>
+                    <option value="emergency">Emergency - ASAP</option>
+                    <option value="week">Within 1 week</option>
+                    <option value="month">Within 1 month</option>
+                    <option value="planning">Planning stage (2-3 months)</option>
+                    <option value="quote">Just getting quotes</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block text-sm font-semibold text-gray-700 mb-2">
+                    Project Details *
+                  </label>
+                  <textarea 
+                    id="message" 
+                    name="message"
+                    rows="5"
+                    required
+                    placeholder="Please describe your project, including dimensions if known, any specific requirements, and current issues if this is a repair..."
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                  ></textarea>
+                </div>
+
+                <div>
+                  <label for="referral" class="block text-sm font-semibold text-gray-700 mb-2">
+                    How did you hear about us?
+                  </label>
+                  <select 
+                    id="referral" 
+                    name="referral"
+                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-600 focus:border-transparent"
+                  >
+                    <option value="">Select an option</option>
+                    <option value="google">Google Search</option>
+                    <option value="referral">Friend/Family Referral</option>
+                    <option value="previous">Previous Customer</option>
+                    <option value="truck">Saw Our Trucks</option>
+                    <option value="social">Social Media</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div class="flex items-start gap-3">
+                  <input 
+                    type="checkbox" 
+                    id="consent" 
+                    name="consent"
+                    required
+                    class="mt-1"
+                  />
+                  <label for="consent" class="text-sm text-gray-600">
+                    I consent to Toronto Concrete contacting me about my project inquiry via phone, email, or text message. 
+                    I understand I can opt out at any time.
+                  </label>
+                </div>
+
+                <button 
+                  type="submit"
+                  class="w-full px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors text-lg"
+                >
+                  Get Free Estimate
+                </button>
+
+                <p class="text-sm text-gray-600 text-center">
+                  * Required fields. We'll respond within 2 business hours.
+                </p>
+              </form>
+            </div>
+
+            <!-- Additional Contact Methods -->
+            <div class="grid md:grid-cols-3 gap-6 mt-8">
+              <div class="bg-white rounded-lg p-6 border border-gray-200 text-center">
+                <MessageSquare class="w-10 h-10 text-red-600 mx-auto mb-3" />
+                <h3 class="font-semibold text-gray-900 mb-2">Text Us</h3>
+                <p class="text-gray-600 text-sm">
+                  Send photos of your project for quick estimates
+                </p>
+                <a href="sms:416-555-0199" class="text-red-600 hover:text-red-700 font-semibold mt-2 inline-block">
+                  (416) 555-0199
+                </a>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200 text-center">
+                <Truck class="w-10 h-10 text-red-600 mx-auto mb-3" />
+                <h3 class="font-semibold text-gray-900 mb-2">On-Site Estimates</h3>
+                <p class="text-gray-600 text-sm">
+                  Free detailed estimates at your location
+                </p>
+                <p class="text-gray-700 font-semibold mt-2">
+                  Available Mon-Sat
+                </p>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200 text-center">
+                <HardHat class="w-10 h-10 text-red-600 mx-auto mb-3" />
+                <h3 class="font-semibold text-gray-900 mb-2">Contractor Direct</h3>
+                <p class="text-gray-600 text-sm">
+                  Builders & contractors call for volume pricing
+                </p>
+                <a href="tel:416-555-0188" class="text-red-600 hover:text-red-700 font-semibold mt-2 inline-block">
+                  (416) 555-0188
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Areas Map Section -->
+    <section class="py-12 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-2xl font-bold text-gray-900 mb-8 text-center">Service Areas</h2>
+        
+        <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+          <div>
+            <h3 class="font-bold text-gray-900 mb-4">Primary Service Areas</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>• Downtown Toronto</li>
+              <li>• North York</li>
+              <li>• Scarborough</li>
+              <li>• Etobicoke</li>
+              <li>• East York</li>
+              <li>• York</li>
+              <li>• Toronto Islands</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h3 class="font-bold text-gray-900 mb-4">Extended Service Areas</h3>
+            <ul class="space-y-2 text-gray-700">
+              <li>• Mississauga</li>
+              <li>• Brampton</li>
+              <li>• Vaughan</li>
+              <li>• Richmond Hill</li>
+              <li>• Markham</li>
+              <li>• Pickering</li>
+              <li>• Ajax</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="text-center mt-8">
+          <p class="text-gray-600">
+            Don't see your area? Call us - we may still be able to help with your project.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gray-900">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold text-white mb-4">
+          Ready to Start Your Concrete Project?
+        </h2>
+        <p class="text-xl text-gray-300 mb-8">
+          39 years of experience • Licensed & insured • 25-year warranty
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+          <a href="tel:416-555-0199" class="inline-block px-8 py-4 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors text-lg">
+            Call Now: (416) 555-0199
+          </a>
+          <a href="#contact-form" class="inline-block px-8 py-4 bg-white text-gray-900 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-lg">
+            Get Online Quote
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <Footer />
+</Layout>

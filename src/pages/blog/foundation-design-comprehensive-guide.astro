@@ -1,0 +1,873 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import Navigation from '@/components/Navigation.astro';
+import Footer from '@/components/Footer.astro';
+import { Foundation, AlertTriangle, Shield } from 'lucide-astro';
+---
+
+<Layout title="Foundation Design Complete Guide | OBC 9.15 Requirements">
+  <Navigation />
+  
+  <main>
+    <!-- Hero Section -->
+    <section class="bg-gray-100 pt-24 pb-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl">
+          <div class="flex items-center gap-2 text-sm text-gray-600 mb-4">
+            <a href="/" class="hover:text-red-600">Home</a>
+            <span>/</span>
+            <a href="/blog" class="hover:text-red-600">Blog</a>
+            <span>/</span>
+            <span>Foundation Design</span>
+          </div>
+          <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+            Complete Foundation Design Guide: Soil, Structure & Code Requirements
+          </h1>
+          <p class="text-xl text-gray-600">
+            Master OBC Part 9.15 requirements for footings and foundations in residential construction
+          </p>
+          <div class="flex items-center gap-4 mt-4 text-sm text-gray-500">
+            <span>Published: January 2024</span>
+            <span>•</span>
+            <span>22 min read</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <article class="py-12">
+      <div class="container mx-auto px-4">
+        <div class="max-w-4xl mx-auto">
+          <!-- Introduction -->
+          <div class="prose prose-lg max-w-none mb-12">
+            <p class="text-xl text-gray-700 mb-8">
+              Foundation failure is catastrophic. There's no partial failure, no warning signs - when a foundation 
+              goes, everything above comes with it. After 39 years of building foundations in Toronto's challenging 
+              soils, we've learned that success starts with understanding soil bearing capacity, structural loads, 
+              and the critical interplay between water, frost, and earth pressure. Here's your comprehensive guide 
+              to OBC Part 9.15 requirements for residential footings and foundations.
+            </p>
+
+            <div class="bg-blue-50 rounded-lg p-6 mb-8 border-2 border-blue-400">
+              <h3 class="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Foundation class="w-5 h-5 text-blue-600" />
+                OBC Part 9.15 Application
+              </h3>
+              <p class="text-gray-700 mb-3">
+                Section 9.15 applies to foundations that meet ALL these conditions:
+              </p>
+              <ul class="space-y-1 text-gray-700">
+                <li>• Soil bearing capacity: minimum 75 kPa (1,500 psf)</li>
+                <li>• Building type: light-frame or flat ICF construction</li>
+                <li>• Maximum 2 storeys with 3m floor-to-floor height</li>
+                <li>• Earth pressure: equivalent to 480 kg/m³ fluid density</li>
+                <li>• Well-drained conditions (no hydrostatic pressure)</li>
+              </ul>
+              <p class="text-gray-700 mt-3">
+                <strong>Beyond these limits:</strong> Part 4 engineering required
+              </p>
+            </div>
+          </div>
+
+          <!-- Soil Bearing Capacity -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              Critical Soil Bearing Requirements
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Soil Types and Bearing Capacity</h3>
+              
+              <div class="bg-white rounded-lg overflow-hidden border border-gray-200 mb-6">
+                <table class="w-full">
+                  <thead class="bg-gray-100">
+                    <tr>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Soil Type</th>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Bearing Capacity</th>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Footing Adjustment</th>
+                      <th class="text-left py-3 px-4 font-semibold text-gray-900">Design Method</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-gray-200">
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">Stable soil/rock</td>
+                      <td class="py-3 px-4 text-gray-700">≥75 kPa</td>
+                      <td class="py-3 px-4 text-gray-700">Use Table 9.15.3.4</td>
+                      <td class="py-3 px-4 text-gray-700">Part 9</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">Loose sand/gravel</td>
+                      <td class="py-3 px-4 text-gray-700">50 kPa</td>
+                      <td class="py-3 px-4 text-gray-700">50% larger footings</td>
+                      <td class="py-3 px-4 text-gray-700">Section 9.4 or Part 4</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">Soft clay</td>
+                      <td class="py-3 px-4 text-gray-700">40 kPa</td>
+                      <td class="py-3 px-4 text-gray-700">2× larger footings</td>
+                      <td class="py-3 px-4 text-gray-700">Section 9.4 or Part 4</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">Fill/organic</td>
+                      <td class="py-3 px-4 text-gray-700">Variable</td>
+                      <td class="py-3 px-4 text-gray-700">Engineering required</td>
+                      <td class="py-3 px-4 text-gray-700">Part 4 only</td>
+                    </tr>
+                    <tr>
+                      <td class="py-3 px-4 text-gray-700">Permafrost</td>
+                      <td class="py-3 px-4 text-gray-700">Special</td>
+                      <td class="py-3 px-4 text-gray-700">Special design</td>
+                      <td class="py-3 px-4 text-gray-700">Part 4 only</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-400">
+                <p class="text-gray-700">
+                  <strong>Toronto Clay Reality:</strong> Much of Toronto sits on Leda clay with bearing capacity 
+                  of 40-60 kPa. This means many sites require either larger footings or engineered design. 
+                  Always get a geotechnical report - the $2,500 investment prevents $50,000+ failures.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Structural Loads -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">
+              <Shield class="inline w-6 h-6 text-red-600 mr-2" />
+              Understanding Foundation Loads
+            </h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Forces Acting on Foundations</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Vertical Loads:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Dead load (structure weight)</li>
+                    <li>• Live load (occupants/contents)</li>
+                    <li>• Snow load (roof)</li>
+                    <li>• Foundation self-weight</li>
+                    <li>• Transfer from superstructure</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Lateral Forces:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Earth pressure (480 kg/m³)</li>
+                    <li>• Hydrostatic pressure if present</li>
+                    <li>• Wind loads transferred</li>
+                    <li>• Earthquake loads</li>
+                    <li>• Frost action/adfreezing</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-gray-50 rounded-lg p-6 mt-6">
+                <h4 class="font-semibold text-gray-900 mb-3">Earth Pressure Calculation:</h4>
+                <p class="text-gray-700 mb-2">
+                  OBC assumes earth pressure equivalent to fluid with 480 kg/m³ density:
+                </p>
+                <ul class="space-y-1 text-gray-700">
+                  <li>• At 1m depth: 4.7 kPa</li>
+                  <li>• At 2m depth: 9.4 kPa</li>
+                  <li>• At 2.4m depth: 11.3 kPa</li>
+                  <li>• Compare to water: 9.8 kPa/m</li>
+                </ul>
+                <p class="text-gray-700 mt-3">
+                  <strong>Critical:</strong> This assumes well-drained conditions. With hydrostatic pressure, 
+                  forces double and Part 4 design is required.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Foundation Types -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Foundation Types Covered by Part 9</h2>
+            
+            <div class="space-y-6">
+              <!-- Concrete Foundations -->
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">1. Concrete Foundations (9.15.2.1)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Comply with Section 9.3.1</li>
+                      <li>• Minimum 15 MPa strength</li>
+                      <li>• 25 MPa for garage/exterior</li>
+                      <li>• Protection during curing</li>
+                      <li>• Forms remain until set</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Critical Details:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Keep moist after form removal</li>
+                      <li>• No freezing during cure</li>
+                      <li>• Protect from rain</li>
+                      <li>• Air entrainment for exterior</li>
+                      <li>• Proper consolidation</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Unit Masonry -->
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">2. Unit Masonry Construction (9.15.2.2)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Block Requirements:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• 15 MPa compressive strength</li>
+                      <li>• Over net cross-section</li>
+                      <li>• Type S or N mortar</li>
+                      <li>• Cores vertical</li>
+                      <li>• Grouted if reinforced</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Installation:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Full mortar coverage</li>
+                      <li>• No freezing 24 hours</li>
+                      <li>• Reinforcement centered</li>
+                      <li>• Grout consolidation</li>
+                      <li>• Proper curing conditions</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Pier Foundations -->
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">3. Pier-Type Foundations (9.15.2.3)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Limitations:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• One-storey buildings only</li>
+                      <li>• 3.5m maximum spacing</li>
+                      <li>• Height ≤ 3× base width</li>
+                      <li>• 150-250mm circular typical</li>
+                      <li>• 190-290mm block piers</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Frost Protection:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Below frost line</li>
+                      <li>• Anchored to footing</li>
+                      <li>• Granular backfill</li>
+                      <li>• Slip plane if needed</li>
+                      <li>• Reinforced for tension</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Wood Frame -->
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">4. Wood-Frame Foundations (9.15.2.4)</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Requirements:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Comply with CSA S406</li>
+                      <li>• PWF/FBT certified lumber</li>
+                      <li>• Preservative treated</li>
+                      <li>• 75 kPa soil minimum</li>
+                      <li>• Granular drainage layer</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Design Assumptions:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Floor spans ≤8m</li>
+                      <li>• Live load 1.9 kPa</li>
+                      <li>• Stud length ≤3.6m</li>
+                      <li>• Earth pressure 4.7 kPa/m</li>
+                      <li>• Snow load ≤4 kPa</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Flat ICF -->
+              <div class="bg-gray-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-4">5. Flat ICF Foundation Walls</h3>
+                <div class="grid md:grid-cols-2 gap-4">
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Description:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Concrete cast in polystyrene</li>
+                      <li>• Forms remain in place</li>
+                      <li>• Uniform wall thickness</li>
+                      <li>• Integrated insulation</li>
+                      <li>• Single dwelling units only</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-900 mb-2">Limitations:</h4>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Maximum 2 storeys</li>
+                      <li>• 3m floor-to-floor max</li>
+                      <li>• 75 kPa soil minimum</li>
+                      <li>• No surcharge loads</li>
+                      <li>• Stable soil required</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Moisture Control -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Moisture and Water Control</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Foundation Moisture Protection Requirements</h3>
+              
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Dampproofing (Section 9.13):</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Required for all below-grade walls</li>
+                    <li>• Extends from footing to finished grade</li>
+                    <li>• Bituminous coating or membrane</li>
+                    <li>• Protection board recommended</li>
+                    <li>• Drainage layer required</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Waterproofing (When Required):</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• High water table conditions</li>
+                    <li>• Hydrostatic pressure present</li>
+                    <li>• Poor drainage conditions</li>
+                    <li>• Membrane systems required</li>
+                    <li>• Part 4 design typically needed</li>
+                  </ul>
+                </div>
+
+                <div class="bg-red-50 rounded-lg p-4 border border-red-400">
+                  <p class="text-gray-700">
+                    <strong>Critical:</strong> Part 9 assumes well-drained conditions with earth pressure of 
+                    480 kg/m³. If water table rises creating hydrostatic pressure (1000 kg/m³), the foundation 
+                    walls are over-stressed and will fail. Proper drainage is not optional.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Thermal Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Thermal Insulation Requirements</h2>
+            
+            <div class="bg-white rounded-lg p-8 border border-gray-200">
+              <h3 class="font-bold text-gray-900 mb-4">Foundation Insulation Objectives</h3>
+              
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Code Minimums Address:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Prevention of surface condensation</li>
+                    <li>• Occupant comfort conditions</li>
+                    <li>• Minimum thermal resistance</li>
+                    <li>• Thermal bridge prevention</li>
+                  </ul>
+                </div>
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Energy Code Adds:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Higher R-values required</li>
+                    <li>• Full-height insulation</li>
+                    <li>• Slab edge insulation</li>
+                    <li>• Continuous air barriers</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-4 mt-6">
+                <p class="text-gray-700">
+                  <strong>Toronto Practice:</strong> While OBC addresses condensation, most builders install 
+                  RSI 2.98 (R-17) minimum for energy efficiency. Full-height interior insulation with vapor 
+                  barrier is standard for finished basements.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Soil Gas Protection -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Soil Gas Protection Requirements</h2>
+            
+            <div class="bg-white rounded-lg p-8 border-2 border-gray-300">
+              <h3 class="font-bold text-gray-900 mb-4">Foundation Soil Gas Control (Section 9.13.4)</h3>
+              
+              <div class="space-y-6">
+                <div>
+                  <h4 class="font-semibold text-gray-900 mb-3">Required Elements:</h4>
+                  <ul class="space-y-2 text-gray-700">
+                    <li>• Drainage layer abutting foundation for venting</li>
+                    <li>• Continuous air barrier system (Section 9.25.3)</li>
+                    <li>• Sealed to basement floor air barrier</li>
+                    <li>• All penetrations sealed</li>
+                    <li>• Sub-slab depressurization roughed-in</li>
+                  </ul>
+                </div>
+
+                <div class="bg-yellow-50 rounded-lg p-4 border border-yellow-400">
+                  <p class="text-gray-700">
+                    <strong>Radon Note:</strong> Toronto has moderate radon potential. Install passive system 
+                    (sealed slab, granular layer, capped pipe) during construction. Converting to active system 
+                    later costs 5× more than roughing-in now.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Common Problems -->
+          <div class="bg-red-50 rounded-lg p-8 mb-12 border-2 border-red-200">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6 flex items-center gap-2">
+              <AlertTriangle class="w-6 h-6 text-red-600" />
+              Critical Foundation Failures to Avoid
+            </h2>
+            
+            <div class="space-y-4">
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Undersized Footings on Poor Soil</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Using Table 9.15.3.4 sizes on soil with <75 kPa capacity
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Always verify soil bearing capacity. For 50 kPa soil, increase 
+                  footing size by 50%. For 40 kPa, double the size or use engineered design.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Hydrostatic Pressure on Standard Walls</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Water table rise creates pressure double the design capacity
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Install proper drainage. If high water table possible, use Part 4 
+                  design with reinforced walls and waterproofing.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Frost Action on Piers</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Adfreezing lifts piers even when below frost line
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Anchor piers to footings, reinforce for tension, backfill with 
+                  granular material, or wrap with polyethylene slip plane.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Fill Settlement</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Building on uncontrolled fill causes differential settlement
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Never use Part 9 on fill. Require geotechnical investigation and 
+                  Part 4 engineered design. Consider deep foundations.
+                </p>
+              </div>
+
+              <div>
+                <h3 class="font-bold text-gray-900 mb-2">Inadequate Curing</h3>
+                <p class="text-gray-700 mb-2">
+                  <strong>Problem:</strong> Concrete frozen or dried during curing, doesn't reach strength
+                </p>
+                <p class="text-gray-700">
+                  <strong>Solution:</strong> Protect from freezing 72 hours minimum. Keep moist 7 days. 
+                  Leave forms in place until set. Never pour on frozen ground.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footing Size Requirements -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">OBC Table 9.15.3.4 Footing Sizes</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <h3 class="text-lg font-bold text-gray-900 p-4 bg-gray-50">Minimum Footing Sizes for 75 kPa Soil</h3>
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Supported Load</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Strip Footing Width</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Column Footing</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Thickness</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Exterior wall, 1 storey</td>
+                    <td class="py-3 px-4 text-gray-700">250mm (10")</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Exterior wall, 2 storey</td>
+                    <td class="py-3 px-4 text-gray-700">350mm (14")</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Interior wall, 1 storey</td>
+                    <td class="py-3 px-4 text-gray-700">200mm (8")</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                    <td class="py-3 px-4 text-gray-700">100mm (4")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Interior wall, 2 storey</td>
+                    <td class="py-3 px-4 text-gray-700">300mm (12")</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                    <td class="py-3 px-4 text-gray-700">150mm (6")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Column, 1 storey</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                    <td class="py-3 px-4 text-gray-700">600×600mm</td>
+                    <td class="py-3 px-4 text-gray-700">200mm (8")</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Column, 2 storey</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                    <td class="py-3 px-4 text-gray-700">750×750mm</td>
+                    <td class="py-3 px-4 text-gray-700">200mm (8")</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <div class="bg-yellow-50 rounded-lg p-4 mt-4 border border-yellow-400">
+              <p class="text-gray-700">
+                <strong>Adjustment for Poor Soil:</strong> For 50 kPa soil, multiply dimensions by 1.5. 
+                For 40 kPa soil, multiply by 1.9. Always round up to nearest 50mm increment.
+              </p>
+            </div>
+          </div>
+
+          <!-- Construction Sequence -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Foundation Construction Sequence</h2>
+            
+            <div class="space-y-4">
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Phase 1: Site Preparation</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Survey and stake building corners</li>
+                  <li>✓ Strip topsoil and organic material</li>
+                  <li>✓ Excavate to required depth (below frost)</li>
+                  <li>✓ Verify soil bearing capacity</li>
+                  <li>✓ Install temporary drainage if needed</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Phase 2: Footing Installation</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Compact subgrade to 95% SPD</li>
+                  <li>✓ Place and compact granular base</li>
+                  <li>✓ Set footing forms to correct elevation</li>
+                  <li>✓ Install reinforcement if required</li>
+                  <li>✓ Pour concrete footings (15-25 MPa)</li>
+                  <li>✓ Form keyway for wall connection</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Phase 3: Foundation Walls</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Set wall forms or lay first course</li>
+                  <li>✓ Install vertical reinforcement</li>
+                  <li>✓ Place concrete or build masonry</li>
+                  <li>✓ Install anchor bolts for sill plate</li>
+                  <li>✓ Cure concrete minimum 7 days</li>
+                  <li>✓ Strip forms when adequate strength</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Phase 4: Waterproofing & Drainage</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Apply dampproofing/waterproofing</li>
+                  <li>✓ Install protection board</li>
+                  <li>✓ Place weeping tile at footing level</li>
+                  <li>✓ Install granular drainage layer</li>
+                  <li>✓ Connect to storm sewer or sump</li>
+                  <li>✓ Test drainage system</li>
+                </ul>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border-2 border-gray-300">
+                <h3 class="font-bold text-gray-900 mb-4">Phase 5: Backfill & Finish</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>✓ Backfill in 300mm lifts</li>
+                  <li>✓ Compact each lift to 95% SPD</li>
+                  <li>✓ Slope grade away from building (2%)</li>
+                  <li>✓ Install window wells if required</li>
+                  <li>✓ Place and compact final grade</li>
+                  <li>✓ Install surface drainage features</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Design Process -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Foundation Design Process</h2>
+            
+            <div class="space-y-4">
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">1</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Verify Site Conditions</h3>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Soil bearing capacity (geotechnical report)</li>
+                      <li>• Water table level and drainage</li>
+                      <li>• Frost depth (1.2m in Toronto)</li>
+                      <li>• Check for fill, organic soil, contamination</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">2</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Determine Design Method</h3>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• If all conditions met: Use Part 9 prescriptive</li>
+                      <li>• If soil 40-75 kPa: Use Section 9.4 or Part 4</li>
+                      <li>• If any limits exceeded: Require Part 4 engineering</li>
+                      <li>• Consider building loads and configuration</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">3</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Size Footings</h3>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Use Table 9.15.3.4 for 75 kPa soil</li>
+                      <li>• Adjust for actual bearing capacity</li>
+                      <li>• Consider concentrated loads</li>
+                      <li>• Minimum depths for frost protection</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">4</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Design Walls</h3>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Select material (concrete, block, ICF, wood)</li>
+                      <li>• Size for lateral earth pressure</li>
+                      <li>• Check backfill height limits</li>
+                      <li>• Design for openings and concentrated loads</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">5</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Address Moisture</h3>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Design drainage system</li>
+                      <li>• Specify dampproofing/waterproofing</li>
+                      <li>• Plan surface grading</li>
+                      <li>• Include granular drainage layers</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bg-white rounded-lg p-6 border border-gray-200">
+                <div class="flex gap-4">
+                  <div class="w-10 h-10 bg-red-600 text-white rounded-full flex items-center justify-center flex-shrink-0 font-bold">6</div>
+                  <div>
+                    <h3 class="font-bold text-gray-900 mb-2">Include Protection Systems</h3>
+                    <ul class="space-y-1 text-gray-700">
+                      <li>• Thermal insulation strategy</li>
+                      <li>• Air barrier continuity</li>
+                      <li>• Soil gas control measures</li>
+                      <li>• Termite protection where required</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Toronto Specific -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Toronto-Specific Foundation Challenges</h2>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Leda Clay Issues</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Sensitive to disturbance</li>
+                  <li>• Variable bearing capacity</li>
+                  <li>• Seasonal volume changes</li>
+                  <li>• Requires careful excavation</li>
+                  <li>• Often needs larger footings</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">High Water Tables</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Common near Lake Ontario</li>
+                  <li>• Ravine lots problematic</li>
+                  <li>• Seasonal variations</li>
+                  <li>• Requires permanent drainage</li>
+                  <li>• May need waterproofing</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Old Fill Areas</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• Historic ravine filling</li>
+                  <li>• Unknown composition</li>
+                  <li>• Variable settlement</li>
+                  <li>• Requires deep foundations</li>
+                  <li>• Always needs engineering</li>
+                </ul>
+              </div>
+
+              <div class="bg-blue-50 rounded-lg p-6">
+                <h3 class="font-bold text-gray-900 mb-3">Frost Depth</h3>
+                <ul class="space-y-2 text-gray-700">
+                  <li>• 1.2m (4 ft) minimum depth</li>
+                  <li>• Deeper in open areas</li>
+                  <li>• Adfreezing on piers</li>
+                  <li>• Frost-protected shallow OK</li>
+                  <li>• Insulation alternatives available</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cost Implications -->
+          <div class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-900 mb-6">Foundation Cost Factors</h2>
+            
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-200">
+              <table class="w-full">
+                <thead class="bg-gray-100">
+                  <tr>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Foundation Type</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Base Cost/m²</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Poor Soil Add</th>
+                    <th class="text-left py-3 px-4 font-semibold text-gray-900">Water Issues Add</th>
+                  </tr>
+                </thead>
+                <tbody class="divide-y divide-gray-200">
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Poured concrete</td>
+                    <td class="py-3 px-4 text-gray-700">$850-1,100</td>
+                    <td class="py-3 px-4 text-gray-700">+30%</td>
+                    <td class="py-3 px-4 text-gray-700">+25%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Concrete block</td>
+                    <td class="py-3 px-4 text-gray-700">$750-950</td>
+                    <td class="py-3 px-4 text-gray-700">+30%</td>
+                    <td class="py-3 px-4 text-gray-700">+30%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">ICF walls</td>
+                    <td class="py-3 px-4 text-gray-700">$950-1,200</td>
+                    <td class="py-3 px-4 text-gray-700">+25%</td>
+                    <td class="py-3 px-4 text-gray-700">+20%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Wood frame (PWF)</td>
+                    <td class="py-3 px-4 text-gray-700">$650-850</td>
+                    <td class="py-3 px-4 text-gray-700">+35%</td>
+                    <td class="py-3 px-4 text-gray-700">+40%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 px-4 text-gray-700">Pier foundation</td>
+                    <td class="py-3 px-4 text-gray-700">$450-600</td>
+                    <td class="py-3 px-4 text-gray-700">+50%</td>
+                    <td class="py-3 px-4 text-gray-700">N/A</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            
+            <p class="text-sm text-gray-600 mt-4">
+              * Includes excavation, footings, walls, dampproofing, and backfill. Add 15% for finished basement prep.
+            </p>
+          </div>
+
+          <!-- Conclusion -->
+          <div class="prose prose-lg max-w-none">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Foundation Success = Understanding Limits</h2>
+            <p class="text-gray-700 mb-4">
+              Part 9 prescriptive requirements work perfectly - when all conditions are met. The moment you exceed 
+              any limit - soil capacity, building height, water table, fill conditions - you need engineering. 
+              Too many failures occur when builders try to stretch Part 9 beyond its boundaries.
+            </p>
+            <p class="text-gray-700 mb-4">
+              In Toronto, with our challenging soils and variable conditions, we recommend geotechnical investigation 
+              for every project. The $2,500 investment reveals whether you can use simple prescriptive design or 
+              need engineering. It's the difference between a $50,000 foundation and a $500,000 failure.
+            </p>
+            <p class="text-gray-700">
+              At Toronto Concrete, we've built foundations on everything from solid bedrock to sensitive marine clay. 
+              We know when to follow the tables and when to call the engineer. Every foundation starts with understanding 
+              the ground beneath - because that's what holds everything up.
+            </p>
+          </div>
+
+          <!-- CTA -->
+          <div class="bg-gray-900 text-white rounded-lg p-8 mt-12 text-center">
+            <h3 class="text-2xl font-bold mb-4">Need Foundation Expertise?</h3>
+            <p class="text-lg mb-6">
+              From soil analysis to engineered solutions - 39 years of foundation experience
+            </p>
+            <a href="tel:437-545-0067" class="inline-block bg-red-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-red-700 transition-colors">
+              Call: (437) 545-0067
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <Footer />
+</Layout>

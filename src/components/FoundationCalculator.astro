@@ -1,0 +1,471 @@
+---
+import { Calculator, Info, DollarSign, Package } from 'lucide-astro';
+---
+
+<section id="calculator" class="py-16 bg-gradient-to-br from-gray-50 to-gray-100">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          Foundation Calculator
+        </h2>
+        <p class="text-xl text-gray-600">
+          Calculate footing sizes, wall quantities, and get instant estimates based on OBC requirements
+        </p>
+      </div>
+
+      <div class="bg-white rounded-2xl shadow-xl p-8">
+        <div class="grid lg:grid-cols-2 gap-8">
+          <!-- Input Section -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Project Details</h3>
+            
+            <!-- House Dimensions -->
+            <div class="bg-gray-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-3">House Dimensions</h4>
+              <div class="grid grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Length (ft)</label>
+                  <input type="number" id="house-length" value="40" min="20" max="100" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500" />
+                </div>
+                <div>
+                  <label class="block text-sm font-medium text-gray-700 mb-1">Width (ft)</label>
+                  <input type="number" id="house-width" value="30" min="20" max="100" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500" />
+                </div>
+              </div>
+            </div>
+
+            <!-- Number of Floors -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Number of Floors Above Grade</label>
+              <div class="grid grid-cols-3 gap-3">
+                <button class="floor-btn px-4 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-red-500 transition-colors" data-floors="1">1 Storey</button>
+                <button class="floor-btn px-4 py-3 border-2 border-red-500 bg-red-50 rounded-lg font-semibold" data-floors="2">2 Storey</button>
+                <button class="floor-btn px-4 py-3 border-2 border-gray-300 rounded-lg font-semibold hover:border-red-500 transition-colors" data-floors="3">3 Storey</button>
+              </div>
+            </div>
+
+            <!-- Foundation Wall Type -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Foundation Wall Type</label>
+              <div class="space-y-2">
+                <label class="flex items-center p-3 border-2 border-red-500 bg-red-50 rounded-lg cursor-pointer">
+                  <input type="radio" name="wall-type" value="concrete" checked class="mr-3" />
+                  <div class="flex-1">
+                    <span class="font-semibold">Poured Concrete</span>
+                    <span class="text-sm text-gray-600 block">200mm thick, most common</span>
+                  </div>
+                </label>
+                <label class="flex items-center p-3 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-red-500 transition-colors">
+                  <input type="radio" name="wall-type" value="block" class="mr-3" />
+                  <div class="flex-1">
+                    <span class="font-semibold">Concrete Block</span>
+                    <span class="text-sm text-gray-600 block">190mm or 290mm blocks</span>
+                  </div>
+                </label>
+                <label class="flex items-center p-3 border-2 border-gray-300 rounded-lg cursor-pointer hover:border-red-500 transition-colors">
+                  <input type="radio" name="wall-type" value="icf" class="mr-3" />
+                  <div class="flex-1">
+                    <span class="font-semibold">ICF (Insulated Concrete Forms)</span>
+                    <span class="text-sm text-gray-600 block">150mm concrete + insulation</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- Basement Height -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Basement Wall Height (ft)</label>
+              <input type="number" id="wall-height" value="8" min="7" max="10" step="0.5" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500" />
+            </div>
+
+            <!-- Soil Type -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Soil Bearing Capacity</label>
+              <select id="soil-type" class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-red-500 focus:border-red-500">
+                <option value="75">Good - 75 kPa (Dense sand/gravel)</option>
+                <option value="50" selected>Average - 50 kPa (Toronto clay)</option>
+                <option value="35">Poor - 35 kPa (Soft clay/silt)</option>
+                <option value="custom">Custom/Engineered</option>
+              </select>
+            </div>
+
+            <!-- Additional Options -->
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-2">Additional Features</label>
+              <div class="space-y-2">
+                <label class="flex items-center">
+                  <input type="checkbox" id="brick-veneer" class="mr-2" />
+                  <span>Brick veneer exterior (+30% footing width)</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" id="garage" class="mr-2" />
+                  <span>Attached garage foundation</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" id="waterproofing" checked class="mr-2" />
+                  <span>Full waterproofing system</span>
+                </label>
+                <label class="flex items-center">
+                  <input type="checkbox" id="drainage" checked class="mr-2" />
+                  <span>Drainage tile system</span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Results Section -->
+          <div class="space-y-6">
+            <h3 class="text-2xl font-bold text-gray-900 mb-4">Calculations & Estimates</h3>
+            
+            <!-- Footing Calculations -->
+            <div class="bg-blue-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Calculator class="w-5 h-5" />
+                Footing Requirements
+              </h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>Exterior Wall Footing Width:</span>
+                  <span class="font-bold" id="ext-footing-width">450mm</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Interior Wall Footing Width:</span>
+                  <span class="font-bold" id="int-footing-width">400mm</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Footing Thickness:</span>
+                  <span class="font-bold" id="footing-thickness">200mm</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Total Footing Length:</span>
+                  <span class="font-bold" id="footing-length">140 linear ft</span>
+                </div>
+                <div class="flex justify-between pt-2 border-t">
+                  <span>Footing Concrete Volume:</span>
+                  <span class="font-bold text-red-600" id="footing-volume">8.5 m³</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Wall Quantities -->
+            <div class="bg-green-50 rounded-lg p-4">
+              <h4 class="font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <Package class="w-5 h-5" />
+                Foundation Wall Quantities
+              </h4>
+              <div class="space-y-2 text-sm">
+                <div class="flex justify-between">
+                  <span>Wall Perimeter:</span>
+                  <span class="font-bold" id="wall-perimeter">140 linear ft</span>
+                </div>
+                <div class="flex justify-between">
+                  <span>Wall Area:</span>
+                  <span class="font-bold" id="wall-area">1,120 sq ft</span>
+                </div>
+                <div id="concrete-wall-qty" class="space-y-1">
+                  <div class="flex justify-between">
+                    <span>Concrete Volume (200mm):</span>
+                    <span class="font-bold text-red-600" id="wall-concrete">21 m³</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Rebar (15M @ 400mm):</span>
+                    <span class="font-bold" id="wall-rebar">280 linear m</span>
+                  </div>
+                </div>
+                <div id="block-wall-qty" class="space-y-1 hidden">
+                  <div class="flex justify-between">
+                    <span>Concrete Blocks (190mm):</span>
+                    <span class="font-bold text-red-600" id="block-count">1,400 blocks</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Mortar Bags:</span>
+                    <span class="font-bold" id="mortar-bags">140 bags</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Core Fill Concrete:</span>
+                    <span class="font-bold" id="core-concrete">8 m³</span>
+                  </div>
+                </div>
+                <div id="icf-wall-qty" class="space-y-1 hidden">
+                  <div class="flex justify-between">
+                    <span>ICF Forms:</span>
+                    <span class="font-bold text-red-600" id="icf-forms">105 m²</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Concrete Volume (150mm):</span>
+                    <span class="font-bold" id="icf-concrete">16 m³</span>
+                  </div>
+                  <div class="flex justify-between">
+                    <span>Rebar (10M @ 400mm):</span>
+                    <span class="font-bold" id="icf-rebar">210 linear m</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cost Estimate -->
+            <div class="bg-gradient-to-r from-red-600 to-red-700 text-white rounded-lg p-4">
+              <h4 class="font-bold mb-3 flex items-center gap-2">
+                <DollarSign class="w-5 h-5" />
+                Cost Estimate Range
+              </h4>
+              <div class="space-y-3">
+                <div>
+                  <div class="text-sm opacity-90">Footings</div>
+                  <div class="text-2xl font-bold" id="footing-cost">$3,500 - $4,500</div>
+                </div>
+                <div>
+                  <div class="text-sm opacity-90">Foundation Walls</div>
+                  <div class="text-2xl font-bold" id="wall-cost">$12,000 - $15,000</div>
+                </div>
+                <div>
+                  <div class="text-sm opacity-90">Waterproofing & Drainage</div>
+                  <div class="text-2xl font-bold" id="waterproof-cost">$3,500 - $4,500</div>
+                </div>
+                <div class="pt-3 border-t border-white/30">
+                  <div class="text-sm opacity-90">Total Estimate</div>
+                  <div class="text-3xl font-bold" id="total-cost">$19,000 - $24,000</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Important Notes -->
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-4">
+              <div class="flex items-start gap-3">
+                <Info class="w-5 h-5 text-yellow-600 flex-shrink-0 mt-0.5" />
+                <div class="text-sm">
+                  <p class="font-bold text-gray-900 mb-1">Important Notes:</p>
+                  <ul class="space-y-1 text-gray-700">
+                    <li>• Calculations based on OBC Part 9 requirements</li>
+                    <li>• Prices are estimates only - site conditions vary</li>
+                    <li>• Includes materials and labor</li>
+                    <li>• Permit fees and engineering not included</li>
+                    <li>• Poor soil may require larger footings</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="space-y-3">
+              <button id="print-calculation" class="w-full px-6 py-3 bg-gray-800 text-white rounded-lg font-semibold hover:bg-gray-900 transition-colors">
+                Print Calculation Details
+              </button>
+              <a href="tel:4375450067" class="block w-full px-6 py-3 bg-red-600 text-white rounded-lg font-semibold hover:bg-red-700 transition-colors text-center">
+                Call for Accurate Quote: (437) 545-0067
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  // Calculator Logic
+  function calculateFoundation() {
+    // Get inputs
+    const length = parseFloat(document.getElementById('house-length').value) || 40;
+    const width = parseFloat(document.getElementById('house-width').value) || 30;
+    const floors = parseInt(document.querySelector('.floor-btn.active')?.dataset.floors || '2');
+    const wallHeight = parseFloat(document.getElementById('wall-height').value) || 8;
+    const soilCapacity = parseFloat(document.getElementById('soil-type').value) || 50;
+    const wallType = document.querySelector('input[name="wall-type"]:checked').value;
+    const hasBrick = document.getElementById('brick-veneer').checked;
+    const hasGarage = document.getElementById('garage').checked;
+    const hasWaterproofing = document.getElementById('waterproofing').checked;
+    const hasDrainage = document.getElementById('drainage').checked;
+
+    // Convert feet to meters for calculations
+    const lengthM = length * 0.3048;
+    const widthM = width * 0.3048;
+    const wallHeightM = wallHeight * 0.3048;
+    
+    // Calculate perimeter
+    const perimeter = (length + width) * 2;
+    const perimeterM = perimeter * 0.3048;
+    
+    // Base footing widths from OBC (mm)
+    let extFootingWidth = floors === 1 ? 250 : floors === 2 ? 350 : 450;
+    let intFootingWidth = floors === 1 ? 200 : floors === 2 ? 300 : 400;
+    
+    // Adjust for soil capacity (base is 75 kPa)
+    const soilFactor = 75 / soilCapacity;
+    extFootingWidth = Math.round(extFootingWidth * soilFactor);
+    intFootingWidth = Math.round(intFootingWidth * soilFactor);
+    
+    // Adjust for brick veneer
+    if (hasBrick) {
+      extFootingWidth = Math.round(extFootingWidth * 1.3);
+    }
+    
+    // Add garage perimeter if selected
+    const totalPerimeter = hasGarage ? perimeter + 40 : perimeter; // Add 40ft for typical garage
+    const totalPerimeterM = totalPerimeter * 0.3048;
+    
+    // Calculate footing thickness (2x projection for plain concrete)
+    const wallThickness = wallType === 'concrete' ? 200 : wallType === 'block' ? 190 : 150;
+    const projection = Math.max((extFootingWidth - wallThickness) / 2, 100);
+    const footingThickness = Math.max(200, projection * 2);
+    
+    // Calculate footing concrete volume
+    const footingVolume = (totalPerimeterM * (extFootingWidth / 1000) * (footingThickness / 1000)).toFixed(1);
+    
+    // Calculate wall area
+    const wallArea = Math.round(totalPerimeter * wallHeight);
+    const wallAreaM2 = (totalPerimeterM * wallHeightM).toFixed(0);
+    
+    // Calculate quantities based on wall type
+    let wallConcrete = 0;
+    let blockCount = 0;
+    let mortarBags = 0;
+    let coreConcrete = 0;
+    let icfForms = 0;
+    let rebarLength = 0;
+    
+    if (wallType === 'concrete') {
+      wallConcrete = (wallAreaM2 * 0.2).toFixed(1); // 200mm thick
+      rebarLength = Math.round(totalPerimeterM * 2.5); // Vertical + horizontal bars
+    } else if (wallType === 'block') {
+      blockCount = Math.round(wallAreaM2 * 12.5); // ~12.5 blocks per m²
+      mortarBags = Math.round(blockCount / 10); // 1 bag per 10 blocks
+      coreConcrete = (wallAreaM2 * 0.08).toFixed(1); // Core fill
+    } else if (wallType === 'icf') {
+      icfForms = Math.round(wallAreaM2);
+      wallConcrete = (wallAreaM2 * 0.15).toFixed(1); // 150mm concrete core
+      rebarLength = Math.round(totalPerimeterM * 2); // Less rebar than poured
+    }
+    
+    // Calculate costs
+    const footingCostMin = Math.round(footingVolume * 400);
+    const footingCostMax = Math.round(footingVolume * 550);
+    
+    let wallCostMin, wallCostMax;
+    if (wallType === 'concrete') {
+      wallCostMin = Math.round(wallConcrete * 500 + rebarLength * 3);
+      wallCostMax = Math.round(wallConcrete * 650 + rebarLength * 4);
+    } else if (wallType === 'block') {
+      wallCostMin = Math.round(blockCount * 3 + mortarBags * 15 + coreConcrete * 400);
+      wallCostMax = Math.round(blockCount * 4 + mortarBags * 20 + coreConcrete * 500);
+    } else {
+      wallCostMin = Math.round(icfForms * 80 + wallConcrete * 500);
+      wallCostMax = Math.round(icfForms * 120 + wallConcrete * 650);
+    }
+    
+    const waterproofCostMin = hasWaterproofing ? Math.round(wallAreaM2 * 30) : 0;
+    const waterproofCostMax = hasWaterproofing ? Math.round(wallAreaM2 * 40) : 0;
+    
+    const drainageCostMin = hasDrainage ? Math.round(totalPerimeterM * 25) : 0;
+    const drainageCostMax = hasDrainage ? Math.round(totalPerimeterM * 35) : 0;
+    
+    const totalMin = footingCostMin + wallCostMin + waterproofCostMin + drainageCostMin;
+    const totalMax = footingCostMax + wallCostMax + waterproofCostMax + drainageCostMax;
+    
+    // Update display
+    document.getElementById('ext-footing-width').textContent = `${extFootingWidth}mm`;
+    document.getElementById('int-footing-width').textContent = `${intFootingWidth}mm`;
+    document.getElementById('footing-thickness').textContent = `${footingThickness}mm`;
+    document.getElementById('footing-length').textContent = `${totalPerimeter} linear ft`;
+    document.getElementById('footing-volume').textContent = `${footingVolume} m³`;
+    
+    document.getElementById('wall-perimeter').textContent = `${totalPerimeter} linear ft`;
+    document.getElementById('wall-area').textContent = `${wallArea} sq ft (${wallAreaM2} m²)`;
+    
+    // Show/hide wall type specific quantities
+    document.getElementById('concrete-wall-qty').classList.toggle('hidden', wallType !== 'concrete');
+    document.getElementById('block-wall-qty').classList.toggle('hidden', wallType !== 'block');
+    document.getElementById('icf-wall-qty').classList.toggle('hidden', wallType !== 'icf');
+    
+    if (wallType === 'concrete') {
+      document.getElementById('wall-concrete').textContent = `${wallConcrete} m³`;
+      document.getElementById('wall-rebar').textContent = `${rebarLength} linear m`;
+    } else if (wallType === 'block') {
+      document.getElementById('block-count').textContent = `${blockCount} blocks`;
+      document.getElementById('mortar-bags').textContent = `${mortarBags} bags`;
+      document.getElementById('core-concrete').textContent = `${coreConcrete} m³`;
+    } else {
+      document.getElementById('icf-forms').textContent = `${icfForms} m²`;
+      document.getElementById('icf-concrete').textContent = `${wallConcrete} m³`;
+      document.getElementById('icf-rebar').textContent = `${Math.round(rebarLength * 0.75)} linear m`;
+    }
+    
+    // Update costs
+    document.getElementById('footing-cost').textContent = `$${footingCostMin.toLocaleString()} - $${footingCostMax.toLocaleString()}`;
+    document.getElementById('wall-cost').textContent = `$${wallCostMin.toLocaleString()} - $${wallCostMax.toLocaleString()}`;
+    document.getElementById('waterproof-cost').textContent = hasWaterproofing || hasDrainage ? 
+      `$${(waterproofCostMin + drainageCostMin).toLocaleString()} - $${(waterproofCostMax + drainageCostMax).toLocaleString()}` : 
+      'Not included';
+    document.getElementById('total-cost').textContent = `$${totalMin.toLocaleString()} - $${totalMax.toLocaleString()}`;
+  }
+
+  // Event listeners
+  document.addEventListener('DOMContentLoaded', () => {
+    // Floor buttons
+    document.querySelectorAll('.floor-btn').forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        document.querySelectorAll('.floor-btn').forEach(b => {
+          b.classList.remove('active', 'border-red-500', 'bg-red-50');
+          b.classList.add('border-gray-300');
+        });
+        e.target.classList.add('active', 'border-red-500', 'bg-red-50');
+        e.target.classList.remove('border-gray-300');
+        calculateFoundation();
+      });
+    });
+    
+    // Set initial active button
+    document.querySelector('[data-floors="2"]').classList.add('active');
+    
+    // Wall type radio buttons styling
+    document.querySelectorAll('input[name="wall-type"]').forEach(radio => {
+      radio.addEventListener('change', (e) => {
+        document.querySelectorAll('input[name="wall-type"]').forEach(r => {
+          const label = r.closest('label');
+          if (r.checked) {
+            label.classList.add('border-red-500', 'bg-red-50');
+            label.classList.remove('border-gray-300');
+          } else {
+            label.classList.remove('border-red-500', 'bg-red-50');
+            label.classList.add('border-gray-300');
+          }
+        });
+        calculateFoundation();
+      });
+    });
+    
+    // Input listeners
+    ['house-length', 'house-width', 'wall-height', 'soil-type'].forEach(id => {
+      document.getElementById(id).addEventListener('input', calculateFoundation);
+    });
+    
+    // Checkbox listeners
+    ['brick-veneer', 'garage', 'waterproofing', 'drainage'].forEach(id => {
+      document.getElementById(id).addEventListener('change', calculateFoundation);
+    });
+    
+    // Print button
+    document.getElementById('print-calculation').addEventListener('click', () => {
+      window.print();
+    });
+    
+    // Initial calculation
+    calculateFoundation();
+  });
+</script>
+
+<style>
+  @media print {
+    .floor-btn:not(.active) {
+      display: none;
+    }
+    input[type="number"], select {
+      border: none;
+      font-weight: bold;
+    }
+    button#print-calculation {
+      display: none;
+    }
+  }
+</style>

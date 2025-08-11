@@ -1,0 +1,140 @@
+---
+import { Star } from 'lucide-astro';
+---
+
+<section id="testimonials" class="py-16 bg-white">
+  <div class="container mx-auto px-4">
+    <div class="max-w-6xl mx-auto">
+      <!-- Header -->
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          What Our Customers Say
+        </h2>
+        <p class="text-lg text-gray-600">
+          Real reviews from real Toronto homeowners
+        </p>
+      </div>
+
+      <!-- Reviews Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div class="bg-gray-50 rounded-lg p-6">
+          <div class="flex gap-1 mb-3">
+            {[...Array(5)].map(() => (
+              <Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
+            ))}
+          </div>
+          <p class="text-gray-700 mb-4">
+            "Joe and his crew replaced our 30-year-old driveway. They showed up when they said they would, 
+            finished on time, and the price was exactly what they quoted. No BS, just good honest work."
+          </p>
+          <div class="pt-4 border-t border-gray-200">
+            <p class="font-semibold text-gray-900">Frank M.</p>
+            <p class="text-sm text-gray-600">Etobicoke - Driveway Replacement</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6">
+          <div class="flex gap-1 mb-3">
+            {[...Array(5)].map(() => (
+              <Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
+            ))}
+          </div>
+          <p class="text-gray-700 mb-4">
+            "Had water coming into the basement for years. ImperialForm fixed it properly - 
+            haven't had a drop of water in 3 years now. Worth every penny."
+          </p>
+          <div class="pt-4 border-t border-gray-200">
+            <p class="font-semibold text-gray-900">Susan Chen</p>
+            <p class="text-sm text-gray-600">North York - Foundation Waterproofing</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6">
+          <div class="flex gap-1 mb-3">
+            {[...Array(5)].map(() => (
+              <Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
+            ))}
+          </div>
+          <p class="text-gray-700 mb-4">
+            "Got quotes from 5 companies. Joe wasn't the cheapest but he was the only one who 
+            explained everything properly. Glad we chose them - beautiful stamped patio!"
+          </p>
+          <div class="pt-4 border-t border-gray-200">
+            <p class="font-semibold text-gray-900">The Johnstons</p>
+            <p class="text-sm text-gray-600">Scarborough - Patio Installation</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6">
+          <div class="flex gap-1 mb-3">
+            {[...Array(5)].map(() => (
+              <Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
+            ))}
+          </div>
+          <p class="text-gray-700 mb-4">
+            "My parents used ImperialForm 20 years ago. When I needed my driveway done, 
+            I didn't even get other quotes. Same great service, same fair pricing."
+          </p>
+          <div class="pt-4 border-t border-gray-200">
+            <p class="font-semibold text-gray-900">Tony R.</p>
+            <p class="text-sm text-gray-600">Mississauga - Driveway & Walkway</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6">
+          <div class="flex gap-1 mb-3">
+            {[...Array(5)].map(() => (
+              <Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
+            ))}
+          </div>
+          <p class="text-gray-700 mb-4">
+            "City said our sidewalk was a trip hazard and had to be fixed. Joe handled everything 
+            including the permits. Fixed in 2 days, city inspector happy, we're happy."
+          </p>
+          <div class="pt-4 border-t border-gray-200">
+            <p class="font-semibold text-gray-900">Margaret D.</p>
+            <p class="text-sm text-gray-600">Toronto - Sidewalk Repair</p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-6">
+          <div class="flex gap-1 mb-3">
+            {[...Array(5)].map(() => (
+              <Star class="w-5 h-5 text-yellow-500 fill-yellow-500" />
+            ))}
+          </div>
+          <p class="text-gray-700 mb-4">
+            "Garage floor was cracking and pitting. They ground it down and applied epoxy coating. 
+            Looks like a showroom now. Clean, professional crew. Highly recommend."
+          </p>
+          <div class="pt-4 border-t border-gray-200">
+            <p class="font-semibold text-gray-900">Mike & Lisa K.</p>
+            <p class="text-sm text-gray-600">Vaughan - Garage Floor Coating</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Trust badges -->
+      <div class="bg-gray-50 rounded-lg p-8">
+        <div class="grid md:grid-cols-4 gap-8 text-center">
+          <div>
+            <div class="text-3xl font-bold text-red-600 mb-1">500+</div>
+            <p class="text-sm text-gray-600">5-Star Reviews</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-red-600 mb-1">A+</div>
+            <p class="text-sm text-gray-600">BBB Rating</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-red-600 mb-1">39</div>
+            <p class="text-sm text-gray-600">Years in Business</p>
+          </div>
+          <div>
+            <div class="text-3xl font-bold text-red-600 mb-1">100%</div>
+            <p class="text-sm text-gray-600">Licensed & Insured</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

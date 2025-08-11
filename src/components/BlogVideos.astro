@@ -1,0 +1,156 @@
+---
+import { PlayCircle, Calendar, User, ArrowRight } from 'lucide-astro';
+
+const blogPosts = [
+  {
+    id: 1,
+    type: "video",
+    title: "How to Maintain Your Concrete Driveway",
+    thumbnail: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600",
+    author: "Mike Thompson",
+    date: "Nov 15, 2024",
+    duration: "5:32",
+    description: "Essential tips for keeping your concrete driveway looking new for decades"
+  },
+  {
+    id: 2,
+    type: "article",
+    title: "Stamped vs. Regular Concrete: Cost Analysis",
+    thumbnail: "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?w=600",
+    author: "Sarah Chen",
+    date: "Nov 10, 2024",
+    readTime: "4 min read",
+    description: "Complete breakdown of costs and benefits for Toronto homeowners"
+  },
+  {
+    id: 3,
+    type: "video",
+    title: "Winter Concrete Care in Toronto",
+    thumbnail: "https://images.unsplash.com/photo-1491156855053-9cdff72c7f85?w=600",
+    author: "Mike Thompson",
+    date: "Nov 5, 2024",
+    duration: "7:15",
+    description: "Protect your concrete from Toronto's harsh winters with these pro tips"
+  },
+  {
+    id: 4,
+    type: "article",
+    title: "Top 5 Concrete Trends for 2025",
+    thumbnail: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600",
+    author: "David Park",
+    date: "Oct 28, 2024",
+    readTime: "6 min read",
+    description: "Latest design trends and innovations in decorative concrete"
+  },
+  {
+    id: 5,
+    type: "video",
+    title: "Foundation Waterproofing 101",
+    thumbnail: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600",
+    author: "Mike Thompson",
+    date: "Oct 20, 2024",
+    duration: "10:45",
+    description: "Everything you need to know about protecting your home's foundation"
+  },
+  {
+    id: 6,
+    type: "article",
+    title: "City of Toronto Permit Guide",
+    thumbnail: "https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?w=600",
+    author: "Sarah Chen",
+    date: "Oct 15, 2024",
+    readTime: "8 min read",
+    description: "Navigate Toronto's building permits for concrete projects with ease"
+  }
+];
+---
+
+<section id="blog" class="py-20 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="text-center mb-12">
+      <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">
+        Resources & Insights
+      </h2>
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+        Expert advice, tutorials, and industry insights from Toronto's concrete professionals
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {blogPosts.map((post) => (
+        <article class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow group">
+          <div class="relative aspect-video overflow-hidden">
+            <img 
+              src={post.thumbnail} 
+              alt={post.title}
+              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            {post.type === "video" && (
+              <div class="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                <PlayCircle class="w-16 h-16 text-white" />
+              </div>
+            )}
+            <div class="absolute top-4 left-4">
+              <span class={`px-3 py-1 rounded-full text-xs font-semibold ${
+                post.type === "video" 
+                  ? "bg-red-600 text-white" 
+                  : "bg-white text-slate-900"
+              }`}>
+                {post.type === "video" ? "Video" : "Article"}
+              </span>
+            </div>
+          </div>
+          
+          <div class="p-6">
+            <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-red-600 transition-colors">
+              {post.title}
+            </h3>
+            <p class="text-gray-600 text-sm mb-4">{post.description}</p>
+            
+            <div class="flex items-center justify-between text-sm text-gray-500">
+              <div class="flex items-center gap-4">
+                <div class="flex items-center gap-1">
+                  <User class="w-4 h-4" />
+                  <span>{post.author}</span>
+                </div>
+                <div class="flex items-center gap-1">
+                  <Calendar class="w-4 h-4" />
+                  <span>{post.date}</span>
+                </div>
+              </div>
+              <span class="text-red-600 font-semibold">
+                {post.type === "video" ? post.duration : post.readTime}
+              </span>
+            </div>
+          </div>
+        </article>
+      ))}
+    </div>
+
+    <div class="mt-12 text-center">
+      <a href="#" class="inline-flex items-center gap-2 text-red-600 font-semibold hover:text-red-700 transition-colors">
+        View All Resources
+        <ArrowRight class="w-5 h-5" />
+      </a>
+    </div>
+
+    <div class="mt-16 bg-slate-900 text-white rounded-lg p-8">
+      <div class="max-w-3xl mx-auto text-center">
+        <h3 class="text-2xl font-bold mb-4">Subscribe to Our Newsletter</h3>
+        <p class="text-gray-300 mb-6">
+          Get monthly tips, project ideas, and exclusive offers delivered to your inbox
+        </p>
+        <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+          <input 
+            type="email" 
+            placeholder="Enter your email"
+            class="flex-1 px-4 py-3 rounded-md text-slate-900 focus:outline-none focus:ring-2 focus:ring-red-500"
+          />
+          <button type="submit" class="bg-red-600 px-6 py-3 rounded-md font-semibold hover:bg-red-700 transition-colors">
+            Subscribe
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
