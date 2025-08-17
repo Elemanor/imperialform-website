@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --brand-ink: #111827;
+    --brand-bg: #FFFFFF;
+    --brand-primary: #F97316;
+    --brand-primary-ink: #111827;
+    --brand-accent: #0EA5E9;
+    --brand-muted: #F3F4F6;
+    --brand-line: #E5E7EB;
+    --status-success: #16A34A;
+    --status-warning: #F59E0B;
+    --status-danger: #DC2626;
+  }
+}
+
+@layer utilities {
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Custom container padding */
+  .container {
+    @apply px-4 mx-auto;
+  }
+  
+  /* Responsive text utilities */
+  .text-responsive {
+    @apply text-base md:text-lg;
+  }
+  
+  /* Custom focus styles */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-brand-accent focus:ring-offset-2;
+  }
+  
+  /* Animation utilities */
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slide-up {
+    from {
+      transform: translateY(10px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .animate-fade-in {
+    animation: fade-in 0.5s ease-in-out;
+  }
+  
+  .animate-slide-up {
+    animation: slide-up 0.3s ease-out;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--brand-muted);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-line);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--brand-accent);
+}
+
+/* Print styles */
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  
+  body {
+    font-size: 12pt;
+  }
+  
+  a {
+    text-decoration: underline;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: none;
+  }
+}

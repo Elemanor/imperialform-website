@@ -1,0 +1,194 @@
+---
+import '../styles/globals.css';
+
+export interface Props {
+  title: string;
+  description?: string;
+  ogImage?: string;
+}
+
+const { 
+  title, 
+  description = "Toronto concrete contractor for slabs, footings, foundation walls & decorative finishes—OBC 2024 compliant, WSIB-covered, ROW permits & inspections handled.",
+  ogImage = "/og-image.jpg" 
+} = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalURL} />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="Imperial Form" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content={canonicalURL} />
+    <meta property="twitter:title" content={title} />
+    <meta property="twitter:description" content={description} />
+    <meta property="twitter:image" content={ogImage} />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QK43R3KY6S"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-QK43R3KY6S');
+    </script>
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://imperialform.ca/#concrete",
+        "name": "Imperial Form | Toronto Slabs, Footings & Foundations",
+        "image": "https://www.imperialform.ca/og-image.jpg",
+        "url": "https://www.imperialform.ca/",
+        "telephone": "+1-437-545-0067",
+        "priceRange": "$–$$",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "123 Example St",
+          "addressLocality": "Toronto",
+          "addressRegion": "ON",
+          "postalCode": "M0M 0M0",
+          "addressCountry": "CA"
+        },
+        "geo": { 
+          "@type": "GeoCoordinates", 
+          "latitude": 43.653, 
+          "longitude": -79.383 
+        },
+        "areaServed": [
+          {"@type":"City","name":"Toronto"},
+          {"@type":"City","name":"Etobicoke"},
+          {"@type":"City","name":"Scarborough"},
+          {"@type":"City","name":"North York"},
+          {"@type":"City","name":"Mississauga"},
+          {"@type":"City","name":"Vaughan"}
+        ],
+        "sameAs": [
+          "https://www.google.com/maps?cid=YOUR_GMB_CID"
+        ],
+        "openingHours": "Mo-Sa 08:00-18:00",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "187"
+        },
+        "makesOffer": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Concrete Slabs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Footings & Grade Beams" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Foundation Walls (CIP, Block, ICF)" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Driveway & Sidewalk Slabs" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Stamped & Exposed Aggregate" } }
+        ]
+      }
+    </script>
+    
+    <!-- FAQPage Schema -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Do you handle permits?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! For foundations and structural work, we handle Toronto Building permits. For driveway access, curbs, and boulevards, we coordinate ROW (Right-of-Way) permits. We also help with MRDD if a building permit is opened."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What concrete mix do you use for driveways and patios?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We typically use air-entrained 32 MPa (C-2 exposure class) concrete with 5-8% air content, w/cm ~0.45, and maximum 100mm slump. This mix is specifically designed for Ontario's freeze-thaw cycles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use de-icing salt on new concrete?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No, avoid all de-icing salts during the first winter. Salt can damage new concrete during its first freeze-thaw season. Use sand for traction instead."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <slot />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #111827;
+    line-height: 1.6;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  /* Accessibility */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+  
+  /* Focus styles */
+  *:focus-visible {
+    outline: 2px solid #0EA5E9;
+    outline-offset: 2px;
+  }
+  
+  /* Print styles */
+  @media print {
+    .no-print {
+      display: none !important;
+    }
+  }
+</style>
